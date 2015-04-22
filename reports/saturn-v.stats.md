@@ -11,7 +11,7 @@
 ### css/saturn-v.css
 
 - **Total Stylesheets:** 1
-- **Total Stylesheet Size:** 24
+- **Total Stylesheet Size:** 41
 - **Total Rules:** 1
 - **Selectors Per Rule:** 1
 - **Total Selectors:** 1
@@ -21,7 +21,7 @@
 - **Top Selector Specificity Selector:** body
 - **Total Id Selectors:** 0
 - **Total Identifiers:** 1
-- **Total Declarations:** 1
+- **Total Declarations:** 2
 - **Total Unique Colors:** 1
 - **Unique Colors:**
 	- `#FF0000`

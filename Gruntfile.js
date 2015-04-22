@@ -1,6 +1,3 @@
-/**
- * Created by marcio on 4/21/15.
- */
 'use strict';
 
 module.exports = function(grunt) {
@@ -20,7 +17,8 @@ module.exports = function(grunt) {
 
     grunt.registerTask('default', [
         'sass',
-        'parker'
+        'parker',
+        'autoprefixer'
     ]);
 
 };
