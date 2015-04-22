@@ -1,0 +1,31 @@
+{
+  "name": "saturn-v",
+  "version": "0.0.1",
+  "description": "Saturn V",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcio/saturn-v.git"
+  },
+  "author": "Marcio Gasparotto",
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/marcio/saturn-v/issues"
+  },
+  "homepage": "https://github.com/marcio/saturn-v",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.0",
+    "grunt-build-control": "^0.4.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jekyll": "^0.4.2",
+    "grunt-parker": "^0.1.3",
+    "grunt-sass": "^0.18.1",
+    "load-grunt-config": "^0.17.1",
+    "load-grunt-tasks": "^3.1.0",
+    "time-grunt": "^1.1.1"
+  }
+}
