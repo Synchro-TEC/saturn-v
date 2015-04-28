@@ -2,8 +2,7 @@
   "name": "saturn-v",
   "version": "0.0.1",
   "description": "Saturn V",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/marcio/saturn-v.git"
