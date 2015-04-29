@@ -11,17 +11,17 @@
 ### css/saturn-v.css
 
 - **Total Stylesheets:** 1
-- **Total Stylesheet Size:** 203
+- **Total Stylesheet Size:** 492
 - **Total Rules:** 4
-- **Selectors Per Rule:** 1.75
-- **Total Selectors:** 7
-- **Identifiers Per Selector:** 1.5714285714285714
-- **Specificity Per Selector:** 10.142857142857142
+- **Selectors Per Rule:** 1.5
+- **Total Selectors:** 6
+- **Identifiers Per Selector:** 1.5
+- **Specificity Per Selector:** 8.5
 - **Top Selector Specificity:** 20
-- **Top Selector Specificity Selector:** .wrapper:after
+- **Top Selector Specificity Selector:** .elastic-percentage-container:after
 - **Total Id Selectors:** 0
-- **Total Identifiers:** 11
-- **Total Declarations:** 10
+- **Total Identifiers:** 9
+- **Total Declarations:** 16
 - **Total Unique Colors:** 1
 - **Unique Colors:**
 	- `#ECF0F1`
