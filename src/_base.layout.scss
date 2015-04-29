@@ -1,0 +1,103 @@
+$susy: (
+  //flow: ltr,
+  //math: fluid,
+  //output: float,
+        gutter-position: inside-static,
+        container: fluid,
+  //container-position: center,
+        columns: 12,
+  //gutters: .25,
+        column-width: 4em,
+  //global-box-sizing: border-box,
+  //last-flow: to,
+        debug: (
+                image: show,
+                color: rgba(#66f, .25),
+                output: background,
+                toggle: top right
+        )
+  //,
+  //        use-custom: (
+  //                background-image: true,
+  //                background-options: false,
+  //                box-sizing: true,
+  //                clearfix: false,
+  //                rem: true,
+  //        )
+);
+
+body {
+  @include container(show);
+  background-color: $gray-light;
+  user-select: none;
+}
+
+.sv-header {
+  @include span(12 no-gutters);
+
+  top: 0;
+  position: fixed;
+  height: 50px;
+  background: rgba($blue, .50);
+}
+.sv-container {
+  @include container;
+  margin: 50px 0;
+}
+.sv-nav {
+  @include span(2);
+  padding: 1em;
+  background: rgba($blue, .30);
+}
+
+.sv-content {
+  @include span(10);
+  padding: 1em;
+  background: rgba($blue, .15);
+}
+
+.sv-content-fluid {
+  @include full;
+  background: rgba($blue, .15);
+}
+
+.sv-nav-fluid {
+  @include span(2);
+  padding: 1em;
+  background: rgba($blue, .30);
+  position: absolute;
+  left: 0;
+  z-index: 99;
+}
+
+.sv-footer {
+  @include full;
+  padding: 1em;
+  background: rgba($blue, .50);
+  bottom: 0;
+  position: fixed;
+}
+
+
+//GRID
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    background: rgba($gray, .70);
+    @include span($i of 12 .25 fluid);
+    padding: 5px;
+    box-shadow: 0 0 0 1px rgba($gray-dark, .125) inset;
+  }
+
+  //.col-#{$i} {
+  //  background: $blue;
+  //  @include span($i of 12);
+  //  padding: 5px;
+  //}
+
+}
+
+.brand {
+  color: $white;
+  margin: 5px 0;
+  font-size: 1.4em;
+}

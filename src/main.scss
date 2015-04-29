@@ -1,49 +1,7 @@
 @import "../bower_components/susy/sass/susy";
+@import "../bower_components/normalize-scss/normalize";
 
 @import "setting.colors";
 @import "generic.border-box";
 
-$susy: (
-        //flow: ltr,
-        //math: fluid,
-        //output: float,
-        //gutter-position: after,
-        //container: auto,
-        //container-position: center,
-        //columns: 12,
-        //gutters: .25,
-        //column-width: false,
-        //global-box-sizing: border-box,
-        //last-flow: to,
-        debug: (
-                image: show,
-                color: rgba(#66f, .25),
-                output: background,
-                toggle: top right,
-        ),
-        use-custom: (
-                background-image: true,
-                background-options: false,
-                box-sizing: true,
-                clearfix: false,
-                rem: true,
-        )
-);
-
-body {
-    background-color: $gray-light;
-    user-select: none;
-}
-// Elastic grid as percentages
-$total-columns: 12;
-$column-width: 6%;
-$gutter-width: 2%;
-$grid-padding: 1%;
-
-$container-style: magic;
-$container-width: 50em;
-
-.elastic-percentage-container { @include container; }
-
-//.fluid-container { @include container(); }
-//.fluid-container { @include container; }
+@import "base.layout";
