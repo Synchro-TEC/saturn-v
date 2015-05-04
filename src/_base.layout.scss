@@ -10,12 +10,12 @@ $susy: (
         column-width: 4em,
   //global-box-sizing: border-box,
   //last-flow: to,
-        debug: (
-                image: show,
-                color: rgba(#66f, .25),
-                output: background,
-                toggle: top right
-        )
+  //      debug: (
+  //              image: show,
+  //              color: rgba(#66f, .25),
+  //              output: background,
+  //              toggle: top right
+  //      )
   //,
   //        use-custom: (
   //                background-image: true,
@@ -27,9 +27,10 @@ $susy: (
 );
 
 body {
-  @include container(show);
+  @include container();
   background-color: $gray-light;
-  user-select: none;
+  //user-select: none;
+  font-family: $font-family-sans-serif;
 }
 
 .sv-header {
@@ -37,8 +38,8 @@ body {
 
   top: 0;
   position: fixed;
-  height: 50px;
-  background: rgba($blue, .50);
+  height: $header-height;
+  background: $blue;
 }
 .sv-container {
   @include container;
@@ -53,18 +54,18 @@ body {
 .sv-content {
   @include span(10);
   padding: 1em;
-  background: rgba($blue, .15);
+  //background: rgba($blue, .15);
 }
 
 .sv-content-fluid {
   @include full;
-  background: rgba($blue, .15);
+  //background: rgba($blue, .15);
 }
 
 .sv-nav-fluid {
   @include span(2);
   padding: 1em;
-  background: rgba($blue, .30);
+  //background: rgba($blue, .30);
   position: absolute;
   left: 0;
   z-index: 99;
@@ -73,7 +74,7 @@ body {
 .sv-footer {
   @include full;
   padding: 1em;
-  background: rgba($blue, .50);
+  background: $blue;
   bottom: 0;
   position: fixed;
 }
@@ -88,16 +89,23 @@ body {
     box-shadow: 0 0 0 1px rgba($gray-dark, .125) inset;
   }
 
-  //.col-#{$i} {
-  //  background: $blue;
-  //  @include span($i of 12);
-  //  padding: 5px;
-  //}
-
+  @if $i < 12 {
+    .col-offset-#{$i} {
+      background: rgba($gray, .70);
+      @include push($i of 12);
+      padding: 5px;
+    }
+  }
 }
+
+.row {
+  @include container;
+}
+
 
 .brand {
   color: $white;
   margin: 5px 0;
   font-size: 1.4em;
 }
+
