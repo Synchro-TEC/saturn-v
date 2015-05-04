@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../../assets/css/saturn-v.css" rel="stylesheet" />
+</head>
+<body>
+<header class="sv-header">
+    <div class="col-2">
+        <h1 class="brand">Saturn V</h1>
+    </div>
+    <div class="col-7">space</div>
+    <div class="col-3">links</div>
+</header>
+<section class="sv-container">
+
+
+    <article class="sv-content-fluid">
+        <div class="col-12">
+<pre><code class="language-html"><div class="code-container"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">data-abide</span>=<span class="hljs-value">"ajax"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"myform"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"name-field"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Your name <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>required<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"users_name"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">pattern</span>=<span class="hljs-value">"[a-zA-Z]+"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">small</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>Name is required and must be a string.<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></div></code></pre>
+<pre><code class="language-javascript"><div class="code-container">$(<span class="hljs-string">'#myform'</span>).on(<span class="hljs-string">'valid.fndtn.abide'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">()</span> </span>{
+<span class="hljs-comment">// Handle the submission of the form</span>
+});</div></code></pre>
+        </div>
+    </article>
+
+
+</section>
+<footer class="sv-footer">FOOTER</footer>
+
+<!--<script src="../../assets/js/templates.js"></script>-->
+<!--<script src="../../assets/js/all.js"></script>-->
+</body>
+</html>
