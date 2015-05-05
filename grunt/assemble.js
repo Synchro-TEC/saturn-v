@@ -7,7 +7,7 @@ module.exports = {
         marked: {
             highlight: function(code, lang) {
                 if (lang === undefined) lang = 'bash';
-                if (lang === 'html') lang = 'xml';
+                if (lang === 'html') lang = 'html';
                 if (lang === 'js') lang = 'javascript';
                 return '<div class="code-container">' + hljs.highlight(lang, code).value + '</div>';
             }

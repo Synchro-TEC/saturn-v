@@ -1,35 +1,14 @@
 $susy: (
-  //flow: ltr,
-  //math: fluid,
-  //output: float,
-        gutter-position: inside-static,
-        container: fluid,
-  //container-position: center,
-        columns: 12,
-  //gutters: .25,
-        column-width: 4em,
-  //global-box-sizing: border-box,
-  //last-flow: to,
-  //      debug: (
-  //              image: show,
-  //              color: rgba(#66f, .25),
-  //              output: background,
-  //              toggle: top right
-  //      )
-  //,
-  //        use-custom: (
-  //                background-image: true,
-  //                background-options: false,
-  //                box-sizing: true,
-  //                clearfix: false,
-  //                rem: true,
-  //        )
+  gutter-position: inside-static,
+  container: fluid,
+  columns: 12,
+  column-width: 4em,
+  global-box-sizing: border-box
 );
 
 body {
   @include container();
   background-color: $gray-light;
-  //user-select: none;
   font-family: $font-family-sans-serif;
 }
 
@@ -39,12 +18,14 @@ body {
   top: 0;
   position: fixed;
   height: $header-height;
-  background: $blue;
+  background: $blue-top;
 }
+
 .sv-container {
   @include container;
-  margin: 50px 0;
+  margin: $header-height 0;
 }
+
 .sv-nav {
   @include span(2);
   padding: 1em;
@@ -73,8 +54,9 @@ body {
 
 .sv-footer {
   @include full;
-  padding: 1em;
-  background: $blue;
+  padding: $default-padding;
+  background: $blue-top;
+  height: $footer-height;
   bottom: 0;
   position: fixed;
 }
@@ -83,23 +65,24 @@ body {
 //GRID
 @for $i from 1 through 12 {
   .col-#{$i} {
-    background: rgba($gray, .70);
+    //background: rgba($gray, .70);
     @include span($i of 12 .25 fluid);
-    padding: 5px;
-    box-shadow: 0 0 0 1px rgba($gray-dark, .125) inset;
+    padding: $default-padding;
+    //box-shadow: 0 0 0 1px rgba($gray-dark, .125) inset;
   }
 
   @if $i < 12 {
     .col-offset-#{$i} {
-      background: rgba($gray, .70);
+      //background: rgba($gray, .70);
       @include push($i of 12);
-      padding: 5px;
+      padding: $default-padding;
     }
   }
 }
 
 .row {
   @include container;
+  margin: $default-margin 0;
 }
 
 
@@ -109,3 +92,9 @@ body {
   font-size: 1.4em;
 }
 
+
+pre {
+  background: $white;
+  padding: 1em;
+  font-size: $font-size-small;
+}
