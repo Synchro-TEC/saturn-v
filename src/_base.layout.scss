@@ -9,6 +9,7 @@ $susy: (
 body {
   @include container();
   //background-color: $gray-light;
+  margin: $header-height 0;
   font-family: $font-family-sans-serif;
 }
 
@@ -19,17 +20,31 @@ body {
   position: fixed;
   height: $header-height;
   background: $blue-top;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 }
 
-.sv-container {
+.sv-container-vertical {
   @include container;
   margin: ($header-height + 10px) 0;
 }
 
-.sv-nav {
+.sv-container-horizontal {
+  @include container;
+}
+
+
+.sv-nav-vertical {
   @include span(2);
   padding: 1em;
   background: rgba($blue, .30);
+}
+
+.sv-nav-horizontal {
+  @include container;
+  background: rgba($gray-light, .90);
+  height: $horizontal-menu-height;
+  border-bottom: 1px solid rgba($gray, .6);
 }
 
 .sv-content {
@@ -40,17 +55,29 @@ body {
 
 .sv-content-fluid {
   @include full;
+  padding: $med-padding;
   //margin: ($header-height + 10px) 0;
   //background: rgba($blue, .15);
 }
 
 .sv-nav-fluid {
-  @include span(2);
-  padding: 1em;
-  //background: rgba($blue, .30);
-  position: absolute;
+  //@include span(1);
+  //padding: 1em;
+  background: rgba($gray-light, .9);
+  position: fixed;
   left: 0;
-  z-index: 99;
+  z-index: 5;
+  bottom: 0;
+  overflow: visible;
+  width: 230px;
+  top: $horizontal-menu-height;
+  box-shadow: 0 0 4px rgba(0,0,0,.14),2px 4px 8px rgba(0,0,0,.28);
+  padding: 20px 0;
+  //-webkit-transform: translateX(-240px);
+  //transform: translateX(-240px);
+  //-webkit-transition: -webkit-transform .15s ease-in-out;
+  //transition: transform .15s ease-in-out;
+
 }
 
 .sv-footer {
@@ -60,6 +87,7 @@ body {
   height: $footer-height;
   bottom: 0;
   position: fixed;
+  z-index: 10;
 }
 
 

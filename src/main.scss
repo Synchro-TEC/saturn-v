@@ -8,3 +8,25 @@
 
 @import "base.layout";
 @import "base.tables";
+
+@import "component.menu";
+
+
+button {
+  &.link {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    outline: none;
+
+    &.white {
+      color: $white;
+      &:hover {
+        color: darken($blue-top, 15%);
+      }
+    }
+
+
+  }
+}
