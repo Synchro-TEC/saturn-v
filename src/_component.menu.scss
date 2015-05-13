@@ -31,10 +31,7 @@
   ul {
     list-style: none;
     li {
-      //float: left;
-      //display: inline-block;
-      //margin: 0 .3em;
-
+      border-bottom: 1px solid rgba($gray, .5);
     }
     a {
       height: $vertical-menu-height;
