@@ -63,7 +63,7 @@ body {
 .sv-nav-fluid {
   //@include span(1);
   //padding: 1em;
-  background: rgba($gray-light, .9);
+  background: $gray-light;
   position: fixed;
   left: -($fluid-nav-witdh +100);
   transition: all 180ms linear;
@@ -127,9 +127,19 @@ body {
 *******************************/
 pre {
   background: $gray-light;
-  padding: 1em;
   font-size: $font-size-base;
+  transition: all .3s ease;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
   color: rgba($gray-dark, .8);
+  &.active {
+    overflow: auto;
+    max-height: 300px;
+    opacity: 1;
+    padding: 1em;
+    transition: all .3s ease;
+  }
 }
 .code-container {
   font-family: $font-family-monospace;

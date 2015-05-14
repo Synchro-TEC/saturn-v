@@ -73,7 +73,7 @@
 <!--<script src="{{assets}}/js/templates.js"></script>-->
 <!--<script src="{{assets}}/js/all.js"></script>-->
 <script>
-    (function(){
+    $(document).ready(function() {
         var $nav = $('nav'), $navTigger = $('.jsMenuTrigger');
 
         $navTigger.click(function () {
@@ -81,7 +81,19 @@
             $(this).toggleClass('active');
         });
 
-    })();
+//        setTimeout(function(){
+
+            $.each($('.show__code'), function(i, $button){
+                $($button).click(function(){
+                    var $code = $($('pre')[i]);
+                    $code.toggleClass('active');
+                });
+            });
+
+//        }, 2000);
+
+
+    });
 </script>
 
 </body>

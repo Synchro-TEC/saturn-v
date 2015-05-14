@@ -31,17 +31,17 @@
   ul {
     list-style: none;
     li {
-      border-bottom: 1px solid rgba($gray, .5);
+
     }
     a {
-      height: $vertical-menu-height;
-      line-height: $vertical-menu-height;
       display: block;
       text-decoration: none;
-      padding: 0 $med-padding;
+      padding: $med-padding;
       color: $gray-dark;
+      font-weight: 400;
+      font-size: $font-size-base;
       &:hover {
-        background-color: rgba($white, .5);
+        background-color: rgba($white, .9);
       }
     }
   }
