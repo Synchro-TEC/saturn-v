@@ -11,25 +11,25 @@
 ### assets/css/saturn-v.css
 
 - **Total Stylesheets:** 1
-- **Total Stylesheet Size:** 12812
-- **Total Rules:** 182
-- **Selectors Per Rule:** 1.5604395604395604
-- **Total Selectors:** 284
-- **Identifiers Per Selector:** 2.109154929577465
-- **Specificity Per Selector:** 13.93661971830986
+- **Total Stylesheet Size:** 13837
+- **Total Rules:** 195
+- **Selectors Per Rule:** 1.9282051282051282
+- **Total Selectors:** 376
+- **Identifiers Per Selector:** 1.9867021276595744
+- **Specificity Per Selector:** 12.787234042553191
 - **Top Selector Specificity:** 52
 - **Top Selector Specificity Selector:** .ui.celled.table tr.positive:hover td
 - **Total Id Selectors:** 0
-- **Total Identifiers:** 599
-- **Total Declarations:** 430
+- **Total Identifiers:** 747
+- **Total Declarations:** 449
 - **Total Unique Colors:** 41
 - **Unique Colors:**
 	- `#FFFF00`
 	- `#000000`
 	- `#C0C0C0`
+	- `#ECF0F1`
 	- `#0072C6`
 	- `#FFFFFF`
-	- `#ECF0F1`
 	- `#333333`
 	- `#555555`
 	- `#009991`

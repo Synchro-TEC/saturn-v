@@ -1,15 +1,14 @@
 @import "../bower_components/susy/sass/susy";
 @import "../bower_components/normalize-scss/normalize";
 
-@import "setting.colors";
-@import "settings.units";
-@import "settings.typograph";
+@import "settings/settings";
+
 @import "generic.border-box";
 
-@import "base.layout";
-@import "base.tables";
+@import "base/base";
 
 @import "component.menu";
+
 
 @import "trumps/trump";
 
