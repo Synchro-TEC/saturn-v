@@ -11,6 +11,7 @@
 
 @import "component.menu";
 
+@import "trumps/trump";
 
 button {
   &.link {
@@ -26,7 +27,5 @@ button {
         color: darken($blue-top, 15%);
       }
     }
-
-
   }
 }

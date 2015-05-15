@@ -13,42 +13,35 @@
 </head>
 <body>
 <header class="sv-header">
-    <div class="col-2">
-        <h1 class="brand">Saturn V</h1>
-    </div>
-    <div class="col-7">
+    <div class="col-3">
         <p>
-            <!--<button class="link white jsMenuTrigger">-->
-                <!--<svg width="16px" height="16px" version="1.1">-->
-                    <!--<g>-->
-                        <!--<rect fill="#fff" x="1" y="1" width="15" height="3"></rect>-->
-                        <!--<rect fill="#fff" x="1" y="7" width="15" height="3"></rect>-->
-                        <!--<rect fill="#fff" x="1" y="13" width="15" height="3"></rect>-->
-                    <!--</g>-->
-                <!--</svg>-->
-            <!--</button>-->
             <button class="hamburger hamburger-cancel jsMenuTrigger">
                 <span class="icon"></span>
             </button>
-            &nbsp;
-            <button class="link white">
-                <svg width="16px" height="16px" version="1.1">
-                    <g>
-                        <rect fill="#fff" x="12" y="0" width="4" height="4"></rect>
-                        <rect fill="#fff" x="6" y="0" width="4" height="4"></rect>
-                        <rect fill="#fff" x="0" y="0" width="4" height="4"></rect>
-                        <rect fill="#fff" x="12" y="6" width="4" height="4"></rect>
-                        <rect fill="#fff" x="6" y="6" width="4" height="4"></rect>
-                        <rect fill="#fff" x="0" y="6" width="4" height="4"></rect>
-                        <rect fill="#fff" x="12" y="12" width="4" height="4"></rect>
-                        <rect fill="#fff" x="6" y="12" width="4" height="4"></rect>
-                        <rect fill="#fff" x="0" y="12" width="4" height="4"></rect>
-                    </g>
-                </svg>
-            </button>
         </p>
     </div>
-    <div class="col-3"></div>
+    <div class="col-6 sv-no-gutter">
+        <div class="col-3"></div>
+        <div class="col-6"><h1 class="brand">Synchro Saturn-V</h1></div>
+        <div class="col-3"></div>
+    </div>
+    <div class="col-3">
+        <button class="link white">
+            <svg width="16px" height="16px" version="1.1">
+                <g>
+                    <rect fill="#fff" x="12" y="0" width="4" height="4"></rect>
+                    <rect fill="#fff" x="6" y="0" width="4" height="4"></rect>
+                    <rect fill="#fff" x="0" y="0" width="4" height="4"></rect>
+                    <rect fill="#fff" x="12" y="6" width="4" height="4"></rect>
+                    <rect fill="#fff" x="6" y="6" width="4" height="4"></rect>
+                    <rect fill="#fff" x="0" y="6" width="4" height="4"></rect>
+                    <rect fill="#fff" x="12" y="12" width="4" height="4"></rect>
+                    <rect fill="#fff" x="6" y="12" width="4" height="4"></rect>
+                    <rect fill="#fff" x="0" y="12" width="4" height="4"></rect>
+                </g>
+            </svg>
+        </button>
+    </div>
 </header>
 
 
@@ -74,24 +67,21 @@
 <!--<script src="{{assets}}/js/all.js"></script>-->
 <script>
     $(document).ready(function() {
-        var $nav = $('nav'), $navTigger = $('.jsMenuTrigger');
+
+        var $nav = $('nav'),
+            $navTigger = $('.jsMenuTrigger');
 
         $navTigger.click(function () {
             $nav.toggleClass("show");
             $(this).toggleClass('active');
         });
 
-//        setTimeout(function(){
-
-            $.each($('.show__code'), function(i, $button){
-                $($button).click(function(){
-                    var $code = $($('pre')[i]);
-                    $code.toggleClass('active');
-                });
+        $.each( $('.show__code'), function(i, $button) {
+            $($button).click( function() {
+                var $code = $($('pre')[i]);
+                $code.toggleClass('active');
             });
-
-//        }, 2000);
-
+        });
 
     });
 </script>

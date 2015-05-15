@@ -36,12 +36,12 @@
     a {
       display: block;
       text-decoration: none;
-      padding: $med-padding;
-      color: $gray-dark;
-      font-weight: 400;
+      line-height: 50px;
+      padding: 0 $med-padding;
+      color: $black;
       font-size: $font-size-base;
       &:hover {
-        background-color: rgba($white, .9);
+        background-color: rgba($gray-light, .8);
       }
     }
   }

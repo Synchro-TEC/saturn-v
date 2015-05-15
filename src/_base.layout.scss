@@ -22,6 +22,9 @@ body {
   background: $blue-top;
   z-index: 10;
   box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  p {
+    line-height: 30px;
+  }
 }
 
 .sv-container-vertical {
@@ -63,7 +66,7 @@ body {
 .sv-nav-fluid {
   //@include span(1);
   //padding: 1em;
-  background: $gray-light;
+  background: $white;
   position: fixed;
   left: -($fluid-nav-witdh +100);
   transition: all 180ms linear;
@@ -72,7 +75,7 @@ body {
   overflow: visible;
   width: $fluid-nav-witdh;
   top: $horizontal-menu-height;
-  box-shadow: 0 0 4px rgba(0,0,0,.14),2px 4px 8px rgba(0,0,0,.28);
+  box-shadow: 0 0 50px rgba(0,0,0,.3),2px 4px 8px rgba(0,0,0,.5);
   padding: 20px 0;
   //-webkit-transform: translateX(-240px);
   //transform: translateX(-240px);
@@ -91,6 +94,9 @@ body {
   z-index: 10;
 }
 
+// .sv-no-gutter {
+//   padding: 0 !important;
+// }
 
 //GRID
 @for $i from 1 through 12 {
@@ -118,8 +124,9 @@ body {
 
 .brand {
   color: $white;
-  margin: 5px 0;
+  margin: 0;
   font-size: 1.4em;
+  text-align: center;
 }
 
 /*******************************
