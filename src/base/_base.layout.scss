@@ -8,7 +8,7 @@ $susy: (
 
 body {
   @include container();
-  //background-color: $gray-light;
+  background-color: $gray-light;
   margin: $header-height 0;
   font-family: $font-family-sans-serif;
 }
@@ -58,7 +58,7 @@ body {
 
 .sv-content-fluid {
   @include full;
-  padding: $med-padding;
+  padding: $large-padding;
   //margin: ($header-height + 10px) 0;
   //background: rgba($blue, .15);
 }
@@ -127,6 +127,7 @@ body {
   margin: 0;
   font-size: 1.4em;
   text-align: center;
+  line-height: 30px;
 }
 
 /*******************************

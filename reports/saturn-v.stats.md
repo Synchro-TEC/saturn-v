@@ -11,22 +11,24 @@
 ### assets/css/saturn-v.css
 
 - **Total Stylesheets:** 1
-- **Total Stylesheet Size:** 13837
-- **Total Rules:** 195
-- **Selectors Per Rule:** 1.9282051282051282
-- **Total Selectors:** 376
-- **Identifiers Per Selector:** 1.9867021276595744
-- **Specificity Per Selector:** 12.787234042553191
+- **Total Stylesheet Size:** 16732
+- **Total Rules:** 240
+- **Selectors Per Rule:** 1.8083333333333333
+- **Total Selectors:** 434
+- **Identifiers Per Selector:** 2.043778801843318
+- **Specificity Per Selector:** 13.806451612903226
 - **Top Selector Specificity:** 52
 - **Top Selector Specificity Selector:** .ui.celled.table tr.positive:hover td
 - **Total Id Selectors:** 0
-- **Total Identifiers:** 747
-- **Total Declarations:** 449
-- **Total Unique Colors:** 41
+- **Total Identifiers:** 887
+- **Total Declarations:** 535
+- **Total Unique Colors:** 43
 - **Unique Colors:**
 	- `#FFFF00`
 	- `#000000`
 	- `#C0C0C0`
+	- `#0060AA`
+	- `#434343`
 	- `#ECF0F1`
 	- `#0072C6`
 	- `#FFFFFF`
@@ -43,7 +45,6 @@
 	- `#999999`
 	- `#FFDDDD`
 	- `#DDFFDD`
-	- `#222222`
 	- `#F0F0F0`
 	- `#D4D4D5`
 	- `#B7CAA7`
@@ -62,8 +63,9 @@
 	- `#FFF9D7`
 	- `#6E5F00`
 	- `#E0E0E0`
-	- `#434343`
 	- `#ACAAAA`
 	- `#00467A`
+	- `#313534`
+	- `#969C9C`
 - **Total Important Keywords:** 23
 - **Total Media Queries:** 0

@@ -54,6 +54,11 @@ h2, .h2,
 h3, .h3,
 h4, .h4 { 
   &.sv-title {
-    border-bottom: 1px solid $gray-light;
+    margin-top: 0;
+    border-bottom: 1px solid $blue;
+    padding-bottom: $small-padding;
+    color: $gray-dark;
+    font-weight: 600;
+    font-style: italic;
   }
 }
