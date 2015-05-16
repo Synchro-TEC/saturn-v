@@ -54,12 +54,16 @@
 <section class="sv-container-horizontal">
     
     <article class="sv-content-fluid">
-        <!-- {{> title}} -->
-        
         <div class="col-12 card">
-            {{#markdown}}
-            {{> body}}
-            {{/markdown}}
+        
+            {{> title}}
+        
+            <div class="card-body">
+                {{#markdown}}
+                {{> body}}
+                {{/markdown}}    
+            </div>
+            
         </div>
 
     </article>
