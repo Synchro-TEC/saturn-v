@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="ic_filter_none_24px" sketch:type="MSLayerGroup">
+            <path d="M1.81818182,3.63636364 L0,3.63636364 L0,18.1818182 C0,19.1818182 0.818181818,20 1.81818182,20 L16.3636364,20 L16.3636364,18.1818182 L1.81818182,18.1818182 L1.81818182,3.63636364 L1.81818182,3.63636364 Z" id="Shape" fill="#5C6BC0" sketch:type="MSShapeGroup"></path>
+            <path d="M18.1818182,0 L5.45454545,0 C4.45454545,0 3.63636364,0.818181818 3.63636364,1.81818182 L3.63636364,14.5454545 C3.63636364,15.5454545 4.45454545,16.3636364 5.45454545,16.3636364 L18.1818182,16.3636364 C19.1818182,16.3636364 20,15.5454545 20,14.5454545 L20,1.81818182 C20,0.818181818 19.1818182,0 18.1818182,0 L18.1818182,0 Z M18.1818182,14.5454545 L5.45454545,14.5454545 L5.45454545,1.81818182 L18.1818182,1.81818182 L18.1818182,14.5454545 L18.1818182,14.5454545 Z" id="Shape" fill="#9FA8DA" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

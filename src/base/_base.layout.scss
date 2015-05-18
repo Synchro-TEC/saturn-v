@@ -130,6 +130,18 @@ body {
   line-height: 30px;
 }
 
+
+
+.sv-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  &.small {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 /*******************************
          Code Samples
 *******************************/
