@@ -1,0 +1,135 @@
+@import "configs/config.box-model";
+@import "configs/config.colors";
+
+.sv-menu-horizontal {
+  display: none;
+  ul {
+    list-style: none;
+    li {
+      float: left;
+      //display: inline-block;
+      //margin: 0 .3em;
+
+    }
+    a {
+      height: $horizontal-menu-height;
+      line-height: $horizontal-menu-height;
+      display: inline-block;
+      text-decoration: none;
+      padding: 0 $med-padding;
+      // color: $gray-dark;
+      &:hover {
+        // background-color: $gray;
+      }
+    }
+  }
+  &.show {
+    display: block;
+  }
+}
+
+
+.sv-nav-fluid {
+  ul {
+    list-style: none;
+    li {
+
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      line-height: 50px;
+      padding: 0 $med-padding;
+      font-weight: 400;
+      &:hover {
+        background-color: $nav-link-bg;
+        color: darken($link-color, 10%);
+      }
+    }
+  }
+  &.show {
+    transition: all 180ms linear;
+    left: 0;
+  }
+}
+
+
+.hamburger {
+  font-size: 15px;
+
+  display: inline-block;
+
+  width: 1em;
+  height: 1em;
+  padding: 0;
+
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+  vertical-align: middle;
+
+  border: 0 none;
+  background: transparent;
+}
+
+/**
+ * Button height fix for Firefox
+ */
+.hamburger::-moz-focus-inner {
+  padding: 0;
+  border: 0 none;
+}
+
+/**
+ * Focus fix for Chrome
+ */
+.hamburger:focus {
+  outline: 0;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: "";
+}
+
+.hamburger:before,
+.hamburger .icon,
+.hamburger:after {
+  display: block;
+
+  width: 100%;
+  height: .2em;
+  margin: 0 0 .2em;
+
+  transition: transform .2s ease-in-out;
+
+  border-radius: .05em;
+  background: #fff;
+}
+
+/**
+ * Styles for the active `.hamburger` icon
+ */
+.hamburger.active:before,
+.hamburger.active .icon,
+.hamburger.active:after {
+  background: #fff;
+}
+
+.hamburger.hamburger-vertical.active {
+  transform: rotate(270deg);
+}
+
+/**
+ * CLOSE/CANCEL/CROSS
+ */
+.hamburger.hamburger-cancel.active .icon {
+  transform: scale(0);
+}
+
+.hamburger.hamburger-cancel.active:before {
+  transform: translateY(.4em) rotate(135deg);
+}
+
+.hamburger.hamburger-cancel.active:after {
+  transform: translateY(-.4em) rotate(-135deg);
+}

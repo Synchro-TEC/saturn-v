@@ -1,0 +1,18 @@
+@import "configs/config.colors";
+
+button {
+  &.link {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    outline: none;
+
+    &.white {
+      color: $white;
+      &:hover {
+        color: darken($link-color, 15%);
+      }
+    }
+  }
+}

@@ -4,25 +4,198 @@
     <meta charset="UTF-8">
     <title>Cards | Saturn-V Docs</title>
     <link href="../../assets/css/saturn-v.css" rel="stylesheet" />
-    <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.5.0/styles/tomorrow.min.css">-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
     <script src="//cdn.jsdelivr.net/highlight.js/8.5.0/languages/1c.min.js"></script>
 
+    <style>
+        /*******************************
+                 Code Samples
+        *******************************/
+        pre {
+          background: #ecf0f1;
+          font-size: 14px;
+          transition: all .3s ease;
+          overflow: hidden;
+          max-height: 0;
+          opacity: 0;
+          color: rgba(#434343, .8);
+        }
+
+        pre.active {
+            overflow: auto;
+            max-height: 300px;
+            opacity: 1;
+            padding: 1em;
+            transition: all .3s ease;
+        }
+
+        .code-container {
+          font-family: Monaco, Menlo, 'Ubuntu Mono', Consolas, source-code-pro, monospace;
+        }
+
+        .hljs {
+          display: block;
+          overflow-x: auto;
+          padding: 0em;
+          background-color: transparent;
+          -webkit-text-size-adjust: none;
+          color: #333333;
+        }
+
+        .hljs.xml {
+          color: #555555;
+        }
+        .hljs.xml:hover {
+          color: #333333;
+        }
+
+        /* Class Name */
+        .hljs-string,
+        .hljs-tag .hljs-value,
+        .hljs-phpdoc,
+        .hljs-dartdoc,
+        .tex .hljs-formula {
+          color: #009991;
+        }
+
+        /* Comment */
+        .hljs-comment,
+        .hljs-template_comment,
+        .diff .hljs-header,
+        .hljs-javadoc {
+          color: #AAAAAA;
+          font-style: italic;
+        }
+
+
+        /* Properties */
+        .hljs-tag,
+        .hljs-rules .hljs-property,
+        .django .hljs-tag .hljs-keyword {
+          color: #892A6F;
+          font-weight: normal;
+        }
+
+        /* HTML Tag */
+        .hljs-tag .hljs-title {
+          color: #892A6F;
+        }
+
+        /* Attribute */
+        .hljs-attribute,
+        .hljs-variable,
+        .lisp .hljs-body {
+          transition: color 0.3s;
+          color: #934E4E;
+        }
+
+        /* CSS ID */
+        .hljs-title,
+        .hljs-id,
+        .scss .hljs-preprocessor {
+          color: #009FDA;
+          font-weight: bold;
+        }
+
+        /* CSS Attribute */
+        .hljs-rule .hljs-attribute {
+          color: #892A6F;
+        }
+
+        /* CSS Value */
+        .hljs-number,
+        .hljs-hexcolor,
+        .ruby .hljs-constant {
+          color: #333333;
+        }
+
+
+
+        /*--------------
+              Normal
+        ---------------*/
+
+        .hljs-keyword,
+        .css .rule .hljs-keyword,
+        .hljs-winutils,
+        .javascript .hljs-title,
+        .nginx .hljs-title,
+        .hljs-subst,
+        .hljs-request,
+        .hljs-status {
+          color: #333;
+          font-weight: bold;
+        }
+
+        .javascript .hljs-title,
+        .hljs-list .hljs-keyword,
+        .hljs-subst {
+          font-weight: normal;
+        }
+
+        .hljs-class .hljs-title,
+        .hljs-type,
+        .vhdl .hljs-literal,
+        .tex .hljs-command {
+          color: #458;
+          font-weight: bold;
+        }
+
+
+        .hljs-regexp {
+          color: #009926;
+        }
+
+        .hljs-built_in {
+          color: #0086b3;
+        }
+
+        .hljs-preprocessor,
+        .hljs-pragma,
+        .hljs-pi,
+        .hljs-doctype,
+        .hljs-shebang,
+        .hljs-cdata {
+          color: #999;
+          font-weight: bold;
+        }
+
+        .hljs-deletion {
+          background: #fdd;
+        }
+
+        .hljs-addition {
+          background: #dfd;
+        }
+
+        .diff .hljs-change {
+          background: #0086b3;
+        }
+
+        .hljs-chunk {
+          color: #aaa;
+        }
+
+    </style>
+
 </head>
 <body>
 <header class="sv-header">
-    <div class="col-3">
-        <p>
-            <button class="hamburger hamburger-cancel jsMenuTrigger">
-                <span class="icon"></span>
-            </button>
-        </p>
+    <div class="col-4 sv-no-gutter">
+        <div class="col-1">
+            <p>
+                <button class="hamburger hamburger-cancel jsMenuTrigger">
+                    <span class="icon"></span>
+                </button>
+            </p>
+        </div>
+        <div class="col-11"><h1 class="sv-brand">Synchro Saturn-V</h1></div>
     </div>
-    <div class="col-6 sv-no-gutter">
+    <div class="col-5 sv-no-gutter">
         <div class="col-3"></div>
-        <div class="col-6"><h1 class="brand">Synchro Saturn-V</h1></div>
+        <div class="col-6"></div>
         <div class="col-3"></div>
     </div>
     <div class="col-3">
@@ -61,10 +234,7 @@
     
     <article class="sv-content-fluid">
         <div class="col-12 card">
-        
-            <div class="card-head">
-            	<header>Cards</header>
-            </div>        
+            <h2>Cards</h2>
             <div class="card-body">
 <div class="card">
     <div class="card-head">
@@ -84,11 +254,8 @@
 
 </div>
             </div>
-            
         </div>
-
     </article>
-
 
 </section>
 <!-- <footer class="sv-footer"></footer> -->

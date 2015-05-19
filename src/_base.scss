@@ -1,0 +1,27 @@
+@import "configs/config.base";
+@import "configs/config.colors";
+@import "configs/config.sizes";
+
+// @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,600);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,600,400);
+
+html {
+  font-size: $html-font-base; 
+}
+
+body {
+  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  color: $default-text;
+  margin: $header-height 0;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

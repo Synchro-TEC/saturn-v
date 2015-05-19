@@ -1,0 +1,48 @@
+@import "configs/config.colors";
+@import "configs/config.sizes";
+
+.sv-header {
+  @include span(12 no-gutters);
+
+  top: 0;
+  position: fixed;
+  height: $header-height;
+  background: $header-bg;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  p {
+    line-height: 30px;
+  }
+}
+
+
+.sv-container-horizontal {
+  @include container;
+}
+
+.sv-content-fluid {
+  @include full;
+  padding: $large-padding;
+}
+
+.sv-nav-fluid {
+  background: $nav-fluid-bg;
+  position: fixed;
+  left: -($fluid-nav-witdh +100);
+  transition: all 180ms linear;
+  z-index: 5;
+  bottom: 0;
+  overflow: visible;
+  width: $fluid-nav-witdh;
+  top: $horizontal-menu-height;
+  box-shadow: 0 0 50px rgba(0,0,0,.3),2px 4px 8px rgba(0,0,0,.5);
+  padding: 20px 0;
+}
+
+.sv-brand {
+  color: $brand-color;
+  margin: 0;
+  font-size: 1.4em;
+  // text-align: center;
+  line-height: 30px;
+}

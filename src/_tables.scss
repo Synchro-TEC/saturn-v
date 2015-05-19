@@ -1,0 +1,49 @@
+@import "configs/config.tables";
+
+table {
+    &.sv-table {
+        border: 1px solid #E1E1E1;
+        width: 100%;
+
+        th,
+        td {
+          padding: $table-default-padding;
+          text-align: left;
+          border-bottom: 1px solid #E1E1E1; 
+        }
+
+        thead th {
+            background: #f1f1f1;
+        }
+        
+        &.compact {
+            th,
+            td {
+                padding: $table-compact-padding;  
+            }
+        }
+
+        &.large {
+            th,
+            td {
+                padding: $table-large-padding;  
+            }
+        }
+
+        &.celled {
+            tr th,
+            tr td {
+                border-left: 1px solid #E1E1E1; 
+            }
+
+            tr th,
+            tr td {
+                &:first-child {
+                    border-left: none; 
+                }
+            }
+
+        }
+    }
+}
+

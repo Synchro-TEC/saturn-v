@@ -1,0 +1,34 @@
+@import "configs/config.grid";
+@import "configs/config.box-model";
+
+$susy: (
+  gutter-position: inside-static,
+  container: fluid,
+  columns: $columns,
+  column-width: $column-width,
+  global-box-sizing: border-box
+);
+
+
+body {
+  @include container();
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    @include span($i of $columns .25 fluid);
+    padding: $default-padding;
+  }
+
+  @if $i < 12 {
+    .col-offset-#{$i} {
+      @include push($i of $columns);
+      padding: $default-padding;
+    }
+  }
+}
+
+.row {
+  @include container;
+  margin: $default-margin 0;
+}
