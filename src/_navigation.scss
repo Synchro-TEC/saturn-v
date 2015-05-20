@@ -88,27 +88,23 @@
 
 .hamburger:before,
 .hamburger:after {
-  content: "";
+  content: '';
 }
 
 .hamburger:before,
 .hamburger .icon,
 .hamburger:after {
-  display: block;
 
-  width: 100%;
+  background: #fff;
+  border-radius: .05em;
+  display: block;
   height: .2em;
   margin: 0 0 .2em;
-
   transition: transform .2s ease-in-out;
-
-  border-radius: .05em;
-  background: #fff;
+  width: 100%;
 }
 
-/**
- * Styles for the active `.hamburger` icon
- */
+
 .hamburger.active:before,
 .hamburger.active .icon,
 .hamburger.active:after {
@@ -119,9 +115,9 @@
   transform: rotate(270deg);
 }
 
-/**
- * CLOSE/CANCEL/CROSS
- */
+
+//CLOSE/CANCEL/CROSS
+
 .hamburger.hamburger-cancel.active .icon {
   transform: scale(0);
 }

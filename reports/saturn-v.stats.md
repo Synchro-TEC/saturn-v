@@ -11,7 +11,7 @@
 ### assets/css/saturn-v.css
 
 - **Total Stylesheets:** 1
-- **Total Stylesheet Size:** 8198
+- **Total Stylesheet Size:** 8195
 - **Total Rules:** 124
 - **Selectors Per Rule:** 1.6290322580645162
 - **Total Selectors:** 202
