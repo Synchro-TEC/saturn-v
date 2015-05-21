@@ -1,15 +1,16 @@
-@import "configs/config.colors";
+@import 'configs/config.colors';
 
 button {
   &.link {
-    border: none;
     background-color: transparent;
-    padding: 0;
+    border: 0;
     margin: 0;
     outline: none;
+    padding: 0;
 
     &.white {
       color: $white;
+
       &:hover {
         color: darken($link-color, 15%);
       }

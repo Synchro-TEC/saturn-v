@@ -7,9 +7,6 @@
     list-style: none;
     li {
       float: left;
-      //display: inline-block;
-      //margin: 0 .3em;
-
     }
     a {
       height: $horizontal-menu-height;
@@ -17,7 +14,6 @@
       display: inline-block;
       text-decoration: none;
       padding: 0 $med-padding;
-      // color: $gray-dark;
       &:hover {
         // background-color: $gray;
       }

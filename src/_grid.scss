@@ -1,5 +1,5 @@
-@import "configs/config.grid";
-@import "configs/config.box-model";
+@import 'configs/config.grid';
+@import 'configs/config.box-model';
 
 $susy: (
   gutter-position: inside-static,
@@ -34,5 +34,5 @@ body {
 }
 
 .sv-no-gutter {
-  padding: 0 !important;
+  padding: 0;
 }

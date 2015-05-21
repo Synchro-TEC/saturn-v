@@ -1,9 +1,10 @@
-@import "configs/config.colors";
+@import 'configs/config.colors';
 
 a {
   color: $link-color;
   text-decoration: none;
+
   &:hover {
-    color: $link-color-hover;   
+    color: $link-color-hover;
   }
 }
