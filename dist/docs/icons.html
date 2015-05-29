@@ -1,0 +1,5090 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Icones | Saturn-V Docs</title>
+    <link href="../../assets/css/saturn-v.css" rel="stylesheet" />
+    <link href="../../assets/css/icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+    <script src="//cdn.jsdelivr.net/highlight.js/8.5.0/languages/1c.min.js"></script>
+
+    <script type="text/javascript">
+    document.addEventListener&&document.addEventListener("DOMContentLoaded",function(){var a,f={},b,d,g,e=!1,h=document.getElementsByTagName("use"),c;XMLHttpRequest&&(e=new XMLHttpRequest,e="withCredentials"in e?XMLHttpRequest:XDomainRequest?XDomainRequest:!1);if(e)for(g=function(){var a=document.body,b=document.createElement("x");b.innerHTML=c.responseText;a.insertBefore(b.firstChild,a.firstChild)},d=0;d<h.length;d+=1)b=h[d].getAttribute("xlink:href").split("#"),a=b[0],b=b[1],a.length||!b||document.getElementById(b)||
+(a="../../assets/images/icons.svg"),a.length&&(f[a]=f[a]||new e,c=f[a],c.onload||(c.onload=g,c.open("GET",a),c.send()))},!1);
+
+// var url ='../../assets/images/icons.svg';
+// var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
+// document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
+    </script>
+
+    <style>
+        /*******************************
+                 Code Samples
+        *******************************/
+        pre {
+          background: #ecf0f1;
+          font-size: 14px;
+          transition: all .3s ease;
+          overflow: hidden;
+          max-height: 0;
+          opacity: 0;
+          color: rgba(#434343, .8);
+        }
+
+        pre.active {
+            overflow: auto;
+            max-height: 300px;
+            opacity: 1;
+            padding: 1em;
+            transition: all .3s ease;
+        }
+
+        .code-container {
+          font-family: Monaco, Menlo, 'Ubuntu Mono', Consolas, source-code-pro, monospace;
+        }
+
+        .hljs {
+          display: block;
+          overflow-x: auto;
+          padding: 0em;
+          background-color: transparent;
+          -webkit-text-size-adjust: none;
+          color: #333333;
+        }
+
+        .hljs.xml {
+          color: #555555;
+        }
+        .hljs.xml:hover {
+          color: #333333;
+        }
+
+        /* Class Name */
+        .hljs-string,
+        .hljs-tag .hljs-value,
+        .hljs-phpdoc,
+        .hljs-dartdoc,
+        .tex .hljs-formula {
+          color: #009991;
+        }
+
+        /* Comment */
+        .hljs-comment,
+        .hljs-template_comment,
+        .diff .hljs-header,
+        .hljs-javadoc {
+          color: #AAAAAA;
+          font-style: italic;
+        }
+
+
+        /* Properties */
+        .hljs-tag,
+        .hljs-rules .hljs-property,
+        .django .hljs-tag .hljs-keyword {
+          color: #892A6F;
+          font-weight: normal;
+        }
+
+        /* HTML Tag */
+        .hljs-tag .hljs-title {
+          color: #892A6F;
+        }
+
+        /* Attribute */
+        .hljs-attribute,
+        .hljs-variable,
+        .lisp .hljs-body {
+          transition: color 0.3s;
+          color: #934E4E;
+        }
+
+        /* CSS ID */
+        .hljs-title,
+        .hljs-id,
+        .scss .hljs-preprocessor {
+          color: #009FDA;
+          font-weight: bold;
+        }
+
+        /* CSS Attribute */
+        .hljs-rule .hljs-attribute {
+          color: #892A6F;
+        }
+
+        /* CSS Value */
+        .hljs-number,
+        .hljs-hexcolor,
+        .ruby .hljs-constant {
+          color: #333333;
+        }
+
+
+
+        /*--------------
+              Normal
+        ---------------*/
+
+        .hljs-keyword,
+        .css .rule .hljs-keyword,
+        .hljs-winutils,
+        .javascript .hljs-title,
+        .nginx .hljs-title,
+        .hljs-subst,
+        .hljs-request,
+        .hljs-status {
+          color: #333;
+          font-weight: bold;
+        }
+
+        .javascript .hljs-title,
+        .hljs-list .hljs-keyword,
+        .hljs-subst {
+          font-weight: normal;
+        }
+
+        .hljs-class .hljs-title,
+        .hljs-type,
+        .vhdl .hljs-literal,
+        .tex .hljs-command {
+          color: #458;
+          font-weight: bold;
+        }
+
+
+        .hljs-regexp {
+          color: #009926;
+        }
+
+        .hljs-built_in {
+          color: #0086b3;
+        }
+
+        .hljs-preprocessor,
+        .hljs-pragma,
+        .hljs-pi,
+        .hljs-doctype,
+        .hljs-shebang,
+        .hljs-cdata {
+          color: #999;
+          font-weight: bold;
+        }
+
+        .hljs-deletion {
+          background: #fdd;
+        }
+
+        .hljs-addition {
+          background: #dfd;
+        }
+
+        .diff .hljs-change {
+          background: #0086b3;
+        }
+
+        .hljs-chunk {
+          color: #aaa;
+        }
+
+    </style>
+
+</head>
+<body>
+<header class="sv-header">
+    <div class="col-4 sv-no-gutter">
+        <div class="col-1">
+            <p>
+                <button class="hamburger hamburger-cancel jsMenuTrigger">
+                    <span class="icon"></span>
+                </button>
+            </p>
+        </div>
+        <div class="col-11"><h1 class="sv-brand">Synchro Saturn-V</h1></div>
+    </div>
+    <div class="col-5 sv-no-gutter">
+        <div class="col-3"></div>
+        <div class="col-6"></div>
+        <div class="col-3"></div>
+    </div>
+    <div class="col-3">
+        <p class="sv-text-right">
+            <button class="link white">
+                <svg width="16px" height="16px" version="1.1">
+                    <g>
+                        <rect fill="#fff" x="12" y="0" width="4" height="4"></rect>
+                        <rect fill="#fff" x="6" y="0" width="4" height="4"></rect>
+                        <rect fill="#fff" x="0" y="0" width="4" height="4"></rect>
+                        <rect fill="#fff" x="12" y="6" width="4" height="4"></rect>
+                        <rect fill="#fff" x="6" y="6" width="4" height="4"></rect>
+                        <rect fill="#fff" x="0" y="6" width="4" height="4"></rect>
+                        <rect fill="#fff" x="12" y="12" width="4" height="4"></rect>
+                        <rect fill="#fff" x="6" y="12" width="4" height="4"></rect>
+                        <rect fill="#fff" x="0" y="12" width="4" height="4"></rect>
+                    </g>
+                </svg>
+            </button>
+        </p>
+    </div>
+</header>
+
+
+<nav class="sv-nav-fluid">
+    <ul>
+        <li><a href="_index">Home</a></li>
+        <li><a href="buttons">Buttons</a></li>
+        <li><a href="cards">Cards</a></li>
+        <li><a href="forms">Forms</a></li>
+        <li><a href="grid_basics">Grids</a></li>
+        <li><a href="icons">Icones</a></li>
+        <li><a href="tables">Table</a></li>
+    </ul>
+</nav>
+
+<section class="sv-container-horizontal">
+
+    <article class="sv-content-fluid">
+        <div class="col-12 card">
+            <h2>Icones</h2>
+            <div class="card-body">
+<div class="main-l">
+  <div class="header-e">Icons:</div>
+  <div class="section-l cf">
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#users"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#users" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#user"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#user" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#address-book-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#address-book-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#add"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#add" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#address-book"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#address-book" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#alarm-clock"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#alarm-clock" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#align-horizontal-centers"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#align-horizontal-centers" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#align-left-edges"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#align-left-edges" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#align-right-edges"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#align-right-edges" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#align-top"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#align-top" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#align-vertical-centers"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#align-vertical-centers" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#align-bottom"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#align-bottom" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#anchor"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#anchor" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#arrow-down"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#arrow-down" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#arrow-left"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#arrow-left" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#arrow-up"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#arrow-up" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#arrow-right"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#arrow-right" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#asterisk"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#asterisk" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#attachment-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#attachment-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#attachment"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#attachment" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#audio-high"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#audio-high" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#audio-mid"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#audio-mid" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#audio-low"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#audio-low" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#battery-20-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#battery-20-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#battery-20"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#battery-20" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#battery-40-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#battery-40-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#battery-40"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#battery-40" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#battery-60-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#battery-60-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#audio-mute"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#audio-mute" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#battery-60"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#battery-60" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#battery-80-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#battery-80-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#battery-80"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#battery-80" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#battery-100-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#battery-100-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#battery-100"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#battery-100" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#battery-charge"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#battery-charge" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#battery-empty-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#battery-empty-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#battery-empty"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#battery-empty" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#bell-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#bell-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#bell-mute-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#bell-mute-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#battery-charge-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#battery-charge-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#bell-mute"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#bell-mute" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#bell"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#bell" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#bin-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#bin-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#bin-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#bin-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#bin"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#bin" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#book-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#book-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#book-lines"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#book-lines" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#book"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#book" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#brightness-high"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#brightness-high" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#brightness-low"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#brightness-low" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#browser-close-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#browser-close-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#browser-close"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#browser-close" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#browser-download-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#browser-download-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#browser-download"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#browser-download" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#browser-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#browser-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#browser-minimize-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#browser-minimize-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#browser-new-window-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#browser-new-window-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#browser-minimize"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#browser-minimize" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#browser-new-window"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#browser-new-window" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#book-lines-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#book-lines-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#browser-upload"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#browser-upload" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#browser-upload-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#browser-upload-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#browser-windows-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#browser-windows-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#browser-windows"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#browser-windows" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#browser"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#browser" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#bulb-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#bulb-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#bulb"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#bulb" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#bullhorn"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#bullhorn" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#bullhorn-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#bullhorn-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#camera-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#camera-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#calendar"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#calendar" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#bullet"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#bullet" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#camera-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#camera-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#clipboard-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#clipboard-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#camera"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#camera" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#cassette"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#cassette" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#clipboard"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#clipboard" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#clock"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#clock" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#cloud-add-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#cloud-add-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#cloud-add"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#cloud-add" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#cloud-download"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#cloud-download" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#cloud-remove-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#cloud-remove-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#cloud"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#cloud" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#cmd"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#cmd" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#commit"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#commit" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#code"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#code" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#cloud-upload"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#cloud-upload" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#compass"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#compass" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#compose-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#compose-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#compose-4"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#compose-4" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#compose-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#compose-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#cloud-remove"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#cloud-remove" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#compose"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#compose" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#contract-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#contract-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#contract-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#contract-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#contrast"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#contrast" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#contract"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#contract" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#converge"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#converge" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#credit-card-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#credit-card-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#credit-card-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#credit-card-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#crate"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#crate" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#credit-card-4"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#credit-card-4" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#credit-card"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#credit-card" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#crop"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#crop" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#cross"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#cross" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#curlybrace-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#curlybrace-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#database-add"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#database-add" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#database-remove"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#database-remove" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#database"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#database" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#curlybrace"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#curlybrace" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#delete"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#delete" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#distribute-bottom-edges"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#distribute-bottom-edges" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#distribute-horizontal-centers"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#distribute-horizontal-centers" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#distribute-left-edges"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#distribute-left-edges" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#distribute-right-edges"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#distribute-right-edges" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#distribute-vertical-centers"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#distribute-vertical-centers" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#document-add"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#document-add" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#document-remove"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#document-remove" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#document"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#document" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#distribute-top-edges"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#distribute-top-edges" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#droplet"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#droplet" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#ellipsis"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#ellipsis" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#envelope"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#envelope" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#exclude"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#exclude" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#expand-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#expand-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#expand"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#expand" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#expand-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#expand-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#eye-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#eye-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#eye"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#eye" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#fast-forward"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#fast-forward" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#flag-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#flag-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#flag"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#flag" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#flask-full"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#flask-full" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#flask-empty"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#flask-empty" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#floppy"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#floppy" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#flux"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#flux" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#folder-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#folder-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#folder-add-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#folder-add-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#folder-add"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#folder-add" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#folder-duplicate"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#folder-duplicate" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#folder-remove-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#folder-remove-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#folder-remove"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#folder-remove" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#folder-duplicate-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#folder-duplicate-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#folder"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#folder" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#fork"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#fork" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#grid-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#grid-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#grid"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#grid" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#headphones"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#headphones" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#heart-full"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#heart-full" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#heart-empty"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#heart-empty" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#heart-half"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#heart-half" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#home-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#home-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#home-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#home-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#home"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#home" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#icon0"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#icon0" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#in"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#in" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#image"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#image" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#inbox-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#inbox-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#inbox"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#inbox" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#infinity"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#infinity" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#intersect"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#intersect" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#key-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#key-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#layout-column-center"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#layout-column-center" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#keys"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#keys" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#layout-content-left-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#layout-content-left-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#key"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#key" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#layout-content-left"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#layout-content-left" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#layout-content-right-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#layout-content-right-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#layout-content-right"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#layout-content-right" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#layout-sidebar-left"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#layout-sidebar-left" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#layout-sidebar-right"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#layout-sidebar-right" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#link"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#link" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#list-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#list-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#link-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#link-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#list"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#list" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#locked"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#locked" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#mail-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#mail-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#mail-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#mail-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#mail-4"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#mail-4" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#mail-outgoing"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#mail-outgoing" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#mail"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#mail" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#map-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#map-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#mail-incoming"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#mail-incoming" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#map"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#map" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#marquee-download"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#marquee-download" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#marquee-minus"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#marquee-minus" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#marquee-plus"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#marquee-plus" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#marquee-upload"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#marquee-upload" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#maximise"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#maximise" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#marquee"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#marquee" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#menu-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#menu-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#menu-pull-down"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#menu-pull-down" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#menu-pull-up"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#menu-pull-up" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#menu"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#menu" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#microphone-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#microphone-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#minus"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#minus" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#mixer"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#mixer" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#microphone"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#microphone" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#newspaper-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#newspaper-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#newspaper"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#newspaper" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#next"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#next" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#nib"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#nib" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#nope"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#nope" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#options"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#options" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#out"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#out" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#outbox-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#outbox-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#notes"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#notes" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#outbox"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#outbox" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#outgoing-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#outgoing-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#paper-ripped"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#paper-ripped" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#outgoing"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#outgoing" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#paper-roll-ripped"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#paper-roll-ripped" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#paragraph-center-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#paragraph-center-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#paper-roll"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#paper-roll" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#paragraph-center"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#paragraph-center" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#paragraph-justify-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#paragraph-justify-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#paragraph-justify"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#paragraph-justify" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#paragraph-left-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#paragraph-left-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#paragraph-left"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#paragraph-left" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#paragraph-right"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#paragraph-right" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#pen"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#pen" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#pause"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#pause" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#paragraph-right-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#paragraph-right-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#pencil"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#pencil" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#pin-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#pin-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#pin"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#pin" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#play"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#play" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#plus"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#plus" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#podcast"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#podcast" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#polaroid-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#polaroid-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#podcast-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#podcast-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#polaroid"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#polaroid" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#power"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#power" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#previous"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#previous" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#print"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#print" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#pull"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#pull" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#quill"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#quill" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#refresh"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#refresh" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#quill-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#quill-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#reminder"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#reminder" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#remove"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#remove" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#repeat-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#repeat-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#repeat"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#repeat" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#reply-all"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#reply-all" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#return"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#return" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#revert"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#revert" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#rewind"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#rewind" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#rulers"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#rulers" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#safe"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#safe" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#search-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#search-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#search"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#search" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#settings-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#settings-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#settings-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#settings-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#section"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#section" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#settings"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#settings" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#settings-4"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#settings-4" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#shred"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#shred" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#shuffle"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#shuffle" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#sleep"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#sleep" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#reply"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#reply" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#spam-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#spam-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#spam"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#spam" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#speech-bubble-center-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#speech-bubble-center-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#speech-bubble-center-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#speech-bubble-center-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#speech-bubble-center"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#speech-bubble-center" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#speech-bubble-left-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#speech-bubble-left-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#speech-bubble-left-4"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#speech-bubble-left-4" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#speech-bubble-left-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#speech-bubble-left-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#speech-bubble-left"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#speech-bubble-left" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#speech-bubble-right-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#speech-bubble-right-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#speech-bubble-right-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#speech-bubble-right-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#speech-bubble-right-4"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#speech-bubble-right-4" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#speech-bubble-right"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#speech-bubble-right" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#spinner-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#spinner-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#spinner"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#spinner" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#split-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#split-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#spinner-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#spinner-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#split"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#split" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#spool"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#spool" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#square-brackets"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#square-brackets" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#stamp-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#stamp-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#stamp"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#stamp" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#star"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#star" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#stiffy"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#stiffy" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#star-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#star-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#stop"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#stop" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#stopwatch"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#stopwatch" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#store-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#store-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#store"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#store" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#support-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#support-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#subtract"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#subtract" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#support"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#support" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#support-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#support-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#swap-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#swap-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#switch-off"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#switch-off" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#swatch"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#swatch" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#swatches"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#swatches" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#swap"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#swap" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#switch-on"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#switch-on" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#tag-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#tag-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#tag-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#tag-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#tag-4"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#tag-4" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#tag"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#tag" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#terminal-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#terminal-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#terminal"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#terminal" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#terminal-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#terminal-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#tick"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#tick" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#tilde"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#tilde" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#timeline"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#timeline" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#toggle-off"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#toggle-off" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#toggle-on"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#toggle-on" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#transfer"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#transfer" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#tray"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#tray" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#unite"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#unite" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#unlocked"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#unlocked" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#unwatch"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#unwatch" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#user-2-add"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#user-2-add" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#user-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#user-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#user-4-add"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#user-4-add" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#user-3"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#user-3" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#user-4-remove"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#user-4-remove" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#user-2-remove"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#user-2-remove" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#user-4"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#user-4" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#user-card"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#user-card" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#video-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#video-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#vinyl"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#vinyl" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#video"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#video" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#voicemail"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#voicemail" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#wallet-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#wallet-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#wallet"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#wallet" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#watch-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#watch-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#watch"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#watch" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#wave"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#wave" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#wave-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#wave-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#wifi-high"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#wifi-high" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#wifi-low"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#wifi-low" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#wifi-mid"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#wifi-mid" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#wiggle"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#wiggle" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#windows"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#windows" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#zoom-in"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#zoom-in" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#zoom-out-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#zoom-out-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#zoom-out"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#zoom-out" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+    <div class="icon-b cf">
+      <div class="icon-bl">
+        <div class="iconmelon">
+          <svg viewBox="0 0 32 32">
+            <g filter="">
+              <use xlink:href="#zoom-in-2"></use>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="name-bl">
+        <input value="#zoom-in-2" readonly="readonly" class="name-ble"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+        </div>
+    </article>
+
+</section>
+<!-- <footer class="sv-footer"></footer> -->
+
+<!--<script src="../../assets/js/templates.js"></script>-->
+<!--<script src="../../assets/js/all.js"></script>-->
+<script>
+    $(document).ready(function() {
+
+        var $nav = $('nav'),
+            $navTigger = $('.jsMenuTrigger');
+
+        $navTigger.click(function () {
+            $nav.toggleClass("show");
+            $(this).toggleClass('active');
+        });
+
+        $.each( $('.show__code'), function(i, $button) {
+            $($button).click( function() {
+                var $code = $($('pre')[i]);
+                $code.toggleClass('active');
+            });
+        });
+
+    });
+</script>
+
+</body>
+</html>

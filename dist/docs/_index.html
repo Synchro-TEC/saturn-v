@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <title>Home | Saturn-V Docs</title>
     <link href="../../assets/css/saturn-v.css" rel="stylesheet" />
+    <link href="../../assets/css/icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
     <script src="//cdn.jsdelivr.net/highlight.js/8.5.0/languages/1c.min.js"></script>
+
+    <script type="text/javascript">
+    document.addEventListener&&document.addEventListener("DOMContentLoaded",function(){var a,f={},b,d,g,e=!1,h=document.getElementsByTagName("use"),c;XMLHttpRequest&&(e=new XMLHttpRequest,e="withCredentials"in e?XMLHttpRequest:XDomainRequest?XDomainRequest:!1);if(e)for(g=function(){var a=document.body,b=document.createElement("x");b.innerHTML=c.responseText;a.insertBefore(b.firstChild,a.firstChild)},d=0;d<h.length;d+=1)b=h[d].getAttribute("xlink:href").split("#"),a=b[0],b=b[1],a.length||!b||document.getElementById(b)||
+(a="../../assets/images/icons.svg"),a.length&&(f[a]=f[a]||new e,c=f[a],c.onload||(c.onload=g,c.open("GET",a),c.send()))},!1);
+
+// var url ='../../assets/images/icons.svg';
+// var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
+// document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
+    </script>
 
     <style>
         /*******************************
@@ -222,21 +232,29 @@
 
 <nav class="sv-nav-fluid">
     <ul>
-        <li><a href="_index"> <img class="sv-icon small" src="../../assets/images/home.svg"> Home</a></li>
-        <li><a href="buttons"> <img class="sv-icon small" src="../../assets/images/buttons.svg"> Buttons</a></li>
-        <li><a href="cards"> <img class="sv-icon small" src="../../assets/images/cards.svg"> Cards</a></li>
-        <li><a href="forms"> <img class="sv-icon small" src="../../assets/images/forms.svg"> Forms</a></li>
-        <li><a href="grid_basics"> <img class="sv-icon small" src="../../assets/images/grids.svg"> Grids</a></li>
-        <li><a href="tables"> <img class="sv-icon small" src="../../assets/images/tables.svg"> Table</a></li>
-    </ul></nav>
+        <li><a href="_index">Home</a></li>
+        <li><a href="buttons">Buttons</a></li>
+        <li><a href="cards">Cards</a></li>
+        <li><a href="forms">Forms</a></li>
+        <li><a href="grid_basics">Grids</a></li>
+        <li><a href="icons">Icones</a></li>
+        <li><a href="tables">Table</a></li>
+    </ul>
+</nav>
 
 <section class="sv-container-horizontal">
-    
+
     <article class="sv-content-fluid">
         <div class="col-12 card">
             <h2>Home</h2>
             <div class="card-body">
-<p>Teste</p>
+<p><div class="iconmelon">
+  <svg viewBox="0 0 32 32">
+    <g filter="">
+      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#home"></use>
+    </g>
+  </svg>
+</div> Teste</p>
             </div>
         </div>
     </article>
