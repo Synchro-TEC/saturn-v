@@ -1,0 +1,7 @@
+{
+  "preset": "node-style-guide",
+  "requireCurlyBraces": null,
+  "esprima": "esprima-fb",
+  "maximumLineLength": 160,
+  "fileExtensions": [".js", ".jsx"]
+}

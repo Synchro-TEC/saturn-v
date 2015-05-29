@@ -1,4 +1,3 @@
-// https://github.com/assemble/assemble/
 var hljs = require('highlight.js');
 
 module.exports = {
@@ -9,8 +8,8 @@ module.exports = {
         if (lang === 'html') lang = 'xml';
         if (lang === 'js') lang = 'javascript';
         return '<div class="code-container">' + hljs.highlight(lang, code).value + '</div>';
-      }
-    }
+      },
+    },
   },
   dist: {
     options: {
@@ -20,11 +19,11 @@ module.exports = {
       helpers: ['<%= path.docs %>/helpers/*.js'],
       partials: ['<%= path.docs %>/includes/**/*.{html,scss}'],
       layoutdir: '<%= path.docs %>/layouts',
-      layout: 'default.html'
+      layout: 'default.html',
     },
     expand: true,
     cwd: '<%= path.docs %>/pages',
     src: '**/*.{html,md}',
-    dest: '<%= path.dist %>/docs/'
-  }
+    dest: '<%= path.dist %>/docs/',
+  },
 };
