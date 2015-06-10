@@ -1,0 +1,16 @@
+.sv-icon {
+  display: block;
+  fill: #333333;
+  height: 22px;
+  position: relative;
+  width: 22px;
+}
+
+.sv-icon:after {
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
