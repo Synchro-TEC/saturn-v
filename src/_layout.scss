@@ -3,13 +3,12 @@
 
 .sv-header {
   @include span(12 no-gutters);
-
   background: $header-bg;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
   height: $header-height;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 9999;
 
   p {
     line-height: 30px;
@@ -19,6 +18,12 @@
 
 .sv-container-horizontal {
   @include container;
+  transition: all 180ms linear;
+
+  &.active {
+    margin-left: $menu-width;
+    transition: all 180ms linear;
+  }
 }
 
 .sv-content-fluid {

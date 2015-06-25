@@ -5,6 +5,6 @@ module.exports = {
   },
   assemble: {
     files: ['<%= path.docs %>/**/**/*.html'],
-    tasks: ['assemble'],
+    tasks: ['assemble', 'shell'],
   },
 };

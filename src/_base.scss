@@ -2,11 +2,11 @@
 @import 'configs/config.colors';
 @import 'configs/config.sizes';
 
-// @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,600);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700,600,400);
 
 html {
   font-size: $html-font-base;
+  background-color: #f1f1f1;
 }
 
 // currently ems cause chrome bug misinterpreting rems on body element
@@ -25,5 +25,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline-style: none;
 }
 

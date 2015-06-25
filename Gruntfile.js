@@ -22,7 +22,8 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
         'sass',
         'parker',
-        'autoprefixer'
+        'autoprefixer',
+        'exec'
     ]);
-
+  
 };
