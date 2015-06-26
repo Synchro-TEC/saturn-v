@@ -1,6 +1,30 @@
 @import 'configs/config.colors';
 
-button {
+.sv-button {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  min-height: 1em;
+
+  outline: none;
+  border: none;
+
+  background-color: $header-bg;
+  color: $white;
+
+  padding: $med-padding;
+
+
+  line-height: 1;
+  font-size: .9em;
+  font-style: normal;
+  font-weight: 600;
+
+  border-radius: 3px;
+  text-decoration: none;
+
+
   &.link {
     background-color: transparent;
     border: 0;
@@ -12,7 +36,7 @@ button {
       color: $white;
 
       &:hover {
-        color: darken($link-color, 15%);
+        color: $white;
       }
     }
   }

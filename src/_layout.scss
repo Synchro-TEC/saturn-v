@@ -19,7 +19,6 @@
 .sv-container-horizontal {
   @include container;
   transition: all 180ms linear;
-
   &.active {
     margin-left: $menu-width;
     transition: all 180ms linear;
