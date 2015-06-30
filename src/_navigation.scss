@@ -135,7 +135,7 @@ $swift-ease-out: all $swift-ease-out-duration $swift-ease-out-timing-function !d
 //   padding: 10px;
 //   opacity: 0;
 //   top: $header-height;
-//   transition: all 180ms linear; 
+//   transition: all 180ms linear;
 //   width: $menu-width;
 //   // z-index: 9;
 //   &.transition-in {
@@ -147,7 +147,7 @@ $swift-ease-out: all $swift-ease-out-duration $swift-ease-out-timing-function !d
 //     transition: $swift-ease-out;
 //     transform: translate3d(0,100%,0) scale(0.2);
 //   }
-  
+
 //   & ul {
 //     list-style: none;
 //   }
@@ -166,7 +166,7 @@ $swift-ease-out: all $swift-ease-out-duration $swift-ease-out-timing-function !d
   width: $menu-width;
   text-align: left;
   background: $white;
-  
+
   transition: all, 350ms, cubic-bezier(.19, 1, .22, 1);
   transform: scale(0);
   transform-origin: left top;
@@ -180,7 +180,7 @@ $swift-ease-out: all $swift-ease-out-duration $swift-ease-out-timing-function !d
     opacity: 0;
 
     a {
-      font-weight: 600;
+      font-weight: 500;
       text-decoration: none;
       font-size: 1em;
     }

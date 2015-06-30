@@ -1,43 +1,54 @@
 @import 'configs/config.colors';
 
-.sv-button {
+.sv-button,
+a.sv-button {
   cursor: pointer;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
-  min-height: 1em;
+  height: 34px;
 
   outline: none;
   border: none;
 
-  background-color: $header-bg;
-  color: $white;
+  background-color: $btn-default;
+  color: $default-text;
 
   padding: $med-padding;
 
 
-  line-height: 1;
+  line-height: 1.2;
   font-size: .9em;
-  font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
 
-  border-radius: 3px;
+  border-radius: 2px;
   text-decoration: none;
 
+  &:hover {
+    background-color: #B0BEC5;
+  }
+}
 
-  &.link {
-    background-color: transparent;
-    border: 0;
-    margin: 0;
-    outline: none;
-    padding: 0;
-
-    &.white {
-      color: $white;
-
-      &:hover {
-        color: $white;
-      }
+.sv-button,
+a.sv-button {
+  &.danger {
+    background-color: #f44336;
+    color: $white;
+    &:hover {
+      background-color: #d32f2f;
     }
+  }
+
+  &.primary {
+    background-color: #4CAF50;
+    color: $white;
+    &:hover {
+      background-color: #388E3C;
+    }
+  }
+
+
+  &.marged {
+    margin: 0 $small-padding;
   }
 }

@@ -1,3 +1,31 @@
+.sv-form {
+  span {
+    display: block;
+  }
+  .full {
+    width: 100%;
+  }
+
+  legend {
+    font-size: 1em;
+    font-weight: 500;
+    border-bottom: 1px dotted $default-text;
+  }
+}
+
+.sv-form-inline {
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea,
+  select {
+    margin: 0 5px;
+  }
+}
 
 input[type="email"],
 input[type="number"],
@@ -12,8 +40,10 @@ select {
   border: 1px solid $ligh-gray;
   border-radius: 4px;
   box-shadow: none;
-  height: 32px;
+  height: 34px;
   padding: 4px 8px;
+  font-size: .9em;
+  vertical-align: middle;
 }
 
 input[type="email"],
