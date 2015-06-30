@@ -11,7 +11,7 @@
 ### assets/css/saturn-v.css
 
 - **Total Stylesheets:** 1
-- **Total Stylesheet Size:** 10364
+- **Total Stylesheet Size:** 10395
 - **Total Rules:** 146
 - **Selectors Per Rule:** 1.6712328767123288
 - **Total Selectors:** 244
@@ -21,7 +21,7 @@
 - **Top Selector Specificity Selector:** .hamburger.hamburger-cancel.active .icon
 - **Total Id Selectors:** 0
 - **Total Identifiers:** 442
-- **Total Declarations:** 381
+- **Total Declarations:** 382
 - **Total Unique Colors:** 18
 - **Unique Colors:**
 	- `#FFFF00`

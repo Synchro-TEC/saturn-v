@@ -32,7 +32,8 @@
   }
 
   .card-body {
-    padding: $default-padding;
+    min-height: 50em;
+    padding: $default-padding $default-padding $large-padding $default-padding;
   }
 
 }
