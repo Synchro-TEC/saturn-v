@@ -31,7 +31,8 @@ body {
 
 .row {
   @include container;
-  margin: $default-margin 0;
+  clear: both;
+  margin: 0;
 }
 
 .sv-no-gutter {

@@ -1,20 +1,14 @@
 @import 'settings/setting.units';
 @import 'helpers/mixins';
 
+
 .sv-card {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.24),  0 1px 2px 0 rgba(0, 0, 0, 0.12);
   border-radius: 2px;
-  padding: 0;
+  padding: $default-padding;
   background-color: $white;
 
-  &.page {
-    min-height: 50em;
-  }
-
   .card-header {
-    padding: $default-padding;
-    height: 50px;
-
     h1, h2, h3, h4, h5, h6 {
       padding: 0;
       margin: 0;
@@ -32,8 +26,46 @@
   }
 
   .card-body {
+    margin-top: $default-margin;
     min-height: 50em;
-    padding: $default-padding $default-padding $large-padding $default-padding;
+  }
+
+}
+
+.sv-page {
+    .header {
+    h1, h2, h3, h4, h5, h6 {
+      padding: 0;
+      margin: 0;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 1em;
+    }
+    h3 {
+      font-size: .8em;
+    }
+  }
+}
+
+
+.sv-toolbar {
+
+  h1, h2, h3, h4, h5, h6 {
+      padding: 0;
+      margin: 0;
+      font-weight: normal;
+      text-transform: uppercase;
+  }
+  h2 {
+      font-weight: 600;
+      font-size: 1em;
+  }
+  h3 {
+      font-size: .8em;
   }
 
 }

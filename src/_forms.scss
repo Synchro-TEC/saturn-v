@@ -72,11 +72,14 @@ textarea:focus,
 select:focus {
   border: 1px solid darken(#33C3F0, 10%);
   outline: 0; }
-label,
-legend {
+label,{
   display: block;
   margin-bottom: .5rem;
-  font-weight: 400; }
+  font-weight: 300;
+}
+
+
+
 fieldset {
   padding: 0;
   border-width: 0; }

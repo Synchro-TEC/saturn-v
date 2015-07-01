@@ -3,7 +3,7 @@
 @import 'configs/config.sizes';
 
 //@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,600,400);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,300);
 
 html {
   font-size: $html-font-base;
@@ -16,7 +16,7 @@ body {
   color: $default-text;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4em;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6;
   margin: $header-height 0;
 }
