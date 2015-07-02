@@ -6,19 +6,20 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,300);
 
 html {
+  background-color: $smoke;
   font-size: $html-font-base;
-  background-color: #f1f1f1;
   height: 100%;
 }
 
 // currently ems cause chrome bug misinterpreting rems on body element
+
 body {
   color: $default-text;
   font-family: 'Roboto', sans-serif;
   font-size: 1.4em;
   font-weight: 300;
   line-height: 1.6;
-  margin: $header-height 0;
+  margin: $body-margin 0;
 }
 
 *,
@@ -26,7 +27,6 @@ body {
 *:before {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   outline-style: none;
+  padding: 0;
 }
-

@@ -3,23 +3,29 @@
 
 
 .sv-card {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.24),  0 1px 2px 0 rgba(0, 0, 0, 0.12);
-  border-radius: 2px;
-  padding: $default-padding;
   background-color: $white;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .24), 0 1px 2px 0 rgba(0, 0, 0, .12);
+  padding: $default-padding;
 
   .card-header {
-    h1, h2, h3, h4, h5, h6 {
-      padding: 0;
-      margin: 0;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       font-weight: normal;
+      margin: 0;
+      padding: 0;
       text-transform: uppercase;
     }
 
     h2 {
-      font-weight: 600;
       font-size: 1em;
+      font-weight: 600;
     }
+
     h3 {
       font-size: .8em;
     }
@@ -33,18 +39,24 @@
 }
 
 .sv-page {
-    .header {
-    h1, h2, h3, h4, h5, h6 {
-      padding: 0;
-      margin: 0;
+  .header {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       font-weight: normal;
+      margin: 0;
+      padding: 0;
       text-transform: uppercase;
     }
 
     h2 {
-      font-weight: 600;
       font-size: 1em;
+      font-weight: 600;
     }
+
     h3 {
       font-size: .8em;
     }
@@ -53,19 +65,38 @@
 
 
 .sv-toolbar {
+  height: 50px;
+  transition: all, 350ms, cubic-bezier(.19, 1, .22, 1);
 
-  h1, h2, h3, h4, h5, h6 {
-      padding: 0;
-      margin: 0;
-      font-weight: normal;
-      text-transform: uppercase;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
   }
+
   h2 {
-      font-weight: 600;
-      font-size: 1em;
+    font-size: 1em;
+    font-weight: 600;
   }
+
   h3 {
-      font-size: .8em;
+    font-size: .8em;
+  }
+
+  &.active {
+    background-color: rgba($white, .95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: $header-height;
+    transition: all, 350ms, cubic-bezier(.19, 1, .22, 1);
   }
 
 }
