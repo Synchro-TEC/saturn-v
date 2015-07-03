@@ -1,7 +1,7 @@
 .sv-header {
   @include span(12 no-gutters);
   background: $header-bg;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+  box-shadow: 0 2px 5px rgba($sv-color-black, .26);
   height: $header-height;
   position: fixed;
   top: 0;
@@ -16,6 +16,7 @@
 .sv-container-horizontal {
   @include container;
   transition: all 180ms linear;
+
   &.active {
     margin-left: $menu-width;
     transition: all 180ms linear;
@@ -30,7 +31,7 @@
 .sv-nav-fluid {
   background: $nav-fluid-bg;
   bottom: 0;
-  box-shadow: 0 0 50px rgba(0, 0, 0, .3), 2px 4px 8px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 50px rgba($sv-color-black, .3), 2px 4px 8px rgba($sv-color-black, .5);
   left: -($fluid-nav-witdh +100);
   overflow: visible;
   padding: 20px 0;
@@ -44,7 +45,7 @@
 .sv-brand {
   color: $brand-color;
   font-size: 1.4em;
+  font-weight: 500;
   line-height: 1.6;
   margin: 0;
-  font-weight: 500;
 }
