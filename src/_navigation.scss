@@ -10,12 +10,6 @@
   vertical-align: middle;
   width: 1em;
 
-  //Button height fix for Firefox
-  &::--moz-focus-inner {
-    border: 0 none;
-    padding: 0;
-  }
-
   &:focus {
     outline: 0;
   }
