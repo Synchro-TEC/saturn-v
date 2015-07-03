@@ -1,12 +1,8 @@
-@import 'settings/setting.units';
-@import 'helpers/mixins';
-
-
 .sv-card {
-  background-color: $white;
+  background-color: $sv-color-white;
   border-radius: 2px;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .24), 0 1px 2px 0 rgba(0, 0, 0, .12);
-  padding: $default-padding;
+  box-shadow: 0 1px 3px 0 rgba($sv-color-black, .24), 0 1px 2px 0 rgba($sv-color-black, .12);
+  padding: $sv-padding-default;
 
   .card-header {
     h1,
@@ -32,7 +28,7 @@
   }
 
   .card-body {
-    margin-top: $default-margin;
+    margin-top: $sv-margin-default;
     min-height: 50em;
   }
 
@@ -90,8 +86,8 @@
   }
 
   &.active {
-    background-color: rgba($white, .95);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .26);
+    background-color: rgba($sv-color-white, .95);
+    box-shadow: 0 2px 5px rgba($sv-color-black, .26);
     left: 0;
     position: fixed;
     right: 0;

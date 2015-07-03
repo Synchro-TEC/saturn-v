@@ -1,13 +1,8 @@
-@import 'configs/config.base';
-@import 'configs/config.colors';
-@import 'configs/config.sizes';
-
 //@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,600,400);
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,300);
 
 html {
-  background-color: $smoke;
-  font-size: $html-font-base;
+  background-color: $sv-color-smoke;
+  font-size: $sv-font-base-html;
   height: 100%;
 }
 

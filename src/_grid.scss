@@ -1,12 +1,8 @@
-@import 'configs/config.grid';
-@import 'configs/config.box-model';
-@import 'settings/setting.units';
-
 $susy: (
   gutter-position: inside-static,
   container: fluid,
-  columns: $columns,
-  column-width: $column-width,
+  columns: $sv-columns,
+  column-width: $sv-column-width,
   global-box-sizing: border-box
 );
 
@@ -15,16 +11,16 @@ body {
   @include container();
 }
 
-@for $i from 1 through $columns {
+@for $i from 1 through $sv-columns {
   .col-#{$i} {
-    @include span($i of $columns .25 fluid);
-    padding: $default-padding;
+    @include span($i of $sv-columns .25 fluid);
+    padding: $sv-padding-default;
   }
 
   @if $i < 12 {
     .col-offset-#{$i} {
-      @include push($i of $columns);
-      padding: $default-padding;
+      @include push($i of $sv-columns);
+      padding: $sv-padding-default;
     }
   }
 }
@@ -38,143 +34,9 @@ body {
 .row-spaced {
   @include container;
   clear: both;
-  margin: $default-margin 0;
+  margin: $sv-margin-default 0;
 }
 
 .sv-no-gutter {
   padding: 0;
-}
-
-
-
-/* Timer*/
-// .timer{
-//     width: 24px;
-//     height: 24px;
-//     background-color: transparent;
-//     box-shadow: inset 0px 0px 0px 2px $header-bg;
-//     border-radius: 50%;
-//     position: relative;
-//     margin: 38px auto;/* Not necessary- its only for layouting*/
-//  }
-// .timer:after, .timer:before{
-//     position: absolute;
-//     content:"";
-//     background-color: $header-bg;
-// }
-// .timer:after{
-//     width: 10px;
-//     height: 2px;
-//     top: 11px;
-//     left: 11px;
-//     -webkit-transform-origin: 1px 1px;
-//        -moz-transform-origin: 1px 1px;
-//             transform-origin: 1px 1px;
-//     -webkit-animation: minhand .7s linear infinite;
-//        -moz-animation: minhand .7s linear infinite;
-//             animation: minhand .7s linear infinite;
-// }
-//
-// .timer:before{
-//     width: 8px;
-//     height: 2px;
-//     top: 11px;
-//     left: 11px;
-//     -webkit-transform-origin: 1px 1px;
-//        -moz-transform-origin: 1px 1px;
-//             transform-origin: 1px 1px;
-//     -webkit-animation: hrhand 2s linear infinite;
-//        -moz-animation: hrhand 2s linear infinite;
-//             animation: hrhand 2s linear infinite;
-// }
-//
-// @-webkit-keyframes minhand{
-//     0%{-webkit-transform:rotate(0deg)}
-//     100%{-webkit-transform:rotate(360deg)}
-// }
-// @-moz-keyframes minhand{
-//     0%{-moz-transform:rotate(0deg)}
-//     100%{-moz-transform:rotate(360deg)}
-// }
-// @keyframes minhand{
-//     0%{transform:rotate(0deg)}
-//     100%{transform:rotate(360deg)}
-// }
-//
-// @-webkit-keyframes hrhand{
-//     0%{-webkit-transform:rotate(0deg)}
-//     100%{-webkit-transform:rotate(360deg)}
-// }
-// @-moz-keyframes hrhand{
-//     0%{-moz-transform:rotate(0deg)}
-//     100%{-moz-transform:rotate(360deg)}
-// }
-// @keyframes hrhand{
-//     0%{transform:rotate(0deg)}
-//     100%{transform:rotate(360deg)}
-// }
-
-
-
-/*Typing Loader*/
-.timer{
-    width: 8px;
-    height: 8px;
-    -webkit-animation: typing 1s linear infinite alternate;
-       -moz-animation: Typing 1s linear infinite alternate;
-            animation: typing 1s linear infinite alternate;
-    // margin: 46px auto; /* Not necessary- its only for layouting*/
-    position: relative;
-    // left: -12px;
-}
-
-@-webkit-keyframes typing{
-    0%{
-        background-color: rgba($header-bg, 1);
-        box-shadow: 12px 0px 0px 0px rgba($header-bg, 0.2),
-                    24px 0px 0px 0px rgba($header-bg, 0.2);
-      }
-    25%{
-        background-color: rgba($header-bg, 0.4);
-        box-shadow: 12px 0px 0px 0px rgba($header-bg, .2),
-                    24px 0px 0px 0px rgba($header-bg, .2);
-    }
-    75%{ background-color: rgba($header-bg, 0.4);
-        box-shadow: 12px 0px 0px 0px rgba($header-bg, 0.2),
-                    24px 0px 0px 0px rgba($header-bg, 1);
-      }
-}
-
-@-moz-keyframes typing{
-   0%{
-        background-color: rgba($header-bg, 1);
-        box-shadow: 12px 0px 0px 0px rgba($header-bg,0.2),
-                    24px 0px 0px 0px rgba($header-bg,0.2);
-      }
-    25%{
-        background-color: rgba($header-bg, 0.4);
-        box-shadow: 12px 0px 0px 0px rgba($header-bg, .2),
-                    24px 0px 0px 0px rgba($header-bg, .2);
-    }
-    75%{ background-color: rgba($header-bg, 0.4);
-        box-shadow: 12px 0px 0px 0px rgba($header-bg,0.2),
-                    24px 0px 0px 0px rgba($header-bg,1);
-      }
-}
-
-@keyframes typing{
-   0%{
-        background-color: rgba($header-bg, 1);
-        box-shadow: 12px 0px 0px 0px rgba($header-bg,0.2),
-                    24px 0px 0px 0px rgba($header-bg,0.2);
-      }
-    25%{
-        background-color: rgba($header-bg, 0.4);
-        box-shadow: 12px 0px 0px 0px rgba($header-bg, .2),
-                    24px 0px 0px 0px rgba($header-bg,0.2);
-    }
-    75%{ background-color: rgba($header-bg, 0.4);
-        box-shadow: 12px 0px 0px 0px rgba($header-bg,0.2),
-                    24px 0px 0px 0px rgba($header-bg,1);
-      }
 }

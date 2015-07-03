@@ -1,0 +1,86 @@
+// ------------------------------------------------------------------------------------------------------------------
+// BOX MODEL
+// ------------------------------------------------------------------------------------------------------------------
+$sv-margin-default                  : .25em;
+$sv-margin-small                    : .20em;
+$sv-padding-default                 : .5em;
+$sv-padding-small                   : .25em;
+$sv-padding-med                     : .75em;
+$sv-padding-large                   : 1em;
+
+
+// ------------------------------------------------------------------------------------------------------------------
+// LAYOUT                           : GRID
+// ------------------------------------------------------------------------------------------------------------------
+$sv-columns                         : 12;
+$sv-column-width                    : 4em;
+
+
+// ------------------------------------------------------------------------------------------------------------------
+// LAYOUT                           : SIZES
+// ------------------------------------------------------------------------------------------------------------------
+$horizontal-menu-height             : 40px;
+$vertical-menu-height               : 30px;
+$fluid-nav-witdh                    : 230px;
+$header-height                      : 45px;
+$footer-height                      : 35px;
+$body-margin                        : 40px;
+$horizontal-menu-height             : 40px;
+$vertical-menu-height               : 30px;
+$fluid-nav-witdh                    : 230px;
+$menu-width                         : 230px;
+
+
+// ------------------------------------------------------------------------------------------------------------------
+// TYPOGRAPH
+// ------------------------------------------------------------------------------------------------------------------
+$sv-font-base-html                  : 62.5%;
+$sv-font-base-size                  : 12px !default;
+$sv-line-height-base                : 1.429 !default;
+$sv-line-height-base-computed       : floor(($sv-font-base-size * $sv-line-height-base));
+
+
+// ------------------------------------------------------------------------------------------------------------------
+// COLORS
+// ------------------------------------------------------------------------------------------------------------------
+$sv-color-white                     : #fff;
+$sv-color-smoke                     : #f1f1f1;
+$sv-color-smoke-dark                : #ecf0f1;
+$sv-color-gray-blue                 : #cfd8dc;
+$sv-color-gray-light                : #d1d1d1;
+$sv-color-blue-default              : #0072c6;
+$sv-color-blue-dark                 : #0060aa;
+$sv-color-black-blue                : #2c3e50;
+$sv-color-green                     : #4caf50;
+$sv-color-red-pomodoro              : #f44336;
+$sv-color-black                     : #000;
+
+$link-color                         : $sv-color-blue-dark;
+$link-color-hover                   : rgba($sv-color-blue-dark, .7);
+$header-bg                          : $sv-color-blue-default;
+$nav-fluid-bg                       : $sv-color-white;
+$nav-link-bg                        : $sv-color-smoke-dark;
+$brand-color                        : $sv-color-white;
+$btn-default                        : $sv-color-gray-blue;
+$default-text                       : $sv-color-black-blue;
+
+
+// ------------------------------------------------------------------------------------------------------------------
+// TABLE
+// ------------------------------------------------------------------------------------------------------------------
+$sv-table-padding-compact           : 3px 5px;
+$sv-table-padding-default           : 5px 7px;
+$sv-table-padding-large             : 7px 9px;
+
+$sv-table-border-color              : #cfd8dc;
+$sv-table-thead-bg                  : #eceff1;
+$sv-table-cell-padding              : 10px !default;
+
+
+// ------------------------------------------------------------------------------------------------------------------
+// FORM
+// ------------------------------------------------------------------------------------------------------------------
+$sv-form-input-default-height       : 34px;
+$sv-form-input-default-padding      : 4px 8px;
+$sv-form-fields-default-border      : 4px;
+$sv-form-textarea-default-min-height: 65px;

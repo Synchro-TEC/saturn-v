@@ -1,0 +1,23 @@
+.sv-bar-loader {
+  animation: typing 1s linear infinite alternate;
+  height: 8px;
+  position: relative;
+  width: 8px;
+}
+
+@keyframes typing{
+  0% {
+    background-color: rgba($sv-color-blue-default, 1);
+    box-shadow: 12px 0 0 0 rgba($sv-color-blue-default, .2), 24px 0 0 0 rgba($sv-color-blue-default, .2);
+  }
+
+  25% {
+    background-color: rgba($sv-color-blue-default, .4);
+    box-shadow: 12px 0 0 0 rgba($sv-color-blue-default, .2), 24px 0 0 0 rgba($sv-color-blue-default, .2);
+  }
+
+  75% {
+    background-color: rgba($sv-color-blue-default, .4);
+    box-shadow: 12px 0 0 0 rgba($sv-color-blue-default, .2), 24px 0 0 0 rgba($sv-color-blue-default, 1);
+  }
+}

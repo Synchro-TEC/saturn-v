@@ -1,6 +1,3 @@
-@import 'configs/config.colors';
-@import 'configs/config.sizes';
-
 .sv-header {
   @include span(12 no-gutters);
   background: $header-bg;
@@ -27,7 +24,7 @@
 
 .sv-content-fluid {
   @include full;
-  padding: $large-padding;
+  padding: $sv-padding-large;
 }
 
 .sv-nav-fluid {
