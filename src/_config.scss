@@ -41,7 +41,7 @@ $sv-line-height-base-computed       : floor(($sv-font-base-size * $sv-line-heigh
 
 
 // ------------------------------------------------------------------------------------------------------------------
-// COLORS
+// COLORS                           :PURE
 // ------------------------------------------------------------------------------------------------------------------
 $sv-color-white                     : #fff;
 $sv-color-smoke                     : #f1f1f1;
@@ -55,6 +55,9 @@ $sv-color-green                     : #4caf50;
 $sv-color-red-pomodoro              : #f44336;
 $sv-color-black                     : #000;
 
+// ------------------------------------------------------------------------------------------------------------------
+// COLORS                           :ELEMENTS
+// ------------------------------------------------------------------------------------------------------------------
 $link-color                         : $sv-color-blue-dark;
 $link-color-hover                   : rgba($sv-color-blue-dark, .7);
 $header-bg                          : $sv-color-blue-default;
@@ -71,10 +74,11 @@ $default-text                       : $sv-color-black-blue;
 $sv-table-padding-compact           : 3px 5px;
 $sv-table-padding-default           : 5px 7px;
 $sv-table-padding-large             : 7px 9px;
+$sv-table-cell-padding              : 10px !default;
 
+// COLORS ##########################################
 $sv-table-border-color              : #cfd8dc;
 $sv-table-thead-bg                  : #eceff1;
-$sv-table-cell-padding              : 10px !default;
 
 
 // ------------------------------------------------------------------------------------------------------------------
