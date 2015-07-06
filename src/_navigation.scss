@@ -20,7 +20,7 @@
   }
 
   &:before,
-  &.icon,
+  .icon,
   &:after {
     background: $sv-color-white;
     border-radius: .05em;
@@ -33,7 +33,7 @@
 
   &.active {
     &:before,
-    &.icon,
+    .icon,
     &:after {
       background: $sv-color-white;
     }
