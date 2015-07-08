@@ -49,3 +49,21 @@
   line-height: 1.6;
   margin: 0;
 }
+
+
+.sv-flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.sv-flex-item {
+  background-color: $sv-color-cyan;
+  flex-basis: auto;
+  flex-grow: 1;
+  margin: $sv-margin-default;
+
+  &[draggable] {
+    cursor: grab;
+  }
+}

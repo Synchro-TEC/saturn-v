@@ -70,10 +70,6 @@ input[type="radio"] {
     width: 75%;
   }
 
-  span {
-    display: block;
-  }
-
   legend {
     border-bottom: 1px dotted $default-text;
     font-size: 1em;
@@ -85,6 +81,10 @@ input[type="radio"] {
     display: block;
     font-weight: 300;
     margin-bottom: .5rem;
+
+    span {
+      display: block;
+    }
   }
 
   fieldset {
