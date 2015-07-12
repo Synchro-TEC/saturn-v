@@ -53,6 +53,12 @@
 
 .sv-flex-container {
   display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.sv-flex-container-row {
+  display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
