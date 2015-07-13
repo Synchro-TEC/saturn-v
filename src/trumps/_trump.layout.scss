@@ -3,35 +3,46 @@
 }
 
 .sv-pull-left {
-    float: left !important;
+  float: left !important;
 }
+
 .sv-pull-right {
-    float: right !important;
+  float: right !important;
 }
 
 
 // TEXT ALIGN
 .sv-text-left {
-    text-align: left;
+  text-align: left;
 }
 
 .sv-text-right {
-    text-align: right;
+  text-align: right;
 }
 
 .sv-text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .sv-text-justify {
-    text-align: justify;
+  text-align: justify;
 }
 
 .fa {
-    vertical-align: baseline;
-    margin: 0 5px;
+  margin: 0 5px;
+  vertical-align: baseline;
 }
 
 .hidden {
   display: none;
+}
+
+.sv-bg {
+  &-info {
+    background-color: $sv-color-blue-light;
+  }
+
+  &-success {
+    background-color: $sv-color-green;
+  }
 }
