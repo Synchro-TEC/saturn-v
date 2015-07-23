@@ -1,6 +1,7 @@
 @import '../bower_components/susy/sass/susy';
 @import '../bower_components/normalize-scss/normalize';
-@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,300);
+//@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600,700,400);
 
 @import 'config';
 @import 'base';
@@ -16,3 +17,9 @@
 @import 'forms';
 @import 'icons';
 @import 'trumps/trump.layout';
+@import '../node_modules/icono/sass/icono';
+
+
+
+
+

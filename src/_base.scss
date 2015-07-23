@@ -9,9 +9,9 @@ html {
 // currently ems cause chrome bug misinterpreting rems on body element
 body {
   color: $default-text;
-  font-family: 'Roboto', sans-serif;
+  font-family: $sv-font-family;
   font-size: 1.4em;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
   margin: $body-margin 0;
 }

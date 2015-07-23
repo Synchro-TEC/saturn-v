@@ -51,7 +51,6 @@ input[type="radio"] {
   display: inline;
 }
 
-
 .sv-form {
 
   .full {
@@ -73,13 +72,13 @@ input[type="radio"] {
   legend {
     border-bottom: 1px dotted $default-text;
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 600;
     width: inherit;
   }
 
   label {
     display: block;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: .5rem;
 
     span {
