@@ -8,4 +8,24 @@ a {
   &:hover {
     color: $link-color-hover;
   }
+
+  &.danger {
+    color: $sv-color-red-pomodoro;
+
+    &:hover {
+      color: darken($sv-color-red-pomodoro, 15%);
+    }
+  }
+
+  &.natural {
+    color: $sv-color-gray-dark;
+
+    &:hover {
+      color: darken($sv-color-gray-dark, 10%);
+    }
+  }
+}
+
+.sv-pointer {
+  cursor: pointer;
 }

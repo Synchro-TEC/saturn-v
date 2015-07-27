@@ -1,0 +1,55 @@
+
+.sv-color {
+
+  &-blue-dark {
+    color: $sv-color-blue-dark;
+  }
+
+  &-smoke-dark {
+    color: $sv-color-smoke-dark;
+  }
+
+  &-gray {
+    color: $sv-color-gray-light;
+  }
+
+  &-gray-dark {
+    color: $sv-color-gray-dark;
+  }
+
+  &-green {
+    color: $sv-color-green;
+  }
+
+  &-black-blue {
+    color: $sv-color-black-blue;
+  }
+}
+
+.sv-bg-color {
+
+  &-blue-dark {
+    background-color: $sv-color-blue-dark;
+  }
+
+  &-smoke-dark {
+    background-color: $sv-color-smoke-dark;
+  }
+
+  &-gray {
+    background-color: $sv-color-gray-light;
+  }
+
+  &-gray-dark {
+    background-color: $sv-color-gray-dark;
+  }
+
+  &-green {
+    background-color: $sv-color-green;
+  }
+
+  &-black-blue {
+    background-color: $sv-color-black-blue;
+  }
+}
+

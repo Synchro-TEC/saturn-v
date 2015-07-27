@@ -1,0 +1,36 @@
+.sv-label {
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 1;
+  vertical-align: baseline;
+  margin: 0 .15em;
+  background-color: #e8e8e8;
+  border-color: #e8e8e8;
+  background-image: none;
+  padding: .5em .8em;
+  color: rgba($sv-color-black, .6);
+  text-transform: none;
+  font-weight: 600;
+  border-radius: .3rem;
+  transition: background .1s ease;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &.spaced {
+    margin: .15em;
+  }
+
+  &.fa {
+    width: auto;
+    margin: 0 .75em 0 0;
+  }
+
+
+
+}
