@@ -44,12 +44,20 @@
     background-color: $sv-color-gray-dark;
   }
 
+  &-green-light {
+    background-color: lighten($sv-color-green, 35%);
+  }
+
   &-green {
     background-color: $sv-color-green;
   }
 
   &-black-blue {
     background-color: $sv-color-black-blue;
+  }
+  
+  &-red-light {
+    background-color: lighten($sv-color-red-pomodoro, 30%);
   }
 }
 
