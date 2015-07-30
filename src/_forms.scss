@@ -11,6 +11,7 @@ select {
   border: 1px solid $sv-color-gray-light;
   border-radius: $sv-form-fields-default-border;
   box-shadow: none;
+  color: inherit;
   font-size: .9em;
   height: $sv-form-input-default-height;
   padding: $sv-form-input-default-padding;
@@ -91,6 +92,18 @@ input[type="radio"] {
     padding: 0;
   }
 
+}
+
+select {
+  option {
+    color: $default-text;
+
+    &:first-child {
+      &:checked {
+        color: $sv-color-gray-dark;
+      }
+    }
+  }
 }
 
 .sv-form-inline {
