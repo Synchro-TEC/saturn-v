@@ -1,4 +1,12 @@
 @mixin calc($property, $expression) {
-  #{$property}: -webkit-calc(#{$expression});
   #{$property}: calc(#{$expression});
+}
+
+
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
 }

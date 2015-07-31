@@ -109,6 +109,9 @@
 
   }
 }
+.sv-clear {
+  @include clearfix;
+}
 
 .sv-bloqued {
   cursor: no-drop;

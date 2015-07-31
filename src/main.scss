@@ -3,6 +3,8 @@
 //@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,300);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600,700,400);
 
+@import './helpers/mixins';
+
 @import 'config';
 @import 'base';
 @import 'grid';
@@ -20,9 +22,3 @@
 @import 'segment';
 @import 'colors';
 @import 'label';
-
-
-
-
-
-
