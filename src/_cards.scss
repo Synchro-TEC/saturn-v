@@ -63,6 +63,7 @@
 .sv-toolbar {
   height: 50px;
   transition: all, 350ms, cubic-bezier(.19, 1, .22, 1);
+  z-index: 99;
 
   h1,
   h2,
@@ -94,5 +95,4 @@
     top: $header-height;
     transition: all, 350ms, cubic-bezier(.19, 1, .22, 1);
   }
-
 }
