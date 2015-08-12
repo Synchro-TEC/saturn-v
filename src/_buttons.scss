@@ -37,6 +37,15 @@
     }
   }
 
+  &.info {
+    background-color: $sv-color-blue-default;
+    color: $sv-color-white;
+
+    &:hover {
+      background-color: darken($sv-color-blue-default, 10%);
+    }
+  }
+
   &.marged {
     margin: 0 $sv-padding-small;
   }
