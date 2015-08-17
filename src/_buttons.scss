@@ -15,6 +15,12 @@
   text-decoration: none;
   vertical-align: middle;
 
+  &.small {
+    height: 28px;
+    line-height: 1;
+    padding: $sv-padding-small $sv-padding-med;
+  }
+
   &:hover {
     background-color: darken($btn-default, 10%);
   }
@@ -49,4 +55,5 @@
   &.marged {
     margin: 0 $sv-padding-small;
   }
+
 }
