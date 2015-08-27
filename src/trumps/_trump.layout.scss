@@ -47,3 +47,24 @@
     background-color: $sv-color-green;
   }
 }
+
+//TODO: REMOVER, É APENAS PARA AJUSTE DO VISUAL NO KOWALSKI
+.react-tabs [role=tablist] {
+  margin: 0 !important;
+  border-color: #d3d3d3;
+
+  li {
+    border-color: #d3d3d3;
+    border-radius: 5px 5px 0 0;
+
+    &:first-child {
+     margin: 0 0 0 5px;
+    }
+  }
+
+  [aria-selected=true]  {
+    border-color: #d3d3d3;
+  }
+}
+
+

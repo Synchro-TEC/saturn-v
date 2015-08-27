@@ -1,5 +1,5 @@
 {
-  "preset": "node-style-guide",
+  "preset": "airbnb",
   "requireCurlyBraces": null,
   "esprima": "esprima-fb",
   "maximumLineLength": 160,
