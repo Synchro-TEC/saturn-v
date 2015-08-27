@@ -16,6 +16,10 @@
     margin-bottom: 0;
   }
 
+  &.flat {
+    box-shadow: none;
+  }
+
   &.stacked {
     padding-bottom: 1.4em;
 
@@ -36,8 +40,6 @@
       display: none;
     }
   }
-
-  ///* Add additional page */
 
   &.tall {
     &:before {
