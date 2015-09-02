@@ -9,6 +9,13 @@
 
   p {
     line-height: 30px;
+    width: 120px;
+
+    small {
+      color: $sv-color-white;
+      padding: $sv-padding-med;
+    }
+
   }
 }
 
