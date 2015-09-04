@@ -31,3 +31,10 @@ node_modules
 
 # Sass
 .sass-cache
+
+
+# ASSETS
+assets
+
+# REPORTS
+reports
