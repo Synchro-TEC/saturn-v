@@ -1,10 +1,10 @@
 module.exports = {
   sass: {
     files: ['<%= path.src %>/**/*.scss'],
-    tasks: ['default'],
+    tasks: ['default']
   },
   assemble: {
-    files: ['<%= path.docs %>/**/**/*.html'],
-    tasks: ['assemble', 'shell'],
-  },
+    files: ['<%= path.styleGuide %>/**/**/*.html'],
+    tasks: ['assembler']
+  }
 };

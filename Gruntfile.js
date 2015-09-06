@@ -8,8 +8,8 @@ module.exports = function(grunt) {
         src: 'src',
         assets: 'assets',
         css: 'assets/css',
-        dist: 'dist',
-        docs: 'docs',
+        docs: 'documentation',
+        styleGuide: 'style-guide-src',
         reports: 'reports'
       }
     }
@@ -24,5 +24,10 @@ module.exports = function(grunt) {
         'parker',
         'autoprefixer',
         'exec'
+    ]);
+
+  grunt.registerTask('assembler', [
+        'default',
+        'assemble'
     ]);
 };

@@ -2,8 +2,8 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Buttons | Saturn-V Docs</title>
-    <link href="../../assets/css/saturn-v.css" rel="stylesheet" />
+    <title>Grids | Saturn-V Docs</title>
+    <link href="assets/css/saturn-v.css" rel="stylesheet" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
@@ -11,9 +11,9 @@
 
     <script type="text/javascript">
     document.addEventListener&&document.addEventListener("DOMContentLoaded",function(){var a,f={},b,d,g,e=!1,h=document.getElementsByTagName("use"),c;XMLHttpRequest&&(e=new XMLHttpRequest,e="withCredentials"in e?XMLHttpRequest:XDomainRequest?XDomainRequest:!1);if(e)for(g=function(){var a=document.body,b=document.createElement("x");b.innerHTML=c.responseText;a.insertBefore(b.firstChild,a.firstChild)},d=0;d<h.length;d+=1)b=h[d].getAttribute("xlink:href").split("#"),a=b[0],b=b[1],a.length||!b||document.getElementById(b)||
-(a="../../assets/images/icons.svg"),a.length&&(f[a]=f[a]||new e,c=f[a],c.onload||(c.onload=g,c.open("GET",a),c.send()))},!1);
+(a="assets/images/icons.svg"),a.length&&(f[a]=f[a]||new e,c=f[a],c.onload||(c.onload=g,c.open("GET",a),c.send()))},!1);
 
-// var url ='../../assets/images/icons.svg';
+// var url ='assets/images/icons.svg';
 // var c=new XMLHttpRequest(); c.open('GET', url, false); c.setRequestHeader('Content-Type', 'text/xml'); c.send();
 // document.body.insertBefore(c.responseXML.firstChild, document.body.firstChild)
     </script>
@@ -23,11 +23,11 @@
         .sv-icon {
           margin: 0 auto;
         }
-        
+
         ul.icons {
           list-style: none;
         }
-        
+
         ul.icons li {
           width: 80px;
           height: 80px;
@@ -247,24 +247,49 @@
 </header>
 
 
-<nav class="sv-nav-fluid">
+<nav class="svnav-fluid">
     <ul>
-        <li><a href="_index">Home</a></li>
-        <li><a href="buttons">Buttons</a></li>
-        <li><a href="cards">Cards</a></li>
-        <li><a href="forms">Forms</a></li>
-        <li><a href="grid_basics">Grids</a></li>
-        <li><a href="icons">Icones</a></li>
-        <li><a href="tables">Table</a></li>
-    </ul>
+    
+    <li><a href="buttons.html">Buttons</a></li>
+    
+    <li><a href="cards.html">Cards</a></li>
+    
+    <li><a href="forms.html">Forms</a></li>
+    
+    <li><a href="grid_basics.html">Grids</a></li>
+    
+    <li><a href="icons.html">Icones</a></li>
+    
+    <li><a href="index.html">Home</a></li>
+    
+    <li><a href="tables.html">Table</a></li>
+    
+</ul>
+
 </nav>
 
 <section class="sv-container-horizontal">
 
     <article class="sv-content-fluid">
-        <div class="col-12 card">
-            <h2>Botões</h2>
-            <div class="card-body">
+        <div class="col-12 sv-card">
+            <h2>Grid System</h2>
+
+            <div class="sv-card-body">
+                <p><p class="show__code">Code</p></p>
+<pre><code class="language-html"><div class="code-container"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">data-abide</span>=<span class="hljs-value">"ajax"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"myform"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"name-field"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>Your name <span class="hljs-tag">&lt;<span class="hljs-title">small</span>&gt;</span>required<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"users_name"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">pattern</span>=<span class="hljs-value">"[a-zA-Z]+"</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">small</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"error"</span>&gt;</span>Name is required and must be a string.<span class="hljs-tag">&lt;/<span class="hljs-title">small</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"submit"</span>&gt;</span>Submit<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></div></code></pre>
+<pre><code class="language-javascript"><div class="code-container">$(<span class="hljs-string">'#myform'</span>).on(<span class="hljs-string">'valid.fndtn.abide'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+<span class="hljs-comment">// Handle the submission of the form</span>
+});</div></code></pre>
+
+
             </div>
         </div>
     </article>
@@ -272,27 +297,27 @@
 </section>
 <!-- <footer class="sv-footer"></footer> -->
 
-<!--<script src="../../assets/js/templates.js"></script>-->
-<!--<script src="../../assets/js/all.js"></script>-->
+<!--<script src="assets/js/templates.js"></script>-->
+<!--<script src="assets/js/all.js"></script>-->
 <script>
-    $(document).ready(function() {
+  $(document).ready(function() {
 
-        var $nav = $('nav'),
-            $navTigger = $('.jsMenuTrigger');
+    var $nav = $('nav');
+    var $navTigger = $('.jsMenuTrigger');
 
-        $navTigger.click(function () {
-            $nav.toggleClass("show");
-            $(this).toggleClass('active');
-        });
-
-        $.each( $('.show__code'), function(i, $button) {
-            $($button).click( function() {
-                var $code = $($('pre')[i]);
-                $code.toggleClass('active');
-            });
-        });
-
+    $navTigger.click(function () {
+        $nav.toggleClass("show");
+        $(this).toggleClass('active');
     });
+
+    $.each( $('.show__code'), function(i, $button) {
+      $($button).click( function() {
+        var $code = $($('pre')[i]);
+        $code.toggleClass('active');
+      });
+    });
+
+  });
 </script>
 
 </body>

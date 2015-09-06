@@ -8,22 +8,22 @@ module.exports = {
         if (lang === 'html') lang = 'xml';
         if (lang === 'js') lang = 'javascript';
         return '<div class="code-container">' + hljs.highlight(lang, code).value + '</div>';
-      },
-    },
+      }
+    }
   },
   dist: {
     options: {
       flatten: false,
-      assets: '<%= path.assets %>',
-      data: ['<%= path.docs %>/data/*.json'],
-      helpers: ['<%= path.docs %>/helpers/*.js'],
-      partials: ['<%= path.docs %>/includes/**/*.{html,scss}'],
-      layoutdir: '<%= path.docs %>/layouts',
-      layout: 'default.html',
+      assets: '<%= path.docs %>/assets',
+      data: ['<%= path.styleGuide %>/data/*.json'],
+      helpers: ['<%= path.styleGuide %>/helpers/*.js'],
+      partials: ['<%= path.styleGuide %>/includes/**/*.{html,scss}'],
+      layoutdir: '<%= path.styleGuide %>/layouts',
+      layout: 'default.html'
     },
     expand: true,
-    cwd: '<%= path.docs %>/pages',
+    cwd: '<%= path.styleGuide %>/pages',
     src: '**/*.{html,md}',
-    dest: '<%= path.dist %>/docs/',
-  },
+    dest: '<%= path.docs %>'
+  }
 };
