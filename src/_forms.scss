@@ -50,6 +50,7 @@ select:focus {
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
+  margin-right: $sv-margin-small;
 }
 
 .sv-form {
@@ -83,7 +84,7 @@ input[type="radio"] {
 
     span {
       display: block;
-      font-weight: 600;
+      // font-weight: 600;
     }
   }
 
