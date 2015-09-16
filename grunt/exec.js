@@ -1,8 +1,8 @@
 module.exports = {
   publish: {
-    command: 'cp assets/css/saturn-v.css ../synchro-kowalski/kowalski-web/web-app/css/saturn-v.css'
+    command: 'echo `hello`'
   },
   copyAssets: {
-    command: 'cp -R assets/ documentation/assets'
+    command: 'rm -rf documentation/assets && cp -R assets/ documentation/assets'
   }
 };
