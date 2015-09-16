@@ -216,9 +216,31 @@
                 <button class="hamburger hamburger-cancel jsMenuTrigger">
                     <span class="icon"></span>
                 </button>
+                <small>Menu</small>
+                <nav id="menu" class="sv-menu">
+	<ul>
+	    
+	    <li><a href="buttons.html">Buttons</a></li>
+	    
+	    <li><a href="cards.html">Cards</a></li>
+	    
+	    <li><a href="colors.html">Colors</a></li>
+	    
+	    <li><a href="forms.html">Forms</a></li>
+	    
+	    <li><a href="grid_basics.html">Grids</a></li>
+	    
+	    <li><a href="icons.html">Icones</a></li>
+	    
+	    <li><a href="index.html">Home</a></li>
+	    
+	    <li><a href="tables.html">Table</a></li>
+	    
+	</ul>
+</nav>
             </p>
         </div>
-        <div class="col-11"><h1 class="sv-brand">Synchro Saturn-V</h1></div>
+        <div class="col-11"><h1 align="center" class="sv-brand">Synchro Saturn-V</h1></div>
     </div>
     <div class="col-5 sv-no-gutter">
         <div class="col-3"></div>
@@ -246,28 +268,6 @@
     </div>
 </header>
 
-
-<nav class="svnav-fluid">
-    <ul>
-    
-    <li><a href="buttons.html">Buttons</a></li>
-    
-    <li><a href="cards.html">Cards</a></li>
-    
-    <li><a href="forms.html">Forms</a></li>
-    
-    <li><a href="grid_basics.html">Grids</a></li>
-    
-    <li><a href="icons.html">Icones</a></li>
-    
-    <li><a href="index.html">Home</a></li>
-    
-    <li><a href="tables.html">Table</a></li>
-    
-</ul>
-
-</nav>
-
 <section class="sv-container-horizontal">
 
     <article class="sv-content-fluid">
@@ -275,23 +275,31 @@
             <h2>Cards</h2>
 
             <div class="sv-card-body">
-                <div class="card">
-    <div class="card-head">
+                <div class="sv-card">
+    <div class="card-header">
         <header>Header</header>
-        <div class="tools">
-            <div class="btn-group">
-                <a class="btn btn-icon-toggle btn-refresh"><i class="md md-refresh"></i></a>
-                <a class="btn btn-icon-toggle btn-collapse"><i class="fa fa-angle-down"></i></a>
-                <a class="btn btn-icon-toggle btn-close"><i class="md md-close"></i></a>
-            </div>
-        </div>
     </div><!--end .card-head -->
 
-    <div class="card-body">
+    <div class="card-body" height="10px">
         <p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
-    </div><!--end .card-body -->
 
+
+<p class="show__code">code</p>
+
+<pre><code class="language-html"><div class="code-container"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sv-card&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-header&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">header</span>&gt;</span>Header<span class="hljs-tag">&lt;/<span class="hljs-title">header</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-body&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></div></code></pre>
+
+
+    </div>
 </div>
+
 
             </div>
         </div>
@@ -305,14 +313,17 @@
 <script>
   $(document).ready(function() {
 
-    var $nav = $('nav');
+    //Controle do menu
+    var $menuContainer = $('#menu');
     var $navTigger = $('.jsMenuTrigger');
-
+    
+    
     $navTigger.click(function () {
-        $nav.toggleClass("show");
+        $menuContainer.toggleClass('active');
         $(this).toggleClass('active');
     });
 
+    // Mostrar codigo fonte 
     $.each( $('.show__code'), function(i, $button) {
       $($button).click( function() {
         var $code = $($('pre')[i]);

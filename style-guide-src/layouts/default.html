@@ -216,9 +216,11 @@
                 <button class="hamburger hamburger-cancel jsMenuTrigger">
                     <span class="icon"></span>
                 </button>
+                <small>Menu</small>
+                {{> menu}}
             </p>
         </div>
-        <div class="col-11"><h1 class="sv-brand">Synchro Saturn-V</h1></div>
+        <div class="col-11"><h1 align="center" class="sv-brand">Synchro Saturn-V</h1></div>
     </div>
     <div class="col-5 sv-no-gutter">
         <div class="col-3"></div>
@@ -246,11 +248,6 @@
     </div>
 </header>
 
-
-<nav class="svnav-fluid">
-    {{> menu}}
-</nav>
-
 <section class="sv-container-horizontal">
 
     <article class="sv-content-fluid">
@@ -272,14 +269,17 @@
 <script>
   $(document).ready(function() {
 
-    var $nav = $('nav');
+    //Controle do menu
+    var $menuContainer = $('#menu');
     var $navTigger = $('.jsMenuTrigger');
-
+    
+    
     $navTigger.click(function () {
-        $nav.toggleClass("show");
+        $menuContainer.toggleClass('active');
         $(this).toggleClass('active');
     });
 
+    // Mostrar codigo fonte 
     $.each( $('.show__code'), function(i, $button) {
       $($button).click( function() {
         var $code = $($('pre')[i]);

@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Forms | Saturn-V Docs</title>
+    <title>Colors | Saturn-V Docs</title>
     <link href="assets/css/saturn-v.css" rel="stylesheet" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
@@ -272,96 +272,116 @@
 
     <article class="sv-content-fluid">
         <div class="col-12 sv-card">
-            <h2>Formulários</h2>
+            <h2>Cores</h2>
 
             <div class="sv-card-body">
-                <p class="rows-spaced">
-  Formulários podem ser utilizados para páginas de cadastro, contato, pesquisa, etc.
-</p>
+                <p>Temos duas classes que envolvem cores, veja a seguir:</p>
 <br>
-<h3>Formulário Padrão</h3>
-<form class="sv-form">
-    <label>
-        <span>Name</span>
-        <input type="text" name="name">
-    </label>
-    <label>
-        <span>E-mail</span>
-        <input type="text" name="email">
-    </label>
-    <label>
-        <span>Gender</span>
-        <select>
-            <option value="">Please, select</option>
-            <option value="M">Male</option>
-            <option value="F">Female</option>
-        </select>
-    </label>
-</form>
+<h3> Cor de fundo (sv-bg-color)</h3>
+<ul class="sv-unstyled inline">
+  <li class="sv-margin-default">
+    <div>
+       Blue dark : <div class="sv-bg-color-blue-dark" style="width:150px;height:20px;border-radius:2px;"></div>
+       sv-bg-color-blue-dark
+    </div>
+  </li>
+  <li class="sv-margin-default">
+    <div>
+       Smoke dark : <div class="sv-bg-color-smoke-dark" style="width:150px;height:20px;border-radius:2px;"></div>
+       sv-bg-color-smoke-dark
+    </div>
+  </li>
+  <li class="sv-margin-default">
+    <div>
+       Gray : <div class="sv-bg-color-gray" style="width:150px;height:20px;border-radius:2px;"></div>
+       sv-bg-color-gray
+    </div>
+  </li>
+  <li class="sv-margin-default">
+    <div>
+       Gray dark : <div class="sv-bg-color-gray-dark" style="width:150px;height:20px;border-radius:2px;"></div>
+       sv-bg-color-gray-dark
+    </div>
+  </li>
+  <li class="sv-margin-default">
+    <div>
+       Green light : <div class="sv-bg-color-green-light" style="width:150px;height:20px;border-radius:2px;"></div>
+       sv-bg-color-green-light
+    </div>
+  </li>
+  <li class="sv-margin-default">
+    <div>
+       Green : <div class="sv-bg-color-green" style="width:150px;height:20px;border-radius:2px;"></div>
+       sv-bg-color-green
+    </div>
+  </li>
+  <li class="sv-margin-default">
+    <div>
+       Black blue : <div class="sv-bg-color-black-blue" style="width:150px;height:20px;border-radius:2px;"></div>
+       sv-bg-color-black-blue
+    </div>
+  </li>
+  <li class="sv-margin-default">
+    <div>
+       Red light : <div class="sv-bg-color-red-light" style="width:150px;height:20px;border-radius:2px;"></div>
+       sv-bg-color-red-light
+    </div>
+  </li>
+</ul>
+
+<p class="sv-clear"></p>
+<p class="show__code">Code</p>
+
+<pre><code class="language-html"><div class="code-container">  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sv-bg-color-red-light"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></div></code></pre>
+
+
+<p class="sv-clear"></p>
+
+<p><h3> Cor (sv-color)</h3></p>
+<ul class="sv-unstyled inline">
+  <li class="sv-margin-default">
+    <div>
+       <p class="sv-color-blue-dark"  style="width:150px;height:20px;border-radius:2px;">Blue dark</p>
+       sv-bg-color-blue-dark
+    </div>
+  </li>
+  <li class="sv-margin-default"  style="width:150px;height:20px;border-radius:2px;">
+    <div>
+      <p class="sv-color-smoke-dark"  style="width:150px;height:20px;border-radius:2px;">Smoke dark</p>
+       sv-color-smoke-dark
+    </div>
+  </li>
+  <li class="sv-margin-default"  style="width:150px;height:20px;border-radius:2px;">
+    <div>
+       <p class="sv-color-gray"  style="width:150px;height:20px;border-radius:2px;">Gray</p>
+       sv-color-gray
+    </div>
+  </li>
+  <li class="sv-margin-default"  style="width:150px;height:20px;border-radius:2px;">
+    <div>
+       <p class="sv-color-gray-dark"  style="width:150px;height:20px;border-radius:2px;">Gray dark</p>
+       sv-color-gray-dark
+    </div>
+  </li>
+  <li class="sv-margin-default"  style="width:150px;height:20px;border-radius:2px;">
+    <div>
+       <p class="sv-color-green"  style="width:150px;height:20px;border-radius:2px;">Green</p>
+       sv-color-green
+    </div>
+  </li>
+  <li class="sv-margin-default"  style="width:150px;height:20px;border-radius:2px;">
+    <div>
+       <p class="sv-color-black-blue">Black blue</p>
+       sv-color-black-blue
+    </div>
+  </li>
+</ul>
+
+<p class="sv-clear"></p>
 
 <p class="show__code">Code</p>
 
-<pre><code class="language-html"><div class="code-container"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sv-form"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"name"</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>E-mail<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"email"</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Gender<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">select</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span>Please, select<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"M"</span>&gt;</span>Male<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"F"</span>&gt;</span>Female<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></div></code></pre>
-
-<p><br></p>
-<h3>Formulário Inline</h3>
-
-<form class="sv-form-inline">
-    <label>
-        <span>Name</span>
-        <input type="text" name="name">
-    </label>
-    <label>
-        <span>E-mail</span>
-        <input type="text" name="email">
-    </label>
-    <label>
-        <span>Gender</span>
-        <select>
-            <option value="">Please, select</option>
-            <option value="M">Male</option>
-            <option value="F">Female</option>
-        </select>
-    </label>
-</form>
-
-<p class="show__code">Code</p>
-
-<pre><code class="language-html"><div class="code-container"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sv-form-inline"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"name"</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>E-mail<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"email"</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Gender<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">select</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span>&gt;</span>Please, select<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"M"</span>&gt;</span>Male<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"F"</span>&gt;</span>Female<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span></div></code></pre>
+<pre><code class="language-html"><div class="code-container">  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sv-color-green"</span>&gt;</span>Olá<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></div></code></pre>
 
 
 

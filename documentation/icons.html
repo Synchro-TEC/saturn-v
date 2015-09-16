@@ -216,9 +216,31 @@
                 <button class="hamburger hamburger-cancel jsMenuTrigger">
                     <span class="icon"></span>
                 </button>
+                <small>Menu</small>
+                <nav id="menu" class="sv-menu">
+	<ul>
+	    
+	    <li><a href="buttons.html">Buttons</a></li>
+	    
+	    <li><a href="cards.html">Cards</a></li>
+	    
+	    <li><a href="colors.html">Colors</a></li>
+	    
+	    <li><a href="forms.html">Forms</a></li>
+	    
+	    <li><a href="grid_basics.html">Grids</a></li>
+	    
+	    <li><a href="icons.html">Icones</a></li>
+	    
+	    <li><a href="index.html">Home</a></li>
+	    
+	    <li><a href="tables.html">Table</a></li>
+	    
+	</ul>
+</nav>
             </p>
         </div>
-        <div class="col-11"><h1 class="sv-brand">Synchro Saturn-V</h1></div>
+        <div class="col-11"><h1 align="center" class="sv-brand">Synchro Saturn-V</h1></div>
     </div>
     <div class="col-5 sv-no-gutter">
         <div class="col-3"></div>
@@ -245,28 +267,6 @@
         </p>
     </div>
 </header>
-
-
-<nav class="svnav-fluid">
-    <ul>
-    
-    <li><a href="buttons.html">Buttons</a></li>
-    
-    <li><a href="cards.html">Cards</a></li>
-    
-    <li><a href="forms.html">Forms</a></li>
-    
-    <li><a href="grid_basics.html">Grids</a></li>
-    
-    <li><a href="icons.html">Icones</a></li>
-    
-    <li><a href="index.html">Home</a></li>
-    
-    <li><a href="tables.html">Table</a></li>
-    
-</ul>
-
-</nav>
 
 <section class="sv-container-horizontal">
 
@@ -5764,6 +5764,7 @@
 
 </ul>
 
+
             </div>
         </div>
     </article>
@@ -5776,14 +5777,17 @@
 <script>
   $(document).ready(function() {
 
-    var $nav = $('nav');
+    //Controle do menu
+    var $menuContainer = $('#menu');
     var $navTigger = $('.jsMenuTrigger');
-
+    
+    
     $navTigger.click(function () {
-        $nav.toggleClass("show");
+        $menuContainer.toggleClass('active');
         $(this).toggleClass('active');
     });
 
+    // Mostrar codigo fonte 
     $.each( $('.show__code'), function(i, $button) {
       $($button).click( function() {
         var $code = $($('pre')[i]);

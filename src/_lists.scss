@@ -1,0 +1,12 @@
+ul {
+
+  &.sv-unstyled {
+    list-style:none;
+  }
+
+  &.inline {
+    li {
+      float: left;
+    }
+  }
+}

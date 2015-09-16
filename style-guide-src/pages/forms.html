@@ -3,15 +3,19 @@ title: Forms
 icon: forms
 pageTitle: Formulários
 ---
-
+<p class="rows-spaced">
+  Formulários podem ser utilizados para páginas de cadastro, contato, pesquisa, etc.
+</p>
+<br>
+<h3>Formulário Padrão</h3>
 <form class="sv-form">
     <label>
         <span>Name</span>
-        <input type="text" name="name"> 
+        <input type="text" name="name">
     </label>
     <label>
         <span>E-mail</span>
-        <input type="text" name="email"> 
+        <input type="text" name="email">
     </label>
     <label>
         <span>Gender</span>
@@ -30,11 +34,57 @@ pageTitle: Formulários
 <form class="sv-form">
     <label>
         <span>Name</span>
-        <input type="text" name="name"> 
+        <input type="text" name="name">
     </label>
     <label>
         <span>E-mail</span>
-        <input type="text" name="email"> 
+        <input type="text" name="email">
+    </label>
+    <label>
+        <span>Gender</span>
+        <select>
+            <option value="">Please, select</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select>
+    </label>
+</form>
+```
+{{/markdown}}
+<br>
+<h3>Formulário Inline</h3>
+
+<form class="sv-form-inline">
+    <label>
+        <span>Name</span>
+        <input type="text" name="name">
+    </label>
+    <label>
+        <span>E-mail</span>
+        <input type="text" name="email">
+    </label>
+    <label>
+        <span>Gender</span>
+        <select>
+            <option value="">Please, select</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+        </select>
+    </label>
+</form>
+
+<p class="show__code">Code</p>
+
+{{#markdown}}
+```html
+<form class="sv-form-inline">
+    <label>
+        <span>Name</span>
+        <input type="text" name="name">
+    </label>
+    <label>
+        <span>E-mail</span>
+        <input type="text" name="email">
     </label>
     <label>
         <span>Gender</span>

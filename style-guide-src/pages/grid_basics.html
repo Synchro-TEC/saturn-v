@@ -4,6 +4,22 @@ icon: grids
 pageTitle: Grid System
 ---
 
+<script type="text/javascript">
+$('#myform').on('valid.fndtn.abide', function() {
+// Handle the submission of the form
+});
+</script>
+
+<form data-abide="ajax" id="myform">
+    <div class="name-field">
+        <label>Your name <small>required</small>
+            <input type="text" name="users_name" required pattern="[a-zA-Z]+">
+        </label>
+        <small class="error">Name is required and must be a string.</small>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
 <p class="show__code">Code</p>
 {{#markdown}}
 ```html
