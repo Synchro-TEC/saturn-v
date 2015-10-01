@@ -48,14 +48,21 @@
   z-index: 5;
 }
 
-.sv-brand {
+.sv-brand h1{
   color: $brand-color;
   font-size: 1.4em;
   font-weight: 500;
   line-height: 1.6;
-  margin: 0;
+  margin: 0 0 0 7px;
+  vertical-align: middle;
+  display: inline;
 }
 
+.sv-brand img{
+  height: 15px;
+  width: auto;
+  vertical-align: middle;
+}
 
 .sv-flex-container {
   display: flex;
@@ -127,6 +134,15 @@
   cursor: no-drop;
 }
 
+
 .sv-margin-default {
   margin-right: $sv-margin-default;
+}
+
+.sv-vertical-marged {
+  margin: $sv-margin-med 0;
+}
+
+.sv-horizon-marged {
+  margin: 0 $sv-margin-med;
 }
