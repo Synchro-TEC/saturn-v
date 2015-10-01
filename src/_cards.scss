@@ -28,8 +28,8 @@
   }
 
   .card-body {
+    display: block;
     margin-top: $sv-margin-default;
-    min-height: 50em;
   }
 
 }

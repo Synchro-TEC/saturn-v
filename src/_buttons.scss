@@ -21,6 +21,11 @@
     padding: $sv-padding-small $sv-padding-med;
   }
 
+  &.full {
+    display: block;
+    width: 100%;
+  }
+
   &:hover {
     background-color: darken($btn-default, 10%);
   }

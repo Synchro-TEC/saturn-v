@@ -134,6 +134,15 @@
   cursor: no-drop;
 }
 
+
 .sv-margin-default {
   margin-right: $sv-margin-default;
+}
+
+.sv-vertical-marged {
+  margin: $sv-margin-med 0;
+}
+
+.sv-horizon-marged {
+  margin: 0 $sv-margin-med;
 }
