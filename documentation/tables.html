@@ -210,7 +210,7 @@
 </head>
 <body>
 <header class="sv-header">
-    <div class="col-4 sv-no-gutter">
+    <div class="col-3 sv-no-gutter">
         <div class="col-1">
             <p>
                 <button class="hamburger hamburger-cancel jsMenuTrigger">
@@ -228,11 +228,11 @@
 	    
 	    <li><a href="forms.html">Forms</a></li>
 	    
-	    <li><a href="grid_basics.html">Grids</a></li>
-	    
 	    <li><a href="icons.html">Icones</a></li>
 	    
 	    <li><a href="index.html">Home</a></li>
+	    
+	    <li><a href="pagination.html">Pagination</a></li>
 	    
 	    <li><a href="tables.html">Table</a></li>
 	    
@@ -240,15 +240,14 @@
 </nav>
             </p>
         </div>
-        <div class="col-11"><h1 align="center" class="sv-brand">Synchro Saturn-V</h1></div>
     </div>
-    <div class="col-5 sv-no-gutter">
-        <div class="col-3"></div>
-        <div class="col-6"></div>
-        <div class="col-3"></div>
+    <div class="col-6 sv-no-gutter sv-text-center">
+        <div class="col-12">
+          <h1 class="sv-brand">Synchro Saturn-V</h1>
+        </div>
     </div>
     <div class="col-3">
-        <p class="sv-text-right">
+<!--         <p class="sv-text-right">
             <button class="link white">
                 <svg width="16px" height="16px" version="1.1">
                     <g>
@@ -264,18 +263,26 @@
                     </g>
                 </svg>
             </button>
-        </p>
+        </p> -->
     </div>
 </header>
 
 <section class="sv-container-horizontal">
 
     <article class="sv-content-fluid">
-        <div class="col-12 sv-card">
+      <section class="sv-toolbar">
+        <div class="row-spaced">
+          <div class="col-6">
             <h2>Tabelas</h2>
 
-            <div class="sv-card-body">
-                <p><h3>Tabela Padrão</h3></p>
+          </div>
+        </div>
+        
+      </section>
+        <div class="sv-page">
+          <div class="col-12 sv-card"> 
+              <div class="sv-card-body">
+                  <p><h3>Tabela Padrão</h3></p>
 <table class="sv-table">
     <thead>
     <tr>
@@ -341,8 +348,76 @@
 <span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span></div></code></pre>
 
 
+<p class="sv-clear">
 
-            </div>
+<h3>Tabela Compacta</h3>
+<table class="sv-table-compact">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>E-mail</th>
+        <th>Car</th>
+        <th>Color</th>
+        <th>HP</th>
+        <th>Wheels</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Fulano de Tal</td>
+        <td>fulano@detal.com</td>
+        <td>Mercedes</td>
+        <td>Silver</td>
+        <td>512</td>
+        <td>17&quot;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fulano de Tal</td>
+        <td>fulano@detal.com</td>
+        <td>Mercedes</td>
+        <td>Silver</td>
+        <td>512</td>
+        <td>17&quot;</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Fulano de Tal</td>
+        <td>fulano@detal.com</td>
+        <td>Mercedes</td>
+        <td>Silver</td>
+        <td>512</td>
+        <td>17&quot;</td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+
+<p class="show__code">Code</p>
+
+<pre><code class="language-html"><div class="code-container"><span class="hljs-tag">&lt;<span class="hljs-title">table</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sv-table"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">thead</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>E-mail<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Car<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Color<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>HP<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span>Wheels<span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">th</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">th</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">tbody</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Fulano de Tal<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>fulano@detal.com<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Mercedes<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Silver<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>512<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>17"<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Fulano de Tal<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>fulano@detal.com<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Mercedes<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Silver<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>512<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>17"<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">tr</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Fulano de Tal<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>fulano@detal.com<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Mercedes<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>Silver<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>512<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span>17"<span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">td</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">tr</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">table</span>&gt;</span></div></code></pre>
+
+
+              </div>
+          </div>
         </div>
     </article>
 

@@ -7,37 +7,36 @@ pageTitle: Botões
 <br>
 <h2 class="h2">Tipos</h2>
 
-<div id="tabelaBotoes">
-	<table class="sv-table sv-card" style="width: 750px; background-color:#EEEEEE;">
-		<tr>
-				<td>
-					<h5 class="h5">Default button</h5>
-					<button class="sv-button">Default</button>
-				</td>
-				<td>
-					<h5 class="h5">Small button </h5>
-					<button class="sv-button small">Small</button>
-				</td>
-				<td>
-					<h5 class="h5">Primary button </h5>
-					<button class="sv-button primary">Primary</button>
-				</td>
-				<td>
-					<h5 class="h5">Info button </h5>
-					<button class="sv-button info">Info</button>
-				</td>
-				<td>
-					<h5 class="h5">Danger button </h5>
-					<button class="sv-button danger">Danger</button>
-				</td>
-				<td>
-					<h5 class="h5">Marged button </h5>
-					<button class="sv-button marged">Marged</button>
-				</td>
-	</table>
+<div class="sv-segment tall">
+ 	<ul class="sv-unstyled inline">
+		<li class="sv-margin-default">
+			<h5 class="h5">Default button</h5>
+			<button class="sv-button">Default button</button>
+		</li>
+		<li class="sv-margin-default">
+			<h5 class="h5">Small button </h5>
+			<button class="sv-button small">Small button</button>
+		</li>
+		<li class="sv-margin-default">
+			<h5 class="h5">Primary button </h5>
+			<button class="sv-button primary">Primary button</button>
+		</li>
+		<li class="sv-margin-default">
+			<h5 class="h5">Info button </h5>
+			<button class="sv-button info">Info button</button>
+		</li>
+		<li class="sv-margin-default">
+			<h5 class="h5">Danger button </h5>
+			<button class="sv-button danger">Danger button</button>
+		</li>
+		<li class="sv-margin-default">
+			<h5 class="h5">Marged button </h5>
+			<button class="sv-button marged">Marged button</button>
+		</li>
+	</ul>
 </div>
 
-<p class="show__code">Code</p>
+<p class="sv-clear show__code">Code</p>
 
 {{#markdown}}
 ```html
@@ -60,7 +59,7 @@ pageTitle: Botões
 	 onde a classe <b>small</b> reduz o tamanho do botão e a classe <b>primary</b> altera o estilo.
 </p>
 
-<div class="sv-card" id="exemploSmall" style="background-color:#EEEEEE;width:250px">
+<div class="col-3 sv-segment">
 	<p>Aceita os termos acima citados?</p>
 	<button class="sv-button primary small">Aceitar</button>
 	<button class="sv-button small">Rejeitar</button>

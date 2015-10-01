@@ -1,0 +1,131 @@
+---
+title: Pagination
+icon: pagination
+pageTitle: Paginação
+---
+<p class="row-spaced">O menu de paginação é usado especialmente com o objetivo criar links para outras páginas.</p>
+
+<h4>Exemplos de uso</h4>
+
+<p>
+	Podemos utilizar o menu de paginação de maneira simples utilizando a classe <b>sv-pagination</b>.
+</p>
+<div class="sv-pagination">
+	<a href="#">Anterior</a>
+	<a href="#">1</a>
+	<a href="#">2</a>
+	<a href="#">3</a>
+	<a href="#">4</a>
+	<a href="#">5</a>
+	<a href="#">Próximo</a>
+</div>
+
+<p class="show__code">Code</p>
+
+{{#markdown}}
+```html
+<div class="sv-pagination">
+	<a href="#">Anterior</a>
+	<a href="#">1</a>
+	<a href="#">2</a>
+	<a href="#">3</a>
+	<a href="#">4</a>
+	<a href="#">5</a>
+	<a href="#">Próximo</a>
+</div>
+```
+{{/markdown}}
+
+<br>
+
+<h4>Classe active</h4>
+
+<p>
+	Para fazer o controle da página atual, basta utilizar a classe <b>active</b> no item que representa a página.
+</p>
+
+<div class="sv-pagination">
+	<a href="#">1</a>
+	<a class="active" href="#">2</a>
+	<a href="#">3</a>
+</div>
+
+<p class="show__code">Code</p>
+
+{{#markdown}}
+```html
+<div class="sv-pagination">
+	<a href="#">1</a>
+	<a class="active" href="#">2</a>
+	<a href="#">3</a>
+</div>
+```
+{{/markdown}}
+
+<br>
+
+<h4>Classe disabled</h4>
+
+<p>
+	Podemos utilizar a classe <b>disabled</b> quando não for interessante mostrar todas as páginas disponiveis.
+</p>
+
+<div class="sv-pagination">
+	<a href="#">1</a>
+	<a href="#">2</a>
+	<a href="#">3</a>
+	<a class="disabled" href="#">...</a>
+	<a href="#">9</a>
+	<a href="#">10</a>
+	<a href="#">11</a>
+</div>
+
+<p class="show__code">Code</p>
+
+{{#markdown}}
+```html
+<div class="sv-pagination">
+	<a href="#">1</a>
+	<a href="#">2</a>
+	<a href="#">3</a>
+	<a class="disabled" href="#">...</a>
+	<a href="#">9</a>
+	<a href="#">10</a>
+	<a href="#">11</a>
+</div>
+```
+{{/markdown}}
+
+<br>
+
+<h4>Combinando as classes</h4>
+
+<p>
+	Podemos combinar todas as classes afim de tornar o menu de paginação completo.
+</p>
+
+<div class="sv-pagination">
+	<a href="#">1</a>
+	<a class="active" href="#">2</a>
+	<a href="#">3</a>
+	<a class="disabled" href="#">...</a>
+	<a href="#">9</a>
+	<a href="#">10</a>
+	<a href="#">11</a>
+</div>
+
+<p class="show__code">Code</p>
+
+{{#markdown}}
+```
+<div class="sv-pagination">
+	<a href="#">1</a>
+	<a class="active" href="#">2</a>
+	<a href="#">3</a>
+	<a class="disabled" href="#">...</a>
+	<a href="#">9</a>
+	<a href="#">10</a>
+	<a href="#">11</a>
+</div>
+```
+{{/markdown}}

@@ -4,31 +4,96 @@ icon: cards
 pageTitle: Cards
 ---
 
+<p class="row-spaced">
+	Podemos utilizar cards para agrupar informações, textos, etc.
+</p>
+
+<h4>Exemplos de uso</h4>
+
+<p>
+	Por padrão o card ocupa 12 colunas:
+</p>
 
 <div class="sv-card">
 	<div class="card-header">
-		<header>Header</header>
-	</div><!--end .card-head -->
+		<h1>Título</h1>
+		<p class="card-meta">Subtítulo qualquer.</p>
+	</div>
+	<div class="card-body">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+</div>
 
-	<div class="card-body" height="10px">
-		<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
-
-
-<p class="show__code">code</p>
-
+<p class="show__code">Code</p>
 {{#markdown}}
 ```html
 <div class="sv-card">
 	<div class="card-header">
-		<header>Header</header>
+		<h1>Título</h1>
+		<p class="card-meta">Subtítulo qualquer.</p>
 	</div>
-
 	<div class="card-body">
-		<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
 	</div>
 </div>
 ```
 {{/markdown}}
 
+<br>
+
+<p>
+	Podemos utilizar a classe <b>col</b> para definir a largura de um card, sua utilização é0 feita da seguinte forma: <i>col-numeroDeColunas</i>. Onde o numero de colunas pode variar de 1 a 12.
+</p>
+
+<div class="col-2 sv-card">
+	<div class="card-header">
+		<h1>Título</h1>
+		<p class="card-meta">Subtítulo qualquer.</p>
+	</div>
+	<div class="card-body">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.
+		</p>
 	</div>
 </div>
+
+<p class="sv-clear"></p>
+
+<p class="show__code">Code</p>
+{{#markdown}}
+```html
+<div class="col-2 sv-card">
+	<div class="card-header">
+		<h1>Título</h1>
+		<p class="card-meta">Subtítulo qualquer.</p>
+	</div>
+	<div class="card-body">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.
+		</p>
+	</div>
+</div>
+```
+{{/markdown}}
+
+<p class="sv-clear"></p>

@@ -1,0 +1,52 @@
+/*--------------
+   Pagination   
+---------------*/
+
+.sv-pagination {
+      border-radius: .2857em;
+      border: 1px solid $sv-color-gray-dark;
+      height: 36px;
+      margin: $sv-margin-default;
+      width: max-content;
+      //box-shadow: 2px 2px 2px #056;
+
+      a {
+        float: left;
+        padding: $sv-pagination-padding;
+        line-height: $sv-margin-default;
+        text-decoration: none;
+        height: 100%;
+        border-right: 1px solid $sv-color-gray-dark;
+        margin-right: 0;
+
+      }
+
+      a:hover {
+        color: $sv-color-gray-light;
+        background-color: $sv-color-blue-default;
+
+      }
+
+      a:last-child {
+        border-right: 0px;
+
+      }
+
+      .disabled{
+        background-color: $sv-color-smoke;
+      }
+
+      .disabled:hover {
+        cursor: default;
+        opacity: 1;
+        background-color: $sv-color-smoke;
+        color: $sv-color-gray-darker;
+      }
+
+      .active {
+        background-color: $sv-color-blue-default;
+        cursor: default;
+        color: $sv-color-gray-light;
+
+      }  
+}

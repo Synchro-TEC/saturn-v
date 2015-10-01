@@ -3,6 +3,10 @@
   border-radius: 2px;
   box-shadow: 0 1px 3px 0 rgba($sv-color-black, .24), 0 1px 2px 0 rgba($sv-color-black, .12);
   padding: $sv-padding-default;
+  margin-top: $sv-padding-small;
+  margin-left: $sv-padding-small;
+  margin-right: $sv-padding-small;
+  margin-bottom: $sv-padding-small;
 
   .card-header {
     h1,
@@ -11,10 +15,8 @@
     h4,
     h5,
     h6 {
-      font-weight: normal;
-      margin: 0;
-      padding: 0;
-      text-transform: uppercase;
+      //margin: 0;
+      //padding: 0;
     }
 
     h2 {
@@ -27,9 +29,16 @@
     }
   }
 
+  .card-meta {
+    //font-size: 1em;
+    color: $sv-color-gray-dark;
+    display: block;
+    margin-top: -1.25em;
+  }
+
   .card-body {
+    display: block;
     margin-top: $sv-margin-default;
-    min-height: 50em;
   }
 
 }
@@ -59,9 +68,8 @@
   }
 }
 
-
 .sv-toolbar {
-  height: 50px;
+  //height: 50px;
   transition: all, 350ms, cubic-bezier(.19, 1, .22, 1);
   z-index: 99;
 

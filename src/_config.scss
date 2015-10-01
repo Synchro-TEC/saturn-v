@@ -44,7 +44,7 @@ $sv-font-family                     : 'Lato', sans-serif;
 // COLORS                           :PURE
 // ------------------------------------------------------------------------------------------------------------------
 $sv-color-white                     : #fff;
-$sv-color-smoke                     : #f1f1f1;
+$sv-color-smoke                     : #f1f1f1; 
 $sv-color-smoke-dark                : #ecf0f1;
 $sv-color-gray-blue                 : #cfd8dc;
 $sv-color-gray-light                : #d1d1d1;
@@ -79,7 +79,7 @@ $default-text                       : $sv-color-black-blue;
 // ------------------------------------------------------------------------------------------------------------------
 // TABLE
 // ------------------------------------------------------------------------------------------------------------------
-$sv-table-padding-compact           : 3px 5px;
+$sv-table-padding-compact           : 2.5px 10px 2.5px;
 $sv-table-padding-default           : 5px 7px;
 $sv-table-padding-large             : 7px 9px;
 $sv-table-cell-padding              : 10px !default;
@@ -96,3 +96,8 @@ $sv-form-input-default-height       : 34px;
 $sv-form-input-default-padding      : 4px 8px;
 $sv-form-fields-default-border      : 4px;
 $sv-form-textarea-default-min-height: 65px;
+
+// ------------------------------------------------------------------------------------------------------------------
+// PAGINATION
+// ------------------------------------------------------------------------------------------------------------------
+$sv-pagination-padding				: 15px 20px;
