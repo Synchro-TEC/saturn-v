@@ -1,12 +1,28 @@
 ul {
 
   &.sv-unstyled {
-    list-style:none;
+    list-style: none;
   }
 
   &.inline {
     li {
       float: left;
+    }
+  }
+
+  &.bread-crumber {
+    li {
+      float: left;
+
+      &:after {
+        color: $sv-color-green;
+        content: '\25B6';
+        padding: 0 $sv-padding-med;
+      }
+
+      &:last-of-type:after {
+        content: '';
+      }
     }
   }
 }
