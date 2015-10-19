@@ -22,14 +22,15 @@ $sv-column-width                    : 4em;
 // ------------------------------------------------------------------------------------------------------------------
 $horizontal-menu-height             : 40px;
 $vertical-menu-height               : 30px;
-$fluid-nav-witdh                    : 230px;
+$fluid-nav-width                    : 230px;
 $header-height                      : 45px;
 $footer-height                      : 35px;
 $body-margin                        : 40px;
 $horizontal-menu-height             : 40px;
 $vertical-menu-height               : 30px;
-$fluid-nav-witdh                    : 230px;
+$fluid-nav-width                    : 230px;
 $menu-width                         : 230px;
+$vertical-menu-margin-left          : 200px;
 
 
 // ------------------------------------------------------------------------------------------------------------------
@@ -40,6 +41,7 @@ $sv-font-base-size                  : 12px !default;
 $sv-line-height-base                : 1.429 !default;
 $sv-line-height-base-computed       : floor(($sv-font-base-size * $sv-line-height-base));
 $sv-font-family                     : 'Lato', sans-serif;
+$sv-vertical-menu-line-height		: 36px;
 
 // ------------------------------------------------------------------------------------------------------------------
 // COLORS                           :PURE

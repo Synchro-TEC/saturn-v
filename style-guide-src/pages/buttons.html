@@ -2,41 +2,42 @@
 title: Buttons
 icon: buttons
 pageTitle: Botões
+metaInfo: O botão indica uma possível ação do usuário.
 ---
 <p>O botão indica uma possível ação do usuário.</p>
 <br>
-<h2 class="h2">Tipos</h2>
+<h2>Tipos</h2>
 
 <div class="sv-segment flat">
  	<ul class="sv-unstyled inline">
 		<li>
-			<h5 class="h5">Default button</h5>
+			<h5>Default button</h5>
 			<button class="sv-button">Default button</button>
 		</li>
 		<li>
-			<h5 class="h5">Small button </h5>
+			<h5>Small button </h5>
 			<button class="sv-button small">Small button</button>
 		</li>
 		<li>
-			<h5 class="h5">Primary button </h5>
+			<h5>Primary button </h5>
 			<button class="sv-button primary">Primary button</button>
 		</li>
 		<li>
-			<h5 class="h5">Info button </h5>
+			<h5>Info button </h5>
 			<button class="sv-button info">Info button</button>
 		</li>
 		<li>
-			<h5 class="h5">Danger button </h5>
+			<h5>Danger button </h5>
 			<button class="sv-button danger">Danger button</button>
 		</li>
 		<li>
-			<h5 class="h5">Marged button </h5>
+			<h5>Marged button </h5>
 			<button class="sv-button marged">Marged button</button>
 		</li>
 	</ul>
 </div>
 
-<p class="sv-clear show__code">Code</p>
+<p class="show__code">Code</p>
 
 {{#markdown}}
 ```html
@@ -51,19 +52,38 @@ pageTitle: Botões
 {{/markdown}}
 
 <br>
-<h2 class="h2">Combinando tipos</h2>
+<h2>Combinando tipos</h2>
 <p class="row-spaced">Podemos combinar mais de uma classe para um botão, como por exemplo:</p>
-<h4 class="h4">Small</h4>
-<p class="row-spaced">
-	Podemos combinar a classe <b>small</b> com qualquer classe citada acima, no exemplo a seguir combinamos a classe <b>primary</b> com a classe <b>small</b>,
-	 onde a classe <b>small</b> reduz o tamanho do botão e a classe <b>primary</b> altera o estilo.
-</p>
 
-<div class="col-3 sv-segment">
-	<p>Aceita os termos acima citados?</p>
-	<button class="sv-button primary small">Aceitar</button>
-	<button class="sv-button small">Rejeitar</button>
+<h4>Small</h4>
+<p class="row-spaced">
+	Podemos combinar a classe <b>small</b> com qualquer classe citada acima.
+
+<div class="sv-segment flat">
+ 	<ul class="sv-unstyled inline">
+		<li>
+			<h5 class="sv-text-left">Default button</h5>
+			<button class="sv-button small">Default button</button>
+		</li>
+		<li>
+			<h5>Primary button </h5>
+			<button class="sv-button primary small">Primary button</button>
+		</li>
+		<li>
+			<h5>Info button </h5>
+			<button class="sv-button info small">Info button</button>
+		</li>
+		<li>
+			<h5>Danger button </h5>
+			<button class="sv-button danger small">Danger button</button>
+		</li>
+		<li>
+			<h5>Marged button </h5>
+			<button class="sv-button marged small">Marged button</button>
+		</li>
+	</ul>
 </div>
+<p class="sv-clear"></p>
 
 <p class="show__code">Code</p>
 
@@ -77,16 +97,17 @@ pageTitle: Botões
 <br>
 <h4 class="h4 row-spaced">Marged</h4>
 <p class="row-spaced">
-	Podemos combinar a classe <b>marged</b> com qualquer classe citada acima, no exemplo a seguir combinamos a classe <b>info</b> com a classe <b>marged</b>,
-	 onde a classe <b>marged</b> altera as margens do botão e a classe <b>info</b> altera o estilo.
+	Podemos combinar a classe <b>marged</b> com qualquer classe citada acima.
 </p>
-
-<div class="sv-card" id="exemploMarged" style="background-color:#EEEEEE;width:300px">
-	<p class="row-spaced">Tem certeza que deseja excluir esse registro?</p>
-	<button class="sv-button info marged" style="width:60px">Sim</button>
-	<button class="sv-button danger marged" style="width:60px">Não</button>
+<div class="sv-segment">
+	<button class="sv-button marged">Default & Marged button</button>
+	<button class="sv-button primary marged">Primary & Marged button</button>
+	<button class="sv-button info marged">Info & Marged button</button>
+	<button class="sv-button danger marged">Danger & Marged button</button>
+	<button class="sv-button small marged">Small & Marged button</button>
 </div>
 
+<p class="sv-clear"></p>
 <p class="show__code">Code</p>
 
 {{#markdown}}

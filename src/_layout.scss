@@ -27,24 +27,32 @@
     margin-left: $menu-width;
     transition: all 180ms linear;
   }
+
+  &.vertical-menu {
+    margin-left: $vertical-menu-margin-left;
+  }
+  
 }
 
 .sv-content-fluid {
   @include full;
-  padding: $sv-padding-large;
+  padding: $sv-padding-large; 
+
 }
+
+
 
 .sv-nav-fluid {
   background: $nav-fluid-bg;
   bottom: 0;
   box-shadow: 0 0 50px rgba($sv-color-black, .3), 2px 4px 8px rgba($sv-color-black, .5);
-  left: -($fluid-nav-witdh +100);
+  left: -($fluid-nav-width +100);
   overflow: visible;
   padding: 20px 0;
   position: fixed;
   top: $horizontal-menu-height;
   transition: all 180ms linear;
-  width: $fluid-nav-witdh;
+  width: $fluid-nav-width;
   z-index: 5;
 }
 
@@ -145,4 +153,8 @@
 
 .sv-horizon-marged {
   margin: 0 $sv-margin-med;
+}
+
+.sv-dividing-line {
+  border-bottom: 1px solid $sv-color-gray-light; 
 }

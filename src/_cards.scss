@@ -8,6 +8,12 @@
   margin-right: $sv-padding-small;
   margin-bottom: $sv-padding-small;
 
+  p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+
+  }
+
   .card-header {
     h1,
     h2,
@@ -39,6 +45,8 @@
   .card-body {
     display: block;
     margin-top: $sv-margin-default;
+    font-size: 1.3em;
+    line-height: $sv-line-height-base;
   }
 
 }
