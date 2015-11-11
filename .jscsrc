@@ -1,7 +1,0 @@
-{
-  "preset": "airbnb",
-  "requireCurlyBraces": null,
-  "esprima": "esprima-fb",
-  "maximumLineLength": 160,
-  "fileExtensions": [".js", ".jsx"]
-}
