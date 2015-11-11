@@ -4,9 +4,8 @@
   line-height: 1;
   vertical-align: baseline;
   margin: 0 .15em;
-  background-color: #e8e8e8;
+  background: #e8e8e8 none;
   border-color: #e8e8e8;
-  background-image: none;
   padding: .5em .8em;
   color: rgba($sv-color-black, .6);
   text-transform: none;
@@ -30,7 +29,5 @@
     width: auto;
     margin: 0 .75em 0 0;
   }
-
-
 
 }
