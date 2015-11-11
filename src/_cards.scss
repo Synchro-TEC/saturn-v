@@ -14,6 +14,12 @@
 
   }
 
+
+  ul {
+    margin-left: 25px;
+    
+  }
+
   .card-header {
     h1,
     h2,
@@ -21,8 +27,8 @@
     h4,
     h5,
     h6 {
-      //margin: 0;
-      //padding: 0;
+      margin: 0;
+      padding: 0;
     }
 
     h2 {
@@ -47,6 +53,13 @@
     margin-top: $sv-margin-default;
     font-size: 1.3em;
     line-height: $sv-line-height-base;
+
+  }
+
+  .card-subtitle {
+    font-size: 1.4em;
+    //color: $sv-color-gray-dark;
+    font-weight: 100;
   }
 
 }

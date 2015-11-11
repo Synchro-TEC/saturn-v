@@ -29,18 +29,14 @@
   }
 
   &.vertical-menu {
-    margin-left: $vertical-menu-margin-left;
+    padding-left: $vertical-menu-margin-left;
   }
-  
 }
 
 .sv-content-fluid {
   @include full;
-  padding: $sv-padding-large; 
-
+  padding: $sv-padding-large;
 }
-
-
 
 .sv-nav-fluid {
   background: $nav-fluid-bg;
@@ -70,6 +66,10 @@
   height: 15px;
   width: auto;
   vertical-align: middle;
+}
+
+.sv-brand-saturn {
+  font-family: 'Exo 2', sans-serif;
 }
 
 .sv-flex-container {
@@ -155,6 +155,6 @@
   margin: 0 $sv-margin-med;
 }
 
-.sv-dividing-line {
+.sv-underline {
   border-bottom: 1px solid $sv-color-gray-light; 
 }
