@@ -8,19 +8,7 @@
   margin-right: $sv-padding-small;
   margin-bottom: $sv-padding-small;
 
-  p {
-    font-size: 1.1em;
-    line-height: 1.6em;
-
-  }
-
-
-  ul {
-    margin-left: 25px;
-    
-  }
-
-  .card-header {
+  &.header {
     h1,
     h2,
     h3,
@@ -41,14 +29,14 @@
     }
   }
 
-  .card-meta {
-    //font-size: 1em;
+  &.meta {
+    font-size: 1em;
     color: $sv-color-gray-dark;
     display: block;
     margin-top: -1.25em;
   }
 
-  .card-body {
+  &.body {
     display: block;
     margin-top: $sv-margin-default;
     font-size: 1.3em;
@@ -56,16 +44,15 @@
 
   }
 
-  .card-subtitle {
+  &.subtitle {
     font-size: 1.4em;
-    //color: $sv-color-gray-dark;
     font-weight: 100;
   }
 
 }
 
 .sv-page {
-  .header {
+  &.header {
     h1,
     h2,
     h3,
@@ -86,6 +73,16 @@
     h3 {
       font-size: .8em;
     }
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+  }
+
+  ul {
+    margin-left: 25px;
+
   }
 }
 

@@ -4,10 +4,13 @@
 $sv-margin-default                  : .25em;
 $sv-margin-small                    : .20em;
 $sv-margin-med                      : .50em;
+$sv-margin-large                    : 1em;
+$sv-margin-bigger                   : 2em;
 $sv-padding-default                 : .5em;
 $sv-padding-small                   : .25em;
 $sv-padding-med                     : .75em;
 $sv-padding-large                   : 1em;
+$sv-padding-bigger                  : 2em;
 
 
 // ------------------------------------------------------------------------------------------------------------------
@@ -47,7 +50,7 @@ $sv-vertical-menu-line-height		: 36px;
 // COLORS                           :PURE
 // ------------------------------------------------------------------------------------------------------------------
 $sv-color-white                     : #fff;
-$sv-color-smoke                     : #f1f1f1; 
+$sv-color-smoke                     : #f1f1f1;
 $sv-color-smoke-dark                : #ecf0f1;
 $sv-color-gray-blue                 : #cfd8dc;
 $sv-color-gray-light                : #d1d1d1;
