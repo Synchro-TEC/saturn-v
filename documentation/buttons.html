@@ -62,7 +62,7 @@
         }
 
         .code-container {
-          font-family: Monaco, Menlo, 'Ubuntu Mono', Consolas, source-code-pro, monospace;
+          font-family: monospace;
         }
 
         .hljs {
@@ -247,7 +247,7 @@
 	    <li><a href="tables.html">Table</a></li>
 	    
 	</ul>
-</nav> 
+</nav>
   </div>
   <div>
     <section class="sv-container-horizontal vertical-menu">
@@ -255,7 +255,7 @@
         <section class="sv-toolbar">
         </section>
           <div class="sv-page">
-            <div class="col-12 sv-card"> 
+            <div class="col-12 sv-card">
               <div class="row-spaced">
                 <div class="col-12">
                   <h1 class="sv-underline">Botões</h1>
@@ -279,9 +279,7 @@
 
 <p><br></p>
 <h2 class="sv-underline">
-    <a name="default"></a>
-    Default button
-    <p class="sv-pull-right show__code">&lt;&gt;</p>
+    <a name="default"></a>Default button
 </h2>
 
 <p class="row-spaced">
@@ -289,29 +287,39 @@
 </p>
 
 <div class="sv-segment flat">
-    <button class="sv-button">Default button</button>
+    <button class="sv-button default">Default button</button>
 </div>
 
 <!-- <p class="show__code">Code</p> -->
 
 <p class="row-spaced">
-    O botão pode ter dois tamanhos: default e small. 
+    O botão pode ter dois tamanhos: default e small.
 </p>
 
 <div class="sv-segment flat">
-    <button class="sv-button">Default button</button>
-    <button class="sv-button small">Small button</button>
+  <p class="sv-vertical-marged">
+      <button class="sv-button default">Default button</button>
+      <button class="sv-button default small">Small button</button>
+    <button type="button" class="sv-button link show-code" title="Ver exemplo">&lt;&frasl;&gt;</button>
+  </p>
+
+  <pre><code class="language-html"><div class="code-container">  <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sv-button default&quot;</span>&gt;</span>Default button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sv-button default small&quot;</span>&gt;</span>Small button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span></div></code></pre>
+
 </div>
 
-<pre><code class="language-html"><div class="code-container"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sv-button"</span>&gt;</span>Default button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sv-button small"</span>&gt;</span>Small button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span></div></code></pre>
 
 
-<p><br></p>
+
+
 <h2 class="sv-underline">
     <a name="marged"></a>
     Marged button
-    <p class="sv-pull-right show__code">&lt;&gt;</p>
+  <p class="sv-pull-right">
+    <button type="button" class="sv-button link show-code">&lt;&frasl;&gt;</button>
+  </p>
 </h2>
 
 <p class="row-spaced">
@@ -319,8 +327,8 @@
 </p>
 
 <div class="sv-segment flat">
-    <button class="sv-button">Button 1</button>
-    <button class="sv-button">Button 2</button>
+    <button class="sv-button default">Button 1</button>
+    <button class="sv-button default">Button 2</button>
 </div>
 
 <p class="row-spaced">
@@ -328,8 +336,8 @@
 </p>
 
 <div class="sv-segment flat">
-    <button class="sv-button marged">Default button 1</button>
-    <button class="sv-button marged">Default button 2</button>
+    <button class="sv-button default marged">Default button 1</button>
+    <button class="sv-button default marged">Default button 2</button>
 </div>
 
 <pre><code class="language-html"><div class="code-container">    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sv-button marged"</span>&gt;</span>Default button 1<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
@@ -368,7 +376,9 @@
 </h2>
 
 <p class="row-spaced">
-    A classe danger é indicada para situações em que seja necessário ressaltar a importância de sua ação, como por exemplo ao deletar um registro. Assim como a classe primary, a classe danger também pode ser utilizada com ambos os tamanhos de botão e espaçamento.
+    A classe danger é indicada para situações em que seja necessário ressaltar a importância de sua ação, como por
+    exemplo ao deletar um registro. Assim como a classe primary, a classe danger também pode ser utilizada com ambos os
+    tamanhos de botão e espaçamento.
 </p>
 
 <div class="sv-segment flat">
@@ -390,7 +400,10 @@
 </h2>
 
 <p class="row-spaced">
-    A classe info pode ser utilizada com o mesmo principio da classe primary ou como referência a um link devido a sua cor azul. Assim como as classes anteriores a classe info também pode ser utilizada com ambos os tamanhos de botão e espaçamento.</p>
+    A classe info pode ser utilizada com o mesmo principio da classe primary ou como referência a um link devido
+    a sua cor azul. Assim como as classes anteriores a classe info também pode ser utilizada com ambos os tamanhos de
+    botão e espaçamento.
+</p>
 
 <div class="sv-segment flat">
     <button class="sv-button info">Info button</button>
@@ -411,14 +424,17 @@
 </h2>
 
 <p class="row-spaced">
-    A classe info pode ser utilizada com o mesmo principio da classe primary ou como referência a um link devido a sua cor azul. Assim como as classes anteriores a classe info também pode ser utilizada com ambos os tamanhos de botão e espaçamento.</p>
+    A classe info pode ser utilizada com o mesmo principio da classe primary ou como referência a um link devido a sua
+    cor azul. Assim como as classes anteriores a classe info também pode ser utilizada com ambos os tamanhos de botão e
+    espaçamento.
+</p>
 
 <div class="sv-segment flat">
     <button class="sv-button full">Default full button</button>
     <button class="sv-button primary full">Primary full button</button>
     <button class="sv-button danger full">Default full button</button>
     <button class="sv-button info full">Default full button</button>
-</div> 
+</div>
 
 <pre><code class="language-html"><div class="code-container">    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sv-button full"</span>&gt;</span>Default full button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sv-button primary full"</span>&gt;</span>Primary full button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
@@ -428,11 +444,11 @@
 
                   </div>
                 </div>
-              </div>      
+              </div>
             </div>
           </div>
       </article>
-    </section> 
+    </section>
   </div>
 </div>
 
@@ -446,15 +462,15 @@
     //Controle do menu
     var $menuContainer = $('#menu');
     var $navTigger = $('.jsMenuTrigger');
-    
-    
+
+
     $navTigger.click(function () {
         $menuContainer.toggleClass('active');
         $(this).toggleClass('active');
     });
 
-    // Mostrar codigo fonte 
-    $.each( $('.show__code'), function(i, $button) {
+    // Mostrar codigo fonte++
+    $.each( $('.show-code'), function(i, $button) {
       $($button).click( function() {
         var $code = $($('pre')[i]);
         $code.toggleClass('active');

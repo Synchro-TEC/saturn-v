@@ -64,7 +64,7 @@
 
 .sv-menu {
   background: $sv-color-white;
-  box-shadow: 0 0 4px rgb(51, 51, 51);
+  box-shadow: 0 0 4px $sv-color-black-shadow;
   left: 0;
   padding: 1em 1.35em;
   position: absolute;
@@ -105,6 +105,7 @@
   position: fixed;
   width: 200px;
   transition: all 0.3s linear;
+  box-shadow: 0 1px 3px 0 rgba($sv-color-black, .24), 0 1px 2px 0 rgba($sv-color-black, .12);
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -124,7 +125,7 @@
   & a {
     text-decoration: none;
     display: block;
-    font-weight: 700;
+    font-weight: 600;
     line-height: $sv-vertical-menu-line-height;
     color: $sv-color-asfalt;
     padding-left: $sv-padding-bigger;
@@ -135,8 +136,4 @@
     background-color: $sv-color-smoke-dark;
     outline: 0;
   }
-
-  //li:not(.active):hover a {
-  //    background-color: $sv-color-black-blue;
-  //}
 }

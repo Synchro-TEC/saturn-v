@@ -62,7 +62,7 @@
         }
 
         .code-container {
-          font-family: Monaco, Menlo, 'Ubuntu Mono', Consolas, source-code-pro, monospace;
+          font-family: monospace;
         }
 
         .hljs {
@@ -247,7 +247,7 @@
 	    <li><a href="tables.html">Table</a></li>
 	    
 	</ul>
-</nav> 
+</nav>
   </div>
   <div>
     <section class="sv-container-horizontal vertical-menu">
@@ -255,7 +255,7 @@
         <section class="sv-toolbar">
         </section>
           <div class="sv-page">
-            <div class="col-12 sv-card"> 
+            <div class="col-12 sv-card">
               <div class="row-spaced">
                 <div class="col-12">
                   <h1 class="sv-underline">Paginação</h1>
@@ -377,11 +377,11 @@
 
                   </div>
                 </div>
-              </div>      
+              </div>
             </div>
           </div>
       </article>
-    </section> 
+    </section>
   </div>
 </div>
 
@@ -395,15 +395,15 @@
     //Controle do menu
     var $menuContainer = $('#menu');
     var $navTigger = $('.jsMenuTrigger');
-    
-    
+
+
     $navTigger.click(function () {
         $menuContainer.toggleClass('active');
         $(this).toggleClass('active');
     });
 
-    // Mostrar codigo fonte 
-    $.each( $('.show__code'), function(i, $button) {
+    // Mostrar codigo fonte++
+    $.each( $('.show-code'), function(i, $button) {
       $($button).click( function() {
         var $code = $($('pre')[i]);
         $code.toggleClass('active');

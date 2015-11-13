@@ -1,19 +1,50 @@
 .sv-button {
-  background-color: $btn-default;
+  background-color: transparent;
   border: 0;
   border-radius: 2px;
-  color: $default-text;
   cursor: pointer;
   display: inline-block;
   font-size: .9em;
   font-weight: 600;
-  height: 34px;
-  line-height: 1.2;
   outline: none;
   padding: $sv-padding-med;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
+  white-space: nowrap;
+
+  &.link {
+    border-radius: 0;
+    color: $link-color;
+    font-weight: 600;
+    line-height: $sv-font-base-size;
+    padding: $sv-padding-small;
+
+
+    &:active,
+    &.active,
+    &[disabled],
+    fieldset[disabled] & {
+      background-color: transparent;
+    }
+
+
+    &:hover,
+    &:active,
+    &:hover {
+      background-color: transparent;
+      color: $link-color-hover;
+    }
+
+    &[disabled],
+    fieldset[disabled] & {
+      &:hover,
+      &:focus {
+        //color: $btn-link-disabled-color;
+        text-decoration: none;
+      }
+    }
+  }
 
   &.small {
     height: 28px;
@@ -23,13 +54,13 @@
 
   &.full {
     display: block;
-    width: 100%;
     margin-top: $sv-margin-small;
+    width: 100%;
   }
 
-  &:hover {
-    background-color: darken($btn-default, 10%);
-  }
+  //&:hover {
+  //  background-color: darken($btn-default, 10%);
+  //}
 
   &.danger {
     background-color: $sv-color-red-pomodoro;
@@ -58,8 +89,23 @@
     }
   }
 
+  &.default {
+    background-color: $btn-default;
+    color: $sv-color-asfalt;
+
+    &:hover {
+      background-color: darken($btn-default, 10%);
+    }
+  }
+
   &.marged {
     margin: 0 $sv-padding-small;
+  }
+
+  &.show-code {
+    font-size: .9em;
+    font-weight: 600;
+    letter-spacing: .2em;
   }
 
 }

@@ -43,8 +43,8 @@ $sv-font-base-html                  : 62.5%;
 $sv-font-base-size                  : 12px !default;
 $sv-line-height-base                : 1.429 !default;
 $sv-line-height-base-computed       : floor(($sv-font-base-size * $sv-line-height-base));
-$sv-font-family                     : 'Lato', sans-serif;
-$sv-vertical-menu-line-height		: 36px;
+$sv-font-family                     : 'Source Sans Pro', sans-serif;
+$sv-vertical-menu-line-height		    : 36px;
 
 // ------------------------------------------------------------------------------------------------------------------
 // COLORS                           :PURE
@@ -68,6 +68,7 @@ $sv-color-green-turq                : #1abc9c;
 $sv-color-lime                      : #f0f4c3;
 $sv-color-red-pomodoro              : #f44336;
 $sv-color-black                     : #000;
+$sv-color-black-shadow              : rgb(51, 51, 51);
 
 // ------------------------------------------------------------------------------------------------------------------
 // COLORS                           :ELEMENTS
