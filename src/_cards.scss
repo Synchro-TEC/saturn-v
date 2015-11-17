@@ -8,7 +8,7 @@
   margin-right: $sv-padding-small;
   margin-bottom: $sv-padding-small;
 
-  &.header {
+  .header {
     h1,
     h2,
     h3,
@@ -29,24 +29,19 @@
     }
   }
 
-  &.meta {
+  .meta {
     font-size: 1em;
     color: $sv-color-gray-dark;
     display: block;
-    margin-top: -1.25em;
+    margin-top: -$sv-margin-med;
   }
 
-  &.body {
-    display: block;
+  .body {
     margin-top: $sv-margin-default;
-    font-size: 1.3em;
-    line-height: $sv-line-height-base;
-
   }
 
-  &.subtitle {
+  .subtitle {
     font-size: 1.4em;
-    font-weight: 100;
   }
 
 }

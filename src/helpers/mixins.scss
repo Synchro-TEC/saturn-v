@@ -10,3 +10,8 @@
     display: table;
   }
 }
+
+@mixin disabled-button($backgroun-color) {
+  background-color: lighten($backgroun-color, 10%);
+  cursor: not-allowed;
+}

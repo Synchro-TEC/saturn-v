@@ -229,23 +229,33 @@
 <!-- <nav id="menu" class="sv-menu"> -->
 <nav id="menu" class="sv-vertical-menu">
 	<ul>
-	    
-	    <li><a href="buttons.html">Buttons</a></li>
-	    
-	    <li><a href="cards.html">Cards</a></li>
-	    
-	    <li><a href="colors.html">Colors</a></li>
-	    
-	    <li><a href="forms.html">Forms</a></li>
-	    
-	    <li><a href="icons.html">Icones</a></li>
-	    
-	    <li><a href="index.html">Home</a></li>
-	    
-	    <li><a href="pagination.html">Pagination</a></li>
-	    
-	    <li><a href="tables.html">Table</a></li>
-	    
+    <li><a href="index.html">Home</a></li>
+    <li><a href="grid.html">Grid</a></li>
+    <li><a href="cards.html">Cards</a></li>
+    <li><a href="buttons.html">Buttons</a></li>
+    <li><a href="forms.html">Forms</a></li>
+    <li><a href="tables.html">Tables</a></li>
+    <li><a href="pagination.html">Paginations</a></li>
+
+	    <!---->
+	    <!--<li><a href="buttons.html">Buttons</a></li>-->
+	    <!---->
+	    <!--<li><a href="cards.html">Cards</a></li>-->
+	    <!---->
+	    <!--<li><a href="colors.html">Colors</a></li>-->
+	    <!---->
+	    <!--<li><a href="forms.html">Forms</a></li>-->
+	    <!---->
+	    <!--<li><a href="grid.html">Grid</a></li>-->
+	    <!---->
+	    <!--<li><a href="icons.html">Icones</a></li>-->
+	    <!---->
+	    <!--<li><a href="index.html">Home</a></li>-->
+	    <!---->
+	    <!--<li><a href="pagination.html">Pagination</a></li>-->
+	    <!---->
+	    <!--<li><a href="tables.html">Table</a></li>-->
+	    <!---->
 	</ul>
 </nav>
   </div>
@@ -267,89 +277,376 @@
     Podemos utilizar cards para agrupar informações, textos, etc.
 </p>
 
-<h4>Exemplos de uso</h4>
-
-<p>
-    Por padrão o card ocupa 12 colunas:
-</p>
-
-<div class="sv-card">
-    <div class="header">
+<p><br></p>
+<div class="row-spaced">
+  <div class="col-12">
+    <div class="sv-card">
+      <div class="header">
         <h1>Título</h1>
         <p class="meta">Subtítulo qualquer.</p>
-    </div>
-    <div class="body">
+      </div>
+      <div class="body">
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
+      </div>
     </div>
-</div>
 
-<p class="show__code">Code</p>
-<pre><code class="language-html"><div class="code-container"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;sv-card&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-header&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Título<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-meta&quot;</span>&gt;</span>Subtítulo qualquer.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-body&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></div></code></pre>
-
-
-<br>
-
-<p>
-    Podemos utilizar a classe <b>col</b> para definir a largura de um card, sua utilização é0 feita da seguinte forma: <i>col-numeroDeColunas</i>. Onde o numero de colunas pode variar de 1 a 12.
+<p>  </div>
+</div></p>
+<p class="sv-text-right">
+  <button type="button" class="sv-button link show-code" title="Show Code">&lt;&frasl;&gt;</button>
 </p>
 
-<div class="col-2 sv-card">
-    <div class="card-header">
-        <h1>Título</h1>
-        <p class="card-meta">Subtítulo qualquer.</p>
-    </div>
-    <div class="card-body">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
-        </p>
-    </div>
-</div>
-
-<p class="sv-clear"></p>
-
-<p class="show__code">Code</p>
-<pre><code class="language-html"><div class="code-container"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;col-2 sv-card&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-header&quot;</span>&gt;</span>
+<pre><code class="language-html"><div class="code-container"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sv-card"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card-header"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Título<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-meta&quot;</span>&gt;</span>Subtítulo qualquer.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card-meta"</span>&gt;</span>Subtítulo qualquer.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;card-body&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card-body"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat.
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></div></code></pre>
 
 
-<p class="sv-clear"></p>
+<p><br></p>
+<p class="row-spaced">
+    Podemos utilizar as classes do grid <b>col</b> para definir a largura de um card, sua utilização é feita da seguinte
+  forma: <code>col-numeroDeColunas</code>. Onde o numero de colunas pode variar de 1 a 12.
+</p>
+
+<p><br></p>
+<div class="row-spaced">
+  <div class="col-2 sv-card">
+    <div class="card-header">
+      <h1>Título col-2</h1>
+      <p class="card-meta">Subtítulo qualquer.</p>
+    </div>
+    <div class="card-body">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+    </div>
+  </div>
+
+  <div class="col-6 sv-card">
+    <div class="card-header">
+      <h1>Título col-6</h1>
+      <p class="card-meta">Subtítulo qualquer.</p>
+    </div>
+    <div class="card-body">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+    </div>
+  </div>
+</div>
+
+<p class="sv-text-right">
+  <button type="button" class="sv-button link show-code" title="Show Code">&lt;&frasl;&gt;</button>
+</p>
+
+<pre><code class="language-html"><div class="code-container"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row-spaced"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-2 sv-card"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card-header"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Título col-2<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card-meta"</span>&gt;</span>Subtítulo qualquer.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card-body"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-6 sv-card"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card-header"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>Título col-6<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card-meta"</span>&gt;</span>Subtítulo qualquer.<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"card-body"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></div></code></pre>
+
+
+
+
+<p class="row-spaced">
+  Outra maneira de definir um tamanho para um card é usando o mesmo dentro de um grid.
+</p>
+
+<p><br></p>
+<div class="row-spaced">
+
+  <div class="col-1">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-1">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-1">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-1">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-1">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-1">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-1">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-1">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-1">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-1">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-1">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-1">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+        </p>
+      </div>
+    </div>
+  </div>
+
+<p></div></p>
+<div class="row-spaced">
+
+  <div class="col-4">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <div class="sv-card">
+      <div class="header">
+        <h1>Título</h1>
+        <p class="meta">Subtítulo qualquer.</p>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+
+<p></div></p>
 
                   </div>
                 </div>

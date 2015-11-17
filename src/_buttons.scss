@@ -40,7 +40,6 @@
     fieldset[disabled] & {
       &:hover,
       &:focus {
-        //color: $btn-link-disabled-color;
         text-decoration: none;
       }
     }
@@ -69,6 +68,11 @@
     &:hover {
       background-color: darken($sv-color-red-pomodoro, 10%);
     }
+
+    &[disabled] {
+      @include disabled-button($sv-color-red-pomodoro);
+    }
+
   }
 
   &.primary {
@@ -77,6 +81,10 @@
 
     &:hover {
       background-color: darken($sv-color-green, 10%);
+    }
+
+    &[disabled] {
+      @include disabled-button($sv-color-green);
     }
   }
 
@@ -87,6 +95,10 @@
     &:hover {
       background-color: darken($sv-color-blue-default, 10%);
     }
+
+    &[disabled] {
+      @include disabled-button($sv-color-blue-default);
+    }
   }
 
   &.default {
@@ -95,6 +107,10 @@
 
     &:hover {
       background-color: darken($btn-default, 10%);
+    }
+
+    &[disabled] {
+      @include disabled-button($btn-default);
     }
   }
 
