@@ -43,7 +43,7 @@ $sv-font-base-html                  : 62.5%;
 $sv-font-base-size                  : 12px !default;
 $sv-line-height-base                : 1.429 !default;
 $sv-line-height-base-computed       : floor(($sv-font-base-size * $sv-line-height-base));
-$sv-font-family                     : 'Source Sans Pro', sans-serif;
+$sv-font-family                     : 'Open Sans', sans-serif;
 $sv-vertical-menu-line-height		    : 36px;
 
 // ------------------------------------------------------------------------------------------------------------------
@@ -81,7 +81,8 @@ $nav-link-bg                        : $sv-color-smoke-dark;
 $brand-color                        : $sv-color-white;
 $btn-default                        : $sv-color-gray-blue;
 $default-text                       : $sv-color-black-blue;
-
+$sv-table-border-color              : $sv-color-gray-blue;
+$sv-table-thead-bg                  : $sv-color-smoke-dark;
 
 // ------------------------------------------------------------------------------------------------------------------
 // TABLE
@@ -90,10 +91,6 @@ $sv-table-padding-compact           : 2.5px 10px 2.5px;
 $sv-table-padding-default           : 5px 7px;
 $sv-table-padding-large             : 7px 9px;
 $sv-table-cell-padding              : 10px !default;
-
-// COLORS ##########################################
-$sv-table-border-color              : #cfd8dc;
-$sv-table-thead-bg                  : #eceff1;
 
 
 // ------------------------------------------------------------------------------------------------------------------
