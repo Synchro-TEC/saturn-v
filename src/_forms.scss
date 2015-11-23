@@ -16,6 +16,10 @@ select {
   height: $sv-form-input-default-height;
   padding: $sv-form-input-default-padding;
   vertical-align: middle;
+
+  &:disabled {
+    background-color: $sv-color-smoke-dark;
+  }
 }
 
 input[type="email"],
@@ -55,6 +59,18 @@ input[type="radio"] {
 
 .sv-form {
 
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea,
+  select {
+    width: 100%;
+  }
+
   .full {
     width: 100%;
   }
@@ -80,11 +96,11 @@ input[type="radio"] {
 
   label {
     display: block;
-    margin-bottom: .5rem;
+    margin-bottom: $sv-margin-med;
 
     span {
       display: block;
-      // font-weight: 600;
+      margin-bottom: $sv-margin-small;
     }
   }
 
