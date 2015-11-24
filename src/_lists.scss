@@ -5,9 +5,9 @@ ul {
   }
 
   &.inline {
-    width: 100%;
+    display: table;
     min-width: 100%;
-    display:table;
+    width: 100%;
 
     li {
       display: table-cell;
@@ -18,13 +18,13 @@ ul {
     li {
       float: left;
 
-      &:after {
+      &::after {
         color: $sv-color-green;
         content: '\25B6';
         padding: 0 $sv-padding-med;
       }
 
-      &:last-of-type:after {
+      &:last-of-type::after {
         content: '';
       }
     }

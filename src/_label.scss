@@ -1,17 +1,17 @@
 .sv-label {
-  display: inline-block;
-  white-space: nowrap;
-  line-height: 1;
-  vertical-align: baseline;
-  margin: 0 .15em;
-  background: #e8e8e8 none;
-  border-color: #e8e8e8;
-  padding: .5em .8em;
-  color: rgba($sv-color-black, .6);
-  text-transform: none;
-  font-weight: 600;
+  background: $sv-color-smoke-dark none;
+  border-color: $sv-color-smoke-dark;
   border-radius: .3rem;
+  color: rgba($sv-color-black, .6);
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0 .15em;
+  padding: .5em .8em;
+  text-transform: none;
   transition: background .1s ease;
+  vertical-align: baseline;
+  white-space: nowrap;
 
   &:first-child {
     margin-left: 0;
@@ -26,8 +26,8 @@
   }
 
   &.fa {
-    width: auto;
     margin: 0 .75em 0 0;
+    width: auto;
   }
 
 }
