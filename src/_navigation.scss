@@ -14,14 +14,14 @@
     outline: 0;
   }
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     content: '';
   }
 
-  &:before,
+  &::before,
   .icon,
-  &:after {
+  &::after {
     background: $sv-color-white;
     border-radius: .05em;
     display: block;
@@ -32,9 +32,9 @@
   }
 
   &.active {
-    &:before,
+    &::before,
     .icon,
-    &:after {
+    &::after {
       background: $sv-color-white;
     }
   }
@@ -51,11 +51,11 @@
         transform: scale(0);
       }
 
-      &:before {
+      &::before {
         transform: translateY(.4em) rotate(135deg);
       }
 
-      &:after {
+      &::after {
         transform: translateY(-.4em) rotate(-135deg);
       }
     }
@@ -130,11 +130,13 @@
     padding-left: $sv-padding-bigger;
     text-decoration: none;
     transition: all .1s linear;
+
+    &.active ,
+    &:hover {
+      background-color: $sv-color-smoke-dark;
+      color: $link-color-hover;
+      outline: 0;
+    }
   }
 
-  &.active a,
-  a:hover {
-    background-color: $sv-color-smoke-dark;
-    outline: 0;
-  }
 }

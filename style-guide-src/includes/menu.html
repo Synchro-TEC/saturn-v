@@ -1,17 +1,26 @@
-		<!-- Menu antigo -->
-<!-- <nav id="menu" class="sv-menu"> -->
+
 <nav id="menu" class="sv-vertical-menu">
 	<ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="grid.html">Grid</a></li>
-    <li><a href="cards.html">Cards</a></li>
-    <li><a href="buttons.html">Buttons</a></li>
-    <li><a href="forms.html">Forms</a></li>
-    <li><a href="tables.html">Tables</a></li>
-    <li><a href="pagination.html">Paginations</a></li>
-
-	    <!--{{#each pages}}-->
-	    <!--<li><a href="{{relative absolute basename}}.html">{{data.title}}</a></li>-->
-	    <!--{{/each}}-->
-	</ul>
+    <li>
+      <a href="index.html" {{#compare page.basename 'index' operator="==="}}class="active"{{/compare}}>Home</a>
+    </li>
+    <li>
+      <a href="grid.html" {{#compare page.basename 'grid' operator="==="}}class="active"{{/compare}}>Grid</a>
+    </li>
+    <li>
+      <a href="cards.html" {{#compare page.basename 'cards' operator="==="}}class="active"{{/compare}}>Cards</a>
+    </li>
+    <li>
+      <a href="buttons.html" {{#compare page.basename 'buttons' operator="==="}}class="active"{{/compare}}>Buttons</a>
+    </li>
+    <li>
+      <a href="forms.html" {{#compare page.basename 'forms' operator="==="}}class="active"{{/compare}}>Forms</a>
+    </li>
+    <li>
+      <a href="tables.html" {{#compare page.basename 'tables' operator="==="}}class="active"{{/compare}}>Tables</a>
+    </li>
+    <li>
+      <a href="pagination.html" {{#compare page.basename 'pagination' operator="==="}}class="active"{{/compare}}>Paginations</a>
+    </li>
+  </ul>
 </nav>

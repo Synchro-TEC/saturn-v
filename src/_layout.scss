@@ -1,6 +1,6 @@
 .sv-header {
   @include span(12 no-gutters);
-  background: $header-bg;
+  // background: $header-bg;
   box-shadow: 0 2px 5px rgba($sv-color-black, .26);
   height: $header-height;
   position: fixed;
@@ -42,7 +42,7 @@
   background: $nav-fluid-bg;
   bottom: 0;
   box-shadow: 0 0 50px rgba($sv-color-black, .3), 2px 4px 8px rgba($sv-color-black, .5);
-  left: -($fluid-nav-width +100);
+  left: -($fluid-nav-width + 100);
   overflow: visible;
   padding: 20px 0;
   position: fixed;
@@ -52,20 +52,19 @@
   z-index: 5;
 }
 
-.sv-brand h1 {
-  color: $brand-color;
-  display: inline;
-  font-size: 1.4em;
-  font-weight: 500;
-  line-height: 1.6;
-  margin: 0 0 0 7px;
+.sv-brand {
+  line-height: 40px;
   vertical-align: middle;
-}
 
-.sv-brand img {
-  height: 15px;
-  vertical-align: middle;
-  width: auto;
+  h1 {
+    color: $brand-color;
+    display: inline;
+    font-size: 1.4em;
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 0 0 0 7px;
+    vertical-align: middle;
+  }
 }
 
 //.sv-brand-saturn {
@@ -109,7 +108,7 @@
 
 .sv-h-title {
   border: 0;
-  color: rgba(0, 0, 0, .87);
+  color: rgba($sv-color-black, .87);
   font-family: $sv-font-family;
   font-weight: bold;
   line-height: 1.2em;

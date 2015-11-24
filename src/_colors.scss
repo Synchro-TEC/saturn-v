@@ -1,6 +1,10 @@
 
 .sv-color {
 
+  &-blue {
+    color: $sv-color-blue-default;
+  }
+
   &-blue-dark {
     color: $sv-color-blue-dark;
   }
@@ -25,12 +29,28 @@
     color: $sv-color-green;
   }
 
+  &-green-turq {
+    color: $sv-color-green-turq;
+  }
+
   &-black-blue {
     color: $sv-color-black-blue;
+  }
+
+  &-red-pomodoro {
+    color: $sv-color-red-pomodoro;
+  }
+
+  &-red-light {
+    color: lighten($sv-color-red-pomodoro, 30%);
   }
 }
 
 .sv-bg-color {
+
+  &-blue {
+    background-color: $sv-color-blue-default;
+  }
 
   &-blue-dark {
     background-color: $sv-color-blue-dark;
@@ -60,8 +80,17 @@
     background-color: $sv-color-green;
   }
 
+  &-green-turq {
+    background-color: $sv-color-green-turq;
+  }
+
+
   &-black-blue {
     background-color: $sv-color-black-blue;
+  }
+
+  &-red-pomodoro {
+    background-color: $sv-color-red-pomodoro;
   }
 
   &-red-light {
@@ -71,6 +100,10 @@
 
 
 .sv-border-color {
+
+  &-blue {
+    border: 1px solid $sv-color-blue-default;
+  }
 
   &-blue-dark {
     border: 1px solid $sv-color-blue-dark;
@@ -100,8 +133,16 @@
     border: 1px solid $sv-color-green;
   }
 
+  &-green-turq {
+    border: 1px solid $sv-color-green-turq;
+  }
+
   &-black-blue {
     border: 1px solid $sv-color-black-blue;
+  }
+
+  &-red-pomodoro {
+    border: 1px solid $sv-color-red-pomodoro;
   }
 
   &-red-light {
