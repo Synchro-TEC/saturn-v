@@ -102,17 +102,17 @@
 }
 
 .sv-vertical-menu {
-  position: fixed;
-  width: 200px;
-  transition: all 0.3s linear;
-  box-shadow: 0 1px 3px 0 rgba($sv-color-black, .24), 0 1px 2px 0 rgba($sv-color-black, .12);
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  height: 100vh;
   background-color: $sv-color-white;
+  box-shadow: 0 1px 3px 0 rgba($sv-color-black, .24), 0 1px 2px 0 rgba($sv-color-black, .12);
+  height: 100vh;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  transition: all .3s linear;
+  width: 200px;
 
-  & ul {
+  ul {
     li {
       height: $sv-vertical-menu-line-height;
     }
@@ -122,17 +122,18 @@
     }
   }
 
-  & a {
-    text-decoration: none;
+  a {
+    color: $sv-color-asfalt;
     display: block;
     font-weight: 700;
     line-height: $sv-vertical-menu-line-height;
-    color: $sv-color-asfalt;
     padding-left: $sv-padding-bigger;
-    transition: all 0.1s linear;
+    text-decoration: none;
+    transition: all .1s linear;
   }
 
-  &.active a, a:hover {
+  &.active a,
+  a:hover {
     background-color: $sv-color-smoke-dark;
     outline: 0;
   }

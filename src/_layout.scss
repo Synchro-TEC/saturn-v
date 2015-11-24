@@ -52,20 +52,20 @@
   z-index: 5;
 }
 
-.sv-brand h1{
+.sv-brand h1 {
   color: $brand-color;
+  display: inline;
   font-size: 1.4em;
   font-weight: 500;
   line-height: 1.6;
   margin: 0 0 0 7px;
   vertical-align: middle;
-  display: inline;
 }
 
-.sv-brand img{
+.sv-brand img {
   height: 15px;
-  width: auto;
   vertical-align: middle;
+  width: auto;
 }
 
 //.sv-brand-saturn {

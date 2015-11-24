@@ -1,11 +1,11 @@
 .sv-segment {
-  position: relative;
   background: $sv-color-white;
-  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border: 1px solid rgba($sv-color-black-light, .15);
+  border-radius: .28571429rem;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, .15);
   margin: 1rem 0;
-  padding: 1em 1em;
-  border-radius: 0.28571429rem;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  padding: $sv-padding-large;
+  position: relative;
   z-index: auto;
 
   &:first-child {
@@ -25,15 +25,15 @@
 
     &:before,
     &:after {
-      content: '';
-      position: absolute;
+      background: rgba(0, 0, 0, .03);
+      border-top: 1px solid rgba(34, 36, 38, .15);
       bottom: -3px;
-      left: 0%;
-      border-top: 1px solid rgba(34, 36, 38, 0.15);
-      background: rgba(0, 0, 0, 0.03);
-      width: 100%;
+      content: '';
       height: 6px;
+      left: 0%;
+      position: absolute;
       visibility: visible;
+      width: 100%;
     }
 
     &:before {
@@ -43,8 +43,8 @@
 
   &.tall {
     &:before {
-      display: block;
       bottom: 0;
+      display: block;
     }
   }
 
