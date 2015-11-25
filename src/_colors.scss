@@ -44,6 +44,10 @@
   &-red-light {
     color: lighten($sv-color-red-pomodoro, 30%);
   }
+
+  &-white {
+    color: $sv-color-white;
+  }
 }
 
 .sv-bg-color {
@@ -96,6 +100,10 @@
   &-red-light {
     background-color: lighten($sv-color-red-pomodoro, 30%);
   }
+
+  &-white {
+    background-color: $sv-color-white;
+  }
 }
 
 
@@ -147,5 +155,9 @@
 
   &-red-light {
     border: 1px solid lighten($sv-color-red-pomodoro, 30%);
+  }
+
+  &-white {
+    border: 1px solid $sv-color-white;
   }
 }
