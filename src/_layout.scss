@@ -19,6 +19,13 @@
   }
 }
 
+.sv-header-styless {
+  @include span(12 no-gutters);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
 .sv-container-horizontal {
   @include container;
   transition: all 180ms linear;
