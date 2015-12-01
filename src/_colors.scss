@@ -52,6 +52,18 @@
   &-white {
     color: $sv-color-white;
   }
+
+  &-yellow {
+    color: $sv-color-yellow;
+  }
+
+  &-yellow-dark {
+    color: darken($sv-color-yellow, 10%);
+  }
+
+  &-yellow-light {
+    color: lighten($sv-color-yellow, 15%);
+  }
 }
 
 .sv-bg-color {
@@ -116,6 +128,18 @@
   &-white {
     background-color: $sv-color-white;
   }
+
+  &-yellow {
+    background-color: $sv-color-yellow;
+  }
+
+  &-yellow-dark {
+    background-color: darken($sv-color-yellow, 10%);
+  }
+
+  &-yellow-light {
+    background-color: lighten($sv-color-yellow, 15%);
+  }
 }
 
 
@@ -175,5 +199,17 @@
 
   &-white {
     border: 1px solid $sv-color-white;
+  }
+
+  &-yellow {
+    border: 1px solid $sv-color-yellow;
+  }
+
+  &-yellow-dark {
+    border: 1px solid darken($sv-color-yellow, 10%);
+  }
+
+  &-yellow-light {
+    border: 1px solid lighten($sv-color-yellow, 15%);
   }
 }

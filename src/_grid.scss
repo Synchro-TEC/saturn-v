@@ -38,8 +38,13 @@ body {
   margin: $sv-margin-default 0;
 }
 
+.row-marged {
+  @include container;
+  clear: both;
+  margin: 0;
+  padding: $sv-padding-med;
+}
+
 .sv-no-gutter {
   padding: 0;
 }
-
-
