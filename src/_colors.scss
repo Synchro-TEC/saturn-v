@@ -62,7 +62,11 @@
   }
 
   &-yellow-light {
-    color: lighten($sv-color-yellow, 15%);
+    color: lighten($sv-color-yellow, 30%);
+  }
+
+  &-yellow-white {
+    color: lighten($sv-color-yellow, 45%);
   }
 }
 
@@ -138,7 +142,11 @@
   }
 
   &-yellow-light {
-    background-color: lighten($sv-color-yellow, 15%);
+    background-color: lighten($sv-color-yellow, 30%);
+  }
+
+  &-yellow-white {
+    background-color: lighten($sv-color-yellow, 45%);
   }
 }
 
@@ -210,6 +218,10 @@
   }
 
   &-yellow-light {
-    border: 1px solid lighten($sv-color-yellow, 15%);
+    border: 1px solid lighten($sv-color-yellow, 30%);
+  }
+
+  &-yellow-white {
+    border: 1px solid lighten($sv-color-yellow, 45%);
   }
 }
