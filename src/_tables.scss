@@ -1,5 +1,5 @@
 @mixin table($line-height, $padding){
-  margin-bottom: $sv-line-height-base-computed;
+  margin-bottom: $sv-line-height;
   max-width: 100%;
   width: 100%;
 
@@ -30,7 +30,7 @@ tr {
 &.sv-table {
 
   @include table(
-    $sv-line-height-base,           //line-height
+    $sv-line-height,           //line-height
     $sv-table-cell-padding          //padding
 
     );
@@ -55,10 +55,10 @@ tr {
 &.sv-table-compact {
 
   @include table(
-    $sv-line-height-base,       //line-height
-    $sv-table-padding-compact   //padding    
+    $sv-line-height,       //line-height
+    $sv-table-padding-compact   //padding
 
-  );  
+  );
 
   // Bottom align for column headings
   > thead > tr > th {

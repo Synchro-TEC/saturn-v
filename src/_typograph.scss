@@ -5,44 +5,45 @@ h4,
 h5,
 h6 {
   font-weight: 600;
-  margin-bottom: 1rem;
+  line-height: $sv-headings-line-height;
+  margin-bottom: $sv-headings-margin-bottom;
   margin-top: 0;
 }
 
 h1 {
-  font-size: 3rem;
-  letter-spacing: -.1rem;
-  line-height: 1.3;
+  font-size: $sv-font-size-h1;
+  // letter-spacing: -.1rem;
+  // line-height: 1.3;
 }
 
 h2 {
-  font-size: 2.4rem;
-  letter-spacing: -.08rem;
-  line-height: 1.35;
+  font-size: $sv-font-size-h2;
+  // letter-spacing: -.08rem;
+  // line-height: 1.35;
 }
 
 h3 {
-  font-size: 1.8rem;
-  letter-spacing: -.05rem;
-  line-height: 1.5;
+  font-size: $sv-font-size-h3;
+  // letter-spacing: -.05rem;
+  // line-height: 1.5;
 }
 
 h4 {
-  font-size: 1.5rem;
-  letter-spacing: 0;
-  line-height: 1.6;
+  font-size: $sv-font-size-h4;
+  // letter-spacing: 0;
+  // line-height: 1.6;
 }
 
 h5 {
-  font-size: 1.2rem;
-  letter-spacing: 0;
-  line-height: 1.7;
+  font-size: $sv-font-size-h5;
+  // letter-spacing: 0;
+  // line-height: 1.7;
 }
 
 h6 {
-  font-size: 1.1rem;
-  letter-spacing: 0;
-  line-height: 1.8;
+  font-size: $sv-font-size-h6;
+  // letter-spacing: 0;
+  // line-height: 1.8;
 }
 
 .sv-text-italic {

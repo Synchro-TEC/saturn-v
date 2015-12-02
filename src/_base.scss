@@ -1,16 +1,16 @@
 
 html {
   background-color: $sv-color-smoke;
-  font-size: $sv-font-base-html;
+  font-size: $sv-font-size-root;
   height: 100%;
 }
 
 body {
   color: $default-text;
   font-family: $sv-font-family;
-  font-size: $sv-font-base-size;
+  font-size: $sv-font-size-base;
   font-weight: 400;
-  line-height: $sv-line-height-base-computed;
+  line-height: $sv-line-height;
   margin: $body-margin 0;
 }
 
@@ -22,3 +22,15 @@ body {
   outline-style: none;
   padding: 0;
 }
+
+
+// body {
+//   // Make the `body` use the `font-size-root`
+//   font-family: $font-family-base;
+//   font-size: $font-size-base;
+//   line-height: $line-height;
+//   // Go easy on the eyes and use something other than `#000` for text
+//   color: $body-color;
+//   // By default, `<body>` has no `background-color` so we set one as a best practice.
+//   background-color: $body-bg;
+// }

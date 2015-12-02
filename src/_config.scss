@@ -35,16 +35,37 @@ $vertical-menu-height               : 30px;
 $fluid-nav-width                    : 230px;
 $menu-width                         : 230px;
 $vertical-menu-margin-left          : 200px;
+$sv-vertical-menu-line-height       : 36px;
 
 // ------------------------------------------------------------------------------------------------------------------
 // TYPOGRAPH
 // ------------------------------------------------------------------------------------------------------------------
-$sv-font-base-html                  : 62.5%;
-$sv-font-base-size                  : 13px !default;
-$sv-line-height-base                : 1.429 !default;
-$sv-line-height-base-computed       : floor(($sv-font-base-size * $sv-line-height-base));
+$sv-spacer:                     1rem !default;
+// $sv-font-base-html                  : 62.5%;
+// $sv-font-base-size                  : 13px !default;
+// $sv-line-height-base                : 1.429 !default;
+// $sv-line-height-base-computed       : floor(($sv-font-base-size * $sv-line-height-base));
 $sv-font-family                     : 'Open Sans', sans-serif;
-$sv-vertical-menu-line-height		    : 36px;
+
+
+$sv-font-size-root:             14px !default;
+
+$sv-font-size-base:             1rem !default;
+// $font-size-lg:               1.25rem !default;
+// $font-size-sm:               .85rem !default;
+// $font-size-xs:               .75rem !default;
+
+$sv-font-size-h1:               2.5rem !default;
+$sv-font-size-h2:               2rem !default;
+$sv-font-size-h3:               1.75rem !default;
+$sv-font-size-h4:               1.5rem !default;
+$sv-font-size-h5:               1.25rem !default;
+$sv-font-size-h6:               1rem !default;
+
+$sv-line-height:                1.5 !default;
+
+$sv-headings-margin-bottom:     ($sv-spacer / 2) !default;
+$sv-headings-line-height: 1.1;
 
 // ------------------------------------------------------------------------------------------------------------------
 // COLORS                           :PURE
@@ -52,7 +73,7 @@ $sv-vertical-menu-line-height		    : 36px;
 $sv-color-white                     : #fff;
 $sv-color-smoke                     : #f1f1f1;
 $sv-color-smoke-dark                : #ecf0f1;
-$sv-color-gray-white                : #F5F7F8;
+$sv-color-gray-white                : #f5f7f8;
 $sv-color-gray-blue                 : #cfd8dc;
 $sv-color-gray-light                : #d1d1d1;
 $sv-color-gray-dark                 : #a1a1a1;
