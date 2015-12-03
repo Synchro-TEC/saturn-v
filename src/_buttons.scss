@@ -4,7 +4,7 @@
   border-radius: 2px;
   cursor: pointer;
   display: inline-block;
-  font-size: .9em;
+  font-size: 1rem;
   font-weight: 600;
   outline: none;
   padding: $sv-padding-med;
@@ -46,6 +46,7 @@
   }
 
   &.small {
+    font-size: .8rem;
     height: 28px;
     line-height: 1;
     padding: $sv-padding-small $sv-padding-med;
@@ -55,6 +56,19 @@
     display: block;
     margin-top: $sv-margin-small;
     width: 100%;
+  }
+
+  &.circle {
+    border-radius: 50%;
+    height: 45px;
+    padding: 0;
+    width: 45px;
+
+    &.small {
+      font-size: .8rem;
+      height: 28px;
+      width: 28px;
+    }
   }
 
   //&:hover {
