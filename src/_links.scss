@@ -10,6 +10,14 @@ a {
     color: $link-color-hover;
   }
 
+  &.natural {
+    color: $sv-color-gray-dark;
+
+    &:hover {
+      color: darken($sv-color-gray-dark, 10%);
+    }
+  }
+
   &.danger {
     color: $sv-color-red-pomodoro;
 
@@ -18,11 +26,27 @@ a {
     }
   }
 
-  &.natural {
-    color: $sv-color-gray-dark;
+  &.primary {
+    color: $sv-color-green;
 
     &:hover {
-      color: darken($sv-color-gray-dark, 10%);
+      color: darken($sv-color-green, 15%);
+    }
+  }
+
+  &.info {
+    color: $sv-color-blue-dark;
+
+    &:hover {
+      color: darken($sv-color-blue-dark, 15%);
+    }
+  }
+
+  &.warning {
+    color: $sv-color-yellow;
+
+    &:hover {
+      color: darken($sv-color-yellow, 15%);
     }
   }
 

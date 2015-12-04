@@ -43,6 +43,38 @@
         text-decoration: none;
       }
     }
+
+    &.link-danger {
+      color: $sv-color-red-pomodoro;
+
+      &:hover {
+        color: darken($sv-color-red-pomodoro, 15%);
+      }
+    }
+
+    &.link-primary {
+      color: $sv-color-green;
+
+      &:hover {
+        color: darken($sv-color-green, 15%);
+      }
+    }
+
+    &.link-info {
+      color: $sv-color-blue-dark;
+
+      &:hover {
+        color: darken($sv-color-blue-dark, 15%);
+      }
+    }
+
+    &.link-warning {
+      color: $sv-color-yellow;
+
+      &:hover {
+        color: darken($sv-color-yellow, 15%);
+      }
+    }
   }
 
   &.small {
