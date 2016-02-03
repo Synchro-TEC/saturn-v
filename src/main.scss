@@ -1,26 +1,4 @@
-@import '../bower_components/susy/sass/susy';
-@import '../bower_components/normalize-scss/_normalize';
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300);
-
-@import './helpers/mixins';
-
-@import 'config';
-@import 'base';
-@import 'grid';
-@import 'links';
-@import 'layout';
-@import 'navigation';
-@import 'buttons';
-@import 'cards';
-@import 'tables';
-@import 'loader';
-@import 'lists';
-@import 'pagination';
-@import 'typograph';
-@import 'forms';
-@import 'icons';
-@import 'trumps/trump.layout';
-@import 'segment';
-@import 'colors';
-@import 'label';
+@import './base/base';
+@import './grid/grid';
+@import './colors/colors';

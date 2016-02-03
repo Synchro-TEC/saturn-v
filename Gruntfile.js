@@ -6,28 +6,19 @@ module.exports = function(grunt) {
     data: {
       path: {
         src: 'src',
-        assets: 'assets',
-        css: 'assets/css',
-        docs: 'documentation',
-        styleGuide: 'style-guide-src',
+        css: 'css',
         reports: 'reports'
       }
     }
   });
 
-  grunt.loadNpmTasks('assemble');
   require('load-grunt-tasks')(grunt);
   require('time-grunt')(grunt);
 
   grunt.registerTask('default', [
         'sass',
         'parker',
-        'autoprefixer',
-        'exec'
+        'postcss'
     ]);
 
-  grunt.registerTask('assembler', [
-        'default',
-        'assemble'
-    ]);
 };

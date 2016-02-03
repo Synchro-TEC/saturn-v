@@ -1,0 +1,47 @@
+
+@import 'base-vars';
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  outline-style: none;
+  padding: 0;
+}
+
+body {
+  color: $sv-default-text-color;
+  font-family: $sv-font-family;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  color: $sv-default-text-color;
+  font-weight: 900;
+  line-height: 1;
+  margin: .43em 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+  // margin: .33em 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  // margin: .33em 0;
+}
+
+h4 {
+  font-size: 1.3em;
+}

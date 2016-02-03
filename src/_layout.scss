@@ -1,5 +1,5 @@
 .sv-header {
-  @include span(12 no-gutters);
+  // @include span(12 no-gutters);
   // background: $header-bg;
   box-shadow: 0 2px 5px rgba($sv-color-black, .26);
   height: $header-height;
@@ -20,14 +20,14 @@
 }
 
 .sv-header-styless {
-  @include span(12 no-gutters);
+  // @include span(12 no-gutters);
   position: fixed;
   top: 0;
   z-index: 9999;
 }
 
 .sv-container-horizontal {
-  @include container;
+  // @include container;
   transition: all 180ms linear;
 
   &.active {
@@ -41,7 +41,7 @@
 }
 
 .sv-content-fluid {
-  @include full;
+  // @include full;
   padding: $sv-padding-large;
 }
 
