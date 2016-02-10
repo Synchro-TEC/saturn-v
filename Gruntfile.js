@@ -18,7 +18,8 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
         'sass',
         'parker',
-        'postcss'
+        'postcss',
+        'exec:cp'
     ]);
 
 };

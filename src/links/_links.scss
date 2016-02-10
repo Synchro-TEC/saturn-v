@@ -1,0 +1,10 @@
+a {
+  color: $sv-default-link-color;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:hover {
+    color: $sv-default-link-color-hover;
+  }
+}
