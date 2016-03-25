@@ -16,7 +16,7 @@ html {
 body {
   color: $sv-default-text-color;
   font-family: $sv-font-family;
-  font-size: 1.4rem;
+  font-size: $sv-font-size-base;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   letter-spacing: .01rem;
@@ -28,25 +28,25 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
   margin: .43em 0;
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.3rem;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
 }
 
 h3 {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 
 h4 {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 p {

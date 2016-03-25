@@ -195,7 +195,8 @@ $colors: (
 // BASE
 // ------------------------------------------------------------------------------------------------------------------
 $sv-default-text-color: map-get($colors, 'grey-800');
-$sv-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$sv-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$sv-font-size-base: 1.2rem;
 
 // ------------------------------------------------------------------------------------------------------------------
 // TABLE
