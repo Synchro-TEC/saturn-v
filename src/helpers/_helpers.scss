@@ -57,32 +57,3 @@
 .sv-thin-text {
   font-weight: 300;
 }
-
-
-.sv-shadow--2dp {
-  @include shadow-2dp();
-}
-
-.sv-shadow--3dp {
-  @include shadow-3dp();
-}
-
-.sv-shadow--4dp {
-  @include shadow-4dp();
-}
-
-.sv-shadow--6dp {
-  @include shadow-6dp();
-}
-
-.sv-shadow--8dp {
-  @include shadow-8dp();
-}
-
-.sv-shadow--16dp {
-  @include shadow-16dp();
-}
-
-.sv-shadow--24dp {
-  @include shadow-24dp();
-}

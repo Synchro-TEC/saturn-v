@@ -1,0 +1,53 @@
+
+.sv-card {
+  @include shadow-3dp();
+  background-color: map-get($colors, 'white');
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: $sv-padding-small;
+
+  header {
+    display: flex;
+    padding: $sv-padding-x-large;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 600;
+      margin: 0;
+      padding: 0;
+    }
+
+    &.big-header {
+      height: 150px;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        align-self: flex-end;
+        margin-bottom: 0;
+        padding: 0;
+      }
+    }
+
+  }
+
+  main {
+    display: block;
+    padding: $sv-padding-large $sv-padding-x-large;
+  }
+
+  footer {
+    display: flex;
+    font-weight: 600;
+    padding: $sv-padding-large $sv-padding-x-large;
+  }
+
+}

@@ -32,6 +32,10 @@
     }
   }
 
+  &.spaced {
+    margin-bottom: $sv-margin-large;
+  }
+
 }
 
 .sv-container-start {
@@ -81,6 +85,10 @@
 
 [class*="grid-"] {
   padding: .3rem;
+}
+
+[class*="col-spaced"] {
+  padding: 1rem;
 }
 
 .grid-1 { width: calc(100% / 12 * 1); }
