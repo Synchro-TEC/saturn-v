@@ -1,10 +1,10 @@
-.shadow-z-1 {
+.with-shadow {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
 }
 
 // Variables
 // ---------------------
-$table-header-font-weight      :400;
+$table-header-font-weight      :600;
 $table-header-font-color       :#757575;
 $table-cell-padding            :1.4rem;
 $table-condensed-cell-padding  :$table-cell-padding / 2;
@@ -197,13 +197,13 @@ $table-border-color            :#e0e0e0;
     }
 
     // Special overrides for shadows
-    &.shadow-z-1 {
+    &.with-shadow {
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none;
       > .table > tbody > tr {
         border: none;
-        @extend .shadow-z-1;
+        @extend .with-shadow;
       }
     }
 
