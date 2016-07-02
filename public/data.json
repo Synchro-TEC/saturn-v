@@ -31,7 +31,7 @@
     "assets": {
         "css": [
             "../css/saturn-v.css",
-            "../assets/showcase.css"
+            "../assets/examples.css"
         ],
         "js": []
     },
@@ -59,7 +59,7 @@
                 {
                     "group": "colors",
                     "name": "color-palette",
-                    "title": "Colors"
+                    "title": "Default Palette"
                 }
             ]
         },
