@@ -55,29 +55,6 @@
     },
     "groups": [
         {
-            "name": "colors",
-            "title": "Colors",
-            "components": [
-                {
-                    "group": "colors",
-                    "name": "color-palette",
-                    "title": "Default Palette"
-                },
-                {
-                    "group": "colors",
-                    "name": "font-color",
-                    "title": "Font Colors",
-                    "width": "half"
-                },
-                {
-                    "group": "colors",
-                    "name": "border-color",
-                    "title": "Border Colors",
-                    "width": "half"
-                }
-            ]
-        },
-        {
             "name": "layout",
             "title": "Layout",
             "components": [
@@ -136,6 +113,29 @@
                     "group": "cards",
                     "name": "decorated",
                     "title": "Decorated Card",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "colors",
+            "title": "Colors",
+            "components": [
+                {
+                    "group": "colors",
+                    "name": "color-palette",
+                    "title": "Default Palette"
+                },
+                {
+                    "group": "colors",
+                    "name": "font-color",
+                    "title": "Font Colors",
+                    "width": "half"
+                },
+                {
+                    "group": "colors",
+                    "name": "border-color",
+                    "title": "Border Colors",
                     "width": "half"
                 }
             ]
