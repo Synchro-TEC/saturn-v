@@ -197,15 +197,15 @@ $table-border-color            :#e0e0e0;
     }
 
     // Special overrides for shadows
-    &.with-shadow {
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none;
-      > .table > tbody > tr {
-        border: none;
-        @extend .with-shadow;
-      }
-    }
+    // &.with-shadow {
+    //   -webkit-box-shadow: none;
+    //   -moz-box-shadow: none;
+    //   box-shadow: none;
+    //   > .table > tbody > tr {
+    //     border: none;
+    //     @extend .with-shadow;
+    //   }
+    // }
 
     // Special overrides for the bordered tables
     > .table-bordered {
