@@ -32,6 +32,8 @@ node_modules
 # Sass
 .sass-cache
 
+# Generated
+css/maps
 
 # ASSETS
 assets
