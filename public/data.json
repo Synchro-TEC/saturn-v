@@ -40,26 +40,31 @@
     "font_libraries": {
         "typekit_code": null,
         "typography_web_fonts": null,
-        "google_web_fonts": null
+        "google_web_fonts": "Roboto:300,400,500,700"
     },
     "content": {
         "show_first_page_on_load": true,
-        "title": "Overview",
+        "title": "Iniciando",
         "pages": [
             {
                 "name": "introduction",
-                "title": "Introduction",
+                "title": "Sobre",
                 "file": "./pages/intro.md"
+            },
+            {
+                "name": "install",
+                "title": "Instalação",
+                "file": "./pages/install.html"
             }
         ]
     },
     "groups": [
         {
-            "name": "layout",
-            "title": "Layout",
+            "name": "base",
+            "title": "Base",
             "components": [
                 {
-                    "group": "layout",
+                    "group": "base",
                     "name": "grid",
                     "title": "Grid System",
                     "options": {

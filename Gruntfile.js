@@ -19,6 +19,7 @@ module.exports = function(grunt) {
         'sass',
         'parker',
         'postcss',
+        'exec:cp'
     ]);
 
 };

@@ -10,43 +10,53 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: $sv-font-size-root;
 }
 
 body {
   color: $sv-default-text-color;
   font-family: $sv-font-family;
-  font-size: $sv-font-size-base;
+  font-size: $sv-font-base;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   letter-spacing: .01rem;
-  line-height: 2rem;
+  line-height: $sv-line-height-base;
 }
 
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6{
   font-weight: 600;
   line-height: 1;
-  margin: .43em 0;
+  margin: .6rem 0;
 }
 
 h1 {
-  font-size: 2.3rem;
+  font-size: $sv-font-size-h1;
 }
 
 h2 {
-  font-size: 2.1rem;
+  font-size: $sv-font-size-h2;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: $sv-font-size-h3;
 }
 
 h4 {
-  font-size: 1.6rem;
+  font-size: $sv-font-size-h4;
+}
+
+h5 {
+  font-size: $sv-font-size-h5;
+}
+
+h6 {
+  font-size: $sv-font-size-h6;
 }
 
 p {
