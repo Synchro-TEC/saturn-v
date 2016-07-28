@@ -243,9 +243,11 @@ $sv-colors: (
 // BASE
 // ------------------------------------------------------------------------------------------------------------------
 $sv-default-text-color: map-get($colors, 'grey-800');
-$sv-font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", "sans-serif" !default;
+$sv-font-family: "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", "sans-serif" !default;
+//$sv-font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", "sans-serif" !default;
 
-$sv-font-size-root: 14px !default;
+
+$sv-font-size-root: 15px !default;
 
 $sv-font-base:   1rem !default;
 $sv-font-lg:     1.25rem !default;
@@ -267,13 +269,13 @@ $sv-font-size-h6: 1rem !default;
 // ------------------------------------------------------------------------------------------------------------------
 
 $sv-table-header-font-weight      :600;
-$sv-table-header-bg-color         :map-get($sv-colors, 'blue-grey-100');
-$sv-table-header-font-color       :map-get($sv-colors, 'blue-grey-500');
+$sv-table-header-bg-color         :map-get($sv-colors, 'grey-200');
+$sv-table-header-font-color       :map-get($sv-colors, 'grey-600');
 $sv-table-cell-padding            :.5rem;
 $sv-table-condensed-cell-padding  :$sv-table-cell-padding / 1.5;
 $sv-table-bg                      :map-get($sv-colors, 'white-1');
 $sv-table-bg-accent               :map-get($sv-colors, 'grey-100');
-$sv-table-bg-hover                :map-get($sv-colors, 'blue-grey-50');
+$sv-table-bg-hover                :map-get($sv-colors, 'grey-50');
 $sv-table-bg-active               :$sv-table-bg-hover;
 $sv-table-border-color            :map-get($sv-colors, 'grey-200');
 
