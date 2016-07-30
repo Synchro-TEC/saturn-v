@@ -1,7 +1,7 @@
 
 .sv-card {
-  @include shadow-3dp();
-  background-color: map-get($colors, 'white');
+  @include simple-shadow2();
+  background-color: map-get($sv-colors, 'white-1');
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -17,7 +17,7 @@
     h4,
     h5,
     h6 {
-      font-weight: 600;
+      font-weight: 500;
       margin: 0;
       padding: 0;
     }

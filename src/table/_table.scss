@@ -1,5 +1,5 @@
 .with--shadow {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .12), 0 1px 2px 0 rgba(0, 0, 0, .24);
+  @include simple-shadow();
 }
 
 .sv-table {
@@ -27,10 +27,14 @@
     }
   }
 
+  > thead > tr {
+    border: 1px solid $sv-table-header-border-color;
+  }
+
   > thead > tr > th {
     background-color: $sv-table-header-bg-color;
     color: $sv-table-header-font-color;
-    font-weight: 600;
+    font-weight: 500;
     vertical-align: bottom;
   }
 
@@ -90,7 +94,7 @@
 .with--borders {
   border: 0;
 
-  > thead,
+  //> thead,
   > tbody,
   > tfoot {
 
@@ -106,7 +110,8 @@
   > thead > tr {
     > th,
     > td {
-      border-bottom-width: 2px;
+      //border-bottom-width: 2px;
+      border: none;
     }
   }
 }
