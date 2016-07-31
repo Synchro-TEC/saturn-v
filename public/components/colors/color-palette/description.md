@@ -1,3 +1,0 @@
-All colors below can be used in 3 ways **sv-bg-color-** for backgrounds, **sv-color-** for font color and **sv-border-color-** for borders. 
-
-Ex: sv-bg-color-red, sv-bg-color-blue, sv-color-green, sv-border-color-black ... 
