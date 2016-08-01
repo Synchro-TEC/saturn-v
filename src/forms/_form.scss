@@ -160,6 +160,35 @@ select {
 
   label {
     display: inline-block;
-    //float: left;
+    margin-right: $sv-margin-small;
+    span {
+      display: inline-block;
+      margin-right: $sv-margin-small;
+    }
   }
+}
+
+.sv-input-group {
+
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  select {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    flex: 1 1 0;
+  }
+
+  .sv-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: 0;
+  }
+
+
 }
