@@ -15,6 +15,7 @@ pre {
 
 .dm-content {
   padding: 15px;
+  transition: all .2s ease-in-out;
 }
 
 .dm-sidebar {
@@ -24,7 +25,12 @@ pre {
   padding: 0;
   box-shadow: 1px 0 2px rgba(0,0,0,.2);
   top: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all .2s ease-in-out;
+  background-color: #fff;
 }
+
 
 .dm-sidebar header {
   padding: 0;
@@ -53,6 +59,35 @@ pre {
   padding: 15px;
 }
 
+.dm-sidebar-trigger {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #00a4db;
+  position: absolute;
+  top: -50px;
+  right: 5px;
+  transition: all .5s ease-in-out;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.dm-sidebar-trigger:after {
+  content: "\2630";
+}
+
+.dm-sidebar-trigger-controller {
+  position: absolute;
+  opacity: 0;
+}
+
+.dm-sidebar-trigger-controller:checked ~ .dm-sidebar {
+  width: 250px;
+}
+.dm-sidebar-trigger-controller:checked ~ .dm-sidebar-trigger:after {
+  content: "\00d7";
+}
 /*.dm-header-main {*/
   /*width: calc(100% - 250px);*/
   /*margin-left: 250px;*/
@@ -104,8 +139,7 @@ pre {
 
 .dm-syntec {
   width: 250px;
-  position: absolute;
-  bottom: 20px;
+  margin: 100px 0 30px 0;
   text-align: center;
 }
 
@@ -125,4 +159,42 @@ pre {
   background-color: #fff;
   border: 1px solid #e1e1e1;
   text-align: center;
+}
+
+
+
+@media screen and (min-width: 641px) and (max-width: 960px) {
+  .dm-sidebar {
+    width: 180px;
+  }
+
+  .dm-main {
+    width: calc(100% - 180px);
+    margin-left: 180px;
+  }
+
+  .dm-sidebar-trigger {
+    display: none;
+  }
+
+  .dm-syntec {
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .dm-sidebar {
+    width: 0;
+  }
+
+  .dm-main {
+    width: 100%;
+    margin: 0;
+  }
+
+  .dm-sidebar-trigger {
+    top: 5px;
+    transition: transform 1s;
+  }
+
 }
