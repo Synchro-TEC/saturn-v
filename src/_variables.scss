@@ -116,8 +116,8 @@ $sv-default-text-color: map-get($sv-colors, 'gray-800');
 $sv-font-family: "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", "sans-serif" !default;
 //$sv-font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", "sans-serif" !default;
 
-
-$sv-font-size-root: 15px !default;
+$sv-font-size-base: 15;
+$sv-font-size-root: $sv-font-size-base+px !default;
 
 $sv-font-base:   1rem !default;
 $sv-font-lg:     1.25rem !default;

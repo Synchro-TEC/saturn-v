@@ -20,6 +20,7 @@
     padding: $sv-form-input-default-padding;
     vertical-align: middle;
 
+
     &:disabled {
       background-color: map-get($sv-colors, 'gray-200');
     }
@@ -38,6 +39,48 @@
       outline: 0;
     }
 
+  }
+
+  .full {
+    width: 100%;
+  }
+
+  .three-fourths {
+    width: 75%;
+  }
+
+  .two-thirds {
+    width: 66%;
+  }
+
+  .half {
+    width: 50%;
+  }
+
+  .quarter {
+    width: 25%;
+  }
+
+  legend {
+    border-bottom: 1px dotted map-get($sv-colors, 'gray-600');
+    font-size: 1em;
+    font-weight: 600;
+    width: inherit;
+  }
+
+  label {
+    display: block;
+    margin-bottom: $sv-margin-large;
+
+    span {
+      display: block;
+      margin-bottom: $sv-margin-small;
+    }
+  }
+
+  fieldset {
+    border-width: 0;
+    padding: 0;
   }
 
   input[type="email"],
@@ -70,78 +113,156 @@
     outline: 0;
   }
 
+
+  $primaryColor: map-get($sv-colors, 'green-500');
+  $secondaryColor: map-get($sv-colors, 'gray-400');
+  $twitter: map-get($sv-colors, 'blue-400');
+
+  @function rem($val) {
+    @return ($val / $sv-font-size-base)+rem;
+  }
+
   input[type="checkbox"],
   input[type="radio"] {
-    display: inline;
-    margin-right: $sv-margin-small;
+    apparence: none;
   }
 
-}
-.sv-form {
-
-  input[type="email"],
-  input[type="number"],
-  input[type="search"],
-  input[type="text"],
-  input[type="tel"],
-  input[type="url"],
-  input[type="password"],
-  textarea,
-  select {
-    // width: 100%;
-  }
-
-  .full {
-    width: 100%;
-  }
-
-  .half {
-    width: 50%;
-  }
-
-  .two-thirds {
-    width: 66%;
-  }
-
-  .three-fourths {
-    width: 75%;
-  }
-
-  legend {
-    border-bottom: 1px dotted map-get($sv-colors, 'gray-600');
-    font-size: 1em;
-    font-weight: 600;
-    width: inherit;
-  }
-
-  label {
+  .sv-label--group {
     display: block;
-    margin-bottom: $sv-margin-large;
+    margin-bottom: 0;
+  }
 
-    span {
-      display: block;
-      margin-bottom: $sv-margin-small;
+  .sv-label--checkbox,
+  .sv-label--radio {
+    display: inline-block;
+    position: relative;
+    margin: .5rem;
+    line-height: 1.5;
+    cursor: pointer;
+  }
+
+  .sv-checkbox {
+    position: relative;
+    top: rem(-1);
+
+    margin: 0 1rem 0 0 ;
+
+    cursor: pointer;
+
+    &:before {
+      transition: transform .4s cubic-bezier(.45,1.8,.5,.75);
+      transform: rotate(-45deg) scale(0, 0);
+
+      content: "";
+
+      position: absolute;
+      left: rem(2);
+      top: rem(1);
+      z-index: 1;
+
+      width: rem(12);
+      height: rem(6);
+
+      border: 2px solid $primaryColor;
+      border-top-style: none;
+      border-right-style: none;
     }
-  }
 
-  fieldset {
-    border-width: 0;
-    padding: 0;
-  }
-
-}
-
-select {
-  option {
-    color: map-get($sv-colors, 'gray-600');
-
-    &:first-child {
-      &:checked {
-        color: map-get($sv-colors, 'gray-800');
+    &:checked {
+      &:before {
+        transform: rotate(-45deg) scale(1, 1);
       }
     }
+
+    &:after {
+      content: "";
+
+      position: absolute;
+      top: rem(-2);
+      left: 0;
+
+      width: 1rem;
+      height: 1rem;
+
+      background: #fff;
+
+      border: 2px solid $secondaryColor;
+
+      cursor: pointer;
+    }
   }
+
+  .sv-radio {
+    position: relative;
+
+    margin: 0 1rem 0 0 ;
+
+    cursor: pointer;
+
+    &:before {
+      transition: transform .4s cubic-bezier(.45,1.8,.5,.75);
+      transform: scale(0,0);
+
+      content: "";
+
+      position: absolute;
+      top: rem(2);
+      left: rem(1);
+      z-index: 1;
+
+      width: rem(9);
+      height: rem(9);
+
+
+      background: $primaryColor;
+
+      border-radius: 50%;
+    }
+
+    &:checked {
+      &:before {
+        transform: scale(1,1);
+      }
+    }
+
+    &:after {
+      content: "";
+
+      position: absolute;
+      top: rem(-1);
+      left: rem(-2);
+
+      width: 1rem;
+      height: 1rem;
+
+      background: #fff;
+
+      border: 2px solid $secondaryColor;
+      border-radius: 50%;
+    }
+  }
+
+
+
+
+
+
+
+
 }
+
+
+//select {
+//  option {
+//    color: map-get($sv-colors, 'gray-600');
+//
+//    &:first-child {
+//      &:checked {
+//        color: map-get($sv-colors, 'gray-800');
+//      }
+//    }
+//  }
+//}
 
 .sv-form--inline {
   @extend .sv-form;
@@ -166,6 +287,23 @@ select {
       margin-right: $sv-margin-small;
     }
   }
+}
+
+.sv-form--full {
+  @extend .sv-form;
+
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
+  textarea,
+  select {
+    width: 100%;
+  }
+
 }
 
 .sv-input-group {
