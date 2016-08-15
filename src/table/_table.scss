@@ -65,9 +65,7 @@
   }
 }
 
-.sv-table--condensed {
-  @extend .sv-table;
-
+.with--condensed {
   > thead,
   > tbody,
   > tfoot {
@@ -81,6 +79,18 @@
   }
 }
 
+.with--space {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: $sv-table-spaced-cell-padding;
+      }
+    }
+  }
+}
 
 .with--hover {
   > tbody > tr:hover {

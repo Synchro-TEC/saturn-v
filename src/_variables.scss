@@ -144,6 +144,7 @@ $sv-table-header-border-color     :#e1e3e4; //map-get($sv-colors, 'blue-gray-100
 $sv-table-header-font-color       :map-get($sv-colors, 'gray-600');
 $sv-table-cell-padding            :.5rem;
 $sv-table-condensed-cell-padding  :$sv-table-cell-padding / 1.5;
+$sv-table-spaced-cell-padding     :1rem;
 $sv-table-bg                      :map-get($sv-colors, 'white-1');
 $sv-table-bg-accent               :map-get($sv-colors, 'gray-50');
 $sv-table-bg-hover                :map-get($sv-colors, 'gray-50');

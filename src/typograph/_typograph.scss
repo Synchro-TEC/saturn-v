@@ -53,10 +53,26 @@ h6 {
 
 p {
   margin: 0 0 1rem;
+
+  &.thin {
+    font-weight: 300;
+  }
+
+  &.bold {
+    font-weight: 600;
+  }
 }
 
 code {
   background: #fafbfd;
   padding: 0 2px;
   margin: 0 2px;
+}
+
+dl dt {
+  font-weight: 500;
+}
+
+dl dd {
+  margin-bottom: 10px;
 }
