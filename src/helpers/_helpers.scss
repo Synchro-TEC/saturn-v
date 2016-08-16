@@ -30,6 +30,7 @@
   display: none !important;
 }
 
+
 .sv-vertical-marged-15 {
   margin: 15px 0;
 }
@@ -38,12 +39,21 @@
   margin: 0 15px;
 }
 
+.sv-padd-15 {
+  padding: 15px;
+}
+
+
 .sv-vertical-marged-25 {
   margin: 25px 0;
 }
 
 .sv-horizontal-marged-25 {
   margin: 0 25px;
+}
+
+.sv-padd-25 {
+  padding: 25px;
 }
 
 .sv-vertical-marged-50 {
@@ -54,6 +64,10 @@
   margin: 0 50px;
 }
 
+.sv-padd-50 {
+  padding: 50px;
+}
+
 .sv-thin-text {
   font-weight: 300;
 }
@@ -62,6 +76,7 @@
   margin-bottom: 1.5rem;
   font-weight: 400;
 }
+
 
 
 .sv-segment {
