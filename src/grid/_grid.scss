@@ -7,9 +7,7 @@
 
 .sv-column {
   flex-basis: 100%;
-  padding: $sv-padding-default;
 }
-
 
 @media screen and (min-width: 800px) {
 
@@ -46,9 +44,19 @@
     width: 100px;
   }
 
+  ._150--fixed {
+    flex: none;
+    width: 150px;
+  }
+
   ._200--fixed {
     flex: none;
     width: 200px;
+  }
+
+  ._250--fixed {
+    flex: none;
+    width: 250px;
   }
 
   ._300--fixed {
