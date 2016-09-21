@@ -10,10 +10,27 @@
   transition: all 0.3s;
 }
 
-@media screen and (min-width: 800px) {
+.sv-row--with-gutter {
+  @extend .sv-row;
+
+  .sv-column {
+    flex-basis: 100%;
+    transition: all 0.3s;
+    padding: $sv-padding-small;
+  }
+}
+
+@media screen and (min-width: 736px) {
 
   .sv-column {
     flex: 1;
+  }
+
+  .sv-row--with-gutter {
+    .sv-column {
+      flex: 1;
+      padding: $sv-padding-small;
+    }
   }
 
   ._20 {
