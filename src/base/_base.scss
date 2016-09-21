@@ -16,9 +16,14 @@ html {
 body {
   color: $sv-default-text-color;
   font-family: $sv-font-family;
+  font-weight: 400;
   font-size: $sv-font-base;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   letter-spacing: .01rem;
   line-height: $sv-line-height-base;
+}
+
+body, button, html, input, select, textarea {
+  text-rendering: optimizeLegibility;
 }

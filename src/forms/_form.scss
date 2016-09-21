@@ -11,7 +11,7 @@
   textarea,
   select {
     background-color: map-get($sv-colors, 'white-1');
-    border: 1px solid map-get($sv-colors, 'gray-300');
+    border: 1px solid map-get($sv-colors, 'steel-500');
     border-radius: $sv-form-fields-default-border;
     box-shadow: none;
     color: inherit;
@@ -22,7 +22,7 @@
 
 
     &:disabled {
-      background-color: map-get($sv-colors, 'gray-200');
+      background-color: map-get($sv-colors, 'steel-200');
     }
 
     &.is--valid,

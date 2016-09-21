@@ -12,7 +12,7 @@ h6{
 
   &.sv-title {
     color: map-get($sv-colors, 'blue-gray-700');
-    border-bottom: 1px solid map-get($sv-colors, 'blue-gray-200');
+    //border-bottom: 1px solid map-get($sv-colors, 'blue-gray-200');
     margin-bottom: 1.5rem;
     font-weight: 400;
   }
@@ -64,9 +64,10 @@ p {
 }
 
 code {
-  background: #fafbfd;
-  padding: 0 2px;
-  margin: 0 2px;
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #fafbfd;
 }
 
 dl dt {
@@ -75,4 +76,8 @@ dl dt {
 
 dl dd {
   margin-bottom: 10px;
+}
+
+code, kbd, pre, samp {
+  font-family: Monaco, Menlo, Consolas, monospace;
 }

@@ -43,7 +43,7 @@
 }
 
 @mixin simple-shadow2() {
-  box-shadow: 0 1px 3px 0 #D4D4D5, 0 0 0 1px #D4D4D5;
+  box-shadow: 0 1px 3px 0 map-get($sv-colors, 'steel-300'), 0 0 0 1px map-get($sv-colors, 'steel-300');
 }
 
 @mixin focus-shadow() {

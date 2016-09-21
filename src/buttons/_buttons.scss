@@ -6,8 +6,9 @@
   display: inline-block;
   height: 34px;
   line-height: 34px;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: .85rem;
+  font-stretch: normal;
+  font-weight: 600;
   outline: none;
   padding: 0 $sv-padding-med;
   text-align: center;
@@ -150,15 +151,15 @@
   }
 
   &.default {
-    background-color: map-get($sv-colors, 'blue-gray-200');
-    color: map-get($sv-colors, 'blue-gray-700');
+    background-color: map-get($sv-colors, 'steel-400');
+    color: map-get($sv-colors, 'steel-700');
 
     &:hover {
-      background-color: darken(map-get($sv-colors, 'blue-gray-200'), 10%);
+      background-color: darken(map-get($sv-colors, 'steel-400'), 10%);
     }
 
     &[disabled] {
-      @include disabled-button(map-get($sv-colors, 'blue-gray-200'));
+      @include disabled-button(map-get($sv-colors, 'steel-400'));
     }
   }
 
