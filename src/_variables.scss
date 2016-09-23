@@ -1,5 +1,5 @@
 //@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
-@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700';
+//@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700';
 
 // // ------------------------------------------------------------------------------------------------------------------
 // // COLORS
@@ -114,7 +114,15 @@ $sv-colors: (
 // ------------------------------------------------------------------------------------------------------------------
 $sv-default-text-color: map-get($sv-colors, 'steel-600');
 //$sv-font-family: "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", "sans-serif" !default;
-$sv-font-family: 'Open Sans', system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", "sans-serif" !default;
+$sv-font-family: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+Oxygen-Sans,
+Ubuntu,
+Cantarell,
+"Helvetica Neue",
+sans-serif;
 
 $sv-font-size-base: 16;
 $sv-font-size-root: $sv-font-size-base+px !default;

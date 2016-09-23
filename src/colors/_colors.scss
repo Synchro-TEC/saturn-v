@@ -1,15 +1,15 @@
 
 @each $color, $the-color in $sv-colors {
 
-  .sv-color-#{$color} {
+  .sv-color--#{$color} {
     color: $the-color;
   }
 
-  .sv-bg-color-#{$color} {
+  .sv-bg-color--#{$color} {
     background-color: $the-color;
   }
 
-  .sv-bd-color-#{$color} {
+  .sv-bd-color--#{$color} {
     border-color: $the-color;
   }
 

@@ -35,6 +35,14 @@
   margin: 15px 0;
 }
 
+.sv-horizontal-marged-5 {
+  margin: 0 5px;
+}
+
+.sv-horizontal-marged-10 {
+  margin: 0 10px;
+}
+
 .sv-horizontal-marged-15 {
   margin: 0 15px;
 }
@@ -83,6 +91,10 @@
 .sv-header {
   margin-bottom: 1.5rem;
   font-weight: 400;
+}
+
+.sv-no-margins {
+  margin: 0 !important;
 }
 
 

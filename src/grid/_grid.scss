@@ -16,7 +16,6 @@
   .sv-column {
     flex-basis: 100%;
     transition: all 0.3s;
-    padding: $sv-padding-small;
   }
 }
 
@@ -24,13 +23,6 @@
 
   .sv-column {
     flex: 1;
-  }
-
-  .sv-row--with-gutter {
-    .sv-column {
-      flex: 1;
-      padding: $sv-padding-small;
-    }
   }
 
   ._20 {
@@ -80,6 +72,42 @@
   ._300--fixed {
     flex: none;
     width: 300px;
+  }
+
+  .sv-row--with-gutter {
+    .sv-column {
+      flex: 1;
+      margin-right: $sv-margin-med;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    ._20 {
+      flex: 2;
+    }
+
+    ._25 {
+      flex: 2.5;
+    }
+
+    ._40 {
+      flex: 4.05;
+    }
+
+    ._60 {
+      flex: 6;
+    }
+
+    ._75 {
+      flex: 7.5;
+    }
+
+    ._80 {
+      flex: 8;
+    }
+
   }
 
 }
