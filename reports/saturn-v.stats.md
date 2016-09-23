@@ -1,0 +1,153 @@
+# [saturn-v]( https://github.com/marcio/saturn-v )
+
+**Version:** `0.0.1`
+
+> Saturn V
+
+* * *
+
+## Parker Report
+
+### css/saturn-v.css
+
+- **Total Stylesheets:** 1
+- **Total Stylesheet Size:** 50005
+- **Total Media Queries:** 3
+- **Total Rules:** 580
+- **Selectors Per Rule:** 1.789655172413793
+- **Total Selectors:** 1038
+- **Identifiers Per Selector:** 2.9566473988439306
+- **Specificity Per Selector:** 19.90077071290944
+- **Top Selector Specificity:** 43
+- **Top Selector Specificity Selector:** .sv-table-responsive-vertical>.sv-table>tbody>tr>td[data-title]:before
+- **Total Id Selectors:** 0
+- **Total Identifiers:** 2994
+- **Total Declarations:** 792
+- **Total Unique Colors:** 125
+- **Unique Colors:**
+	- `#FFFFFF`
+	- `#000000`
+	- `#F44336`
+	- `#FFEBEE`
+	- `#FFCDD2`
+	- `#EF9A9A`
+	- `#E57373`
+	- `#EF5350`
+	- `#E53935`
+	- `#D32F2F`
+	- `#C62828`
+	- `#B71C1C`
+	- `#2196F3`
+	- `#E3F2FD`
+	- `#BBDEFB`
+	- `#90CAF9`
+	- `#64B5F6`
+	- `#42A5F5`
+	- `#1E88E5`
+	- `#1976D2`
+	- `#1565C0`
+	- `#0D47A1`
+	- `#4CAF50`
+	- `#E8F5E9`
+	- `#C8E6C9`
+	- `#A5D6A7`
+	- `#81C784`
+	- `#66BB6A`
+	- `#43A047`
+	- `#388E3C`
+	- `#2E7D32`
+	- `#1B5E20`
+	- `#FFEB3B`
+	- `#FFFDE7`
+	- `#FFF9C4`
+	- `#FFF59D`
+	- `#FFF176`
+	- `#FFEE58`
+	- `#FDD835`
+	- `#FBC02D`
+	- `#F9A825`
+	- `#F57F17`
+	- `#FF9800`
+	- `#FFF3E0`
+	- `#FFE0B2`
+	- `#FFCC80`
+	- `#FFB74D`
+	- `#FFA726`
+	- `#FB8C00`
+	- `#F57C00`
+	- `#EF6C00`
+	- `#E65100`
+	- `#9E9E9E`
+	- `#FAFAFA`
+	- `#F5F5F5`
+	- `#EEEEEE`
+	- `#D9D9D9`
+	- `#BDBDBD`
+	- `#757575`
+	- `#616161`
+	- `#424242`
+	- `#212121`
+	- `#607D8B`
+	- `#ECEFF1`
+	- `#CFD8DC`
+	- `#B0BEC5`
+	- `#90A4AE`
+	- `#78909C`
+	- `#546E7A`
+	- `#455A64`
+	- `#37474F`
+	- `#263238`
+	- `#C0CCDA`
+	- `#F9FAFC`
+	- `#EFF2F7`
+	- `#E5E9F2`
+	- `#E0E6ED`
+	- `#D3DCE6`
+	- `#8492A6`
+	- `#3C4858`
+	- `#273444`
+	- `#1F2D3D`
+	- `#0060AA`
+	- `#FFFF00`
+	- `#C0C0C0`
+	- `#EA1C0D`
+	- `#347C37`
+	- `#0C7CD5`
+	- `#FFE608`
+	- `#F77066`
+	- `#3D8B40`
+	- `#6EC071`
+	- `#51ADF6`
+	- `#B2C2D4`
+	- `#F4F6F8`
+	- `#FDE0DC`
+	- `#F9BDBB`
+	- `#FCE4EC`
+	- `#F8BBD0`
+	- `#F3E5F5`
+	- `#E1BEE7`
+	- `#EDE7F6`
+	- `#D1C4E9`
+	- `#E8EAF6`
+	- `#C5CAE9`
+	- `#E7E9FD`
+	- `#D0D9FF`
+	- `#E1F5FE`
+	- `#B3E5FC`
+	- `#E0F7FA`
+	- `#B2EBF2`
+	- `#E0F2F1`
+	- `#B2DFDB`
+	- `#D0F8CE`
+	- `#A3E9A4`
+	- `#F1F8E9`
+	- `#DCEDC8`
+	- `#F9FBE7`
+	- `#F0F4C3`
+	- `#FFF8E1`
+	- `#FFECB3`
+	- `#FBE9E7`
+	- `#FFCCBC`
+	- `#C7254E`
+	- `#FAFBFD`
+- **Total Important Keywords:** 9
