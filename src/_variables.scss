@@ -1,13 +1,10 @@
-//@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
-//@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700';
-
 // // ------------------------------------------------------------------------------------------------------------------
 // // COLORS
 // // ------------------------------------------------------------------------------------------------------------------
 $sv-colors: (
-
   white-1               :#fff,
   black-1               :#000,
+  blue-brand            :#0060aa,
 
   red-1                 :#f44336,
   red-50                :#ffebee,
@@ -104,8 +101,6 @@ $sv-colors: (
   steel-700             :#3C4858,
   steel-800             :#273444,
   steel-900             :#1F2D3D,
-
-  blue-synchro          :#0060aa,
 
 );
 
@@ -231,65 +226,3 @@ $sv-default-link-color-hover        :map-get($sv-colors, 'blue-900');
  $sv-form-input-default-padding       :4px 8px;
  $sv-form-fields-default-border       :4px;
  $sv-form-textarea-default-min-height :65px;
-
-// // ------------------------------------------------------------------------------------------------------------------
-// // TYPOGRAPH
-// // ------------------------------------------------------------------------------------------------------------------
-// $sv-spacer:                     1rem !default;
-// // $sv-font-base-html                  : 62.5%;
-// // $sv-font-base-size                  : 13px !default;
-// // $sv-line-height-base                : 1.429 !default;
-// // $sv-line-height-base-computed       : floor(($sv-font-base-size * $sv-line-height-base));
-// $sv-font-family                     : 'Open Sans', sans-serif;
-//
-//
-// $sv-font-size-root:             14px !default;
-//
-// $sv-font-size-base:             1rem !default;
-// // $font-size-lg:               1.25rem !default;
-// // $font-size-sm:               .85rem !default;
-// // $font-size-xs:               .75rem !default;
-//
-// $sv-font-size-h1:               2.5rem !default;
-// $sv-font-size-h2:               2rem !default;
-// $sv-font-size-h3:               1.75rem !default;
-// $sv-font-size-h4:               1.5rem !default;
-// $sv-font-size-h5:               1.25rem !default;
-// $sv-font-size-h6:               1rem !default;
-//
-// $sv-line-height:                1.5 !default;
-//
-// $sv-headings-margin-bottom:     ($sv-spacer / 2) !default;
-// $sv-headings-line-height: 1.1;
-//
-
-//
-// // ------------------------------------------------------------------------------------------------------------------
-// // COLORS                           :ELEMENTS
-// // ------------------------------------------------------------------------------------------------------------------
-// $link-color                         : $sv-color-asfalt;
-// $link-color-hover                   : rgba($sv-color-blue-dark, .7);
-// $header-bg                          : $sv-color-asfalt;
-// $nav-fluid-bg                       : $sv-color-white;
-// $nav-link-bg                        : $sv-color-smoke-dark;
-// $brand-color                        : $sv-color-white;
-// $btn-default                        : $sv-color-gray-blue;
-// $default-text                       : $sv-color-black-shadow;
-// $sv-table-border-color              : $sv-color-gray-blue;
-// $sv-table-thead-bg                  : $sv-color-smoke-dark;
-//
-// // ------------------------------------------------------------------------------------------------------------------
-// // TABLE
-// // ------------------------------------------------------------------------------------------------------------------
-// $sv-table-padding-compact           : 2.5px 10px 2.5px;
-// $sv-table-padding-default           : 5px 7px;
-// $sv-table-padding-large             : 7px 9px;
-// $sv-table-cell-padding              : 10px !default;
-//
-//
-
-//
-// // ------------------------------------------------------------------------------------------------------------------
-// // PAGINATION
-// // ------------------------------------------------------------------------------------------------------------------
-// $sv-pagination-padding				: 15px 20px;

@@ -1,6 +1,6 @@
 
 .sv-card {
-  @include simple-shadow2();
+  @include simple-shadow2;
   background-color: map-get($sv-colors, 'white-1');
   display: flex;
   flex-direction: column;

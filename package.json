@@ -35,6 +35,7 @@
     "node-sass": "^3.4.2",
     "normalize.css": "^3.0.3",
     "pixrem": "^3.0.0",
+    "sass-lint": "^1.9.1",
     "sass-loader": "^3.1.2",
     "susy": "^2.2.11",
     "time-grunt": "^1.1.1",
