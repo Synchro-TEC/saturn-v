@@ -1,0 +1,55 @@
+.sv-messagebox {
+  position: relative;
+  margin: $sv-margin-med-two 0;
+  padding: $sv-padding-default;
+  @include clearfix;
+
+  .sv-messagebox__close {
+    background: none;
+    border: none;
+    position: absolute;
+    padding: 2px 8px;
+    top: 0;
+    right: 0;
+    font-size: 1.4rem;
+    border-bottom-left-radius: 8px;
+    cursor: pointer;
+  }
+
+  &.info {
+    background-color: map-get($sv-colors, 'blue-300');
+
+    .sv-messagebox__close {
+      color: map-get($sv-colors, 'white-1');
+      background-color: map-get($sv-colors, 'blue-500');
+    }
+    color: map-get($sv-colors, 'white-1');
+  }
+
+  &.success {
+    background-color: map-get($sv-colors, 'green-300');
+    .sv-messagebox__close {
+      color: map-get($sv-colors, 'white-1');
+      background-color: map-get($sv-colors, 'green-500');
+    }
+    color: map-get($sv-colors, 'white-1');
+  }
+
+  &.error {
+    background-color: map-get($sv-colors, 'red-300');
+    .sv-messagebox__close {
+      color: map-get($sv-colors, 'white-1');
+      background-color: map-get($sv-colors, 'red-600');
+    }
+    color: map-get($sv-colors, 'white-1');
+  }
+
+  &.warning {
+    background-color: map-get($sv-colors, 'yellow-200');
+    .sv-messagebox__close {
+      color: map-get($sv-colors, 'white-1');
+      background-color: map-get($sv-colors, 'yellow-700');
+    }
+    color: map-get($sv-colors, 'yellow-900');
+  }
+}
