@@ -111,42 +111,42 @@
   //}
 
   &.danger {
-    background-color: map-get($sv-colors, 'red-500');
+    background-color: map-get($sv-colors, 'red-400');
     color: map-get($sv-colors, 'white-1');
 
     &:hover {
-      background-color: darken(map-get($sv-colors, 'red-500'), 10%);
+      background-color: darken(map-get($sv-colors, 'red-400'), 7%);
     }
 
     &[disabled] {
-      @include disabled-button(map-get($sv-colors, 'red-500'));
+      @include disabled-button(map-get($sv-colors, 'red-200'));
     }
 
   }
 
   &.primary {
-    background-color: map-get($sv-colors, 'green-500');
+    background-color: map-get($sv-colors, 'green-400');
     color: map-get($sv-colors, 'white-1');
 
     &:hover {
-      background-color: darken(map-get($sv-colors, 'green-500'), 10%);
+      background-color: darken(map-get($sv-colors, 'green-400'), 7%);
     }
 
     &[disabled] {
-      @include disabled-button(map-get($sv-colors, 'green-500'));
+      @include disabled-button(map-get($sv-colors, 'green-200'));
     }
   }
 
   &.info {
-    background-color: map-get($sv-colors, 'blue-500');
+    background-color: map-get($sv-colors, 'blue-400');
     color: map-get($sv-colors, 'white-1');
 
     &:hover {
-      background-color: darken(map-get($sv-colors, 'blue-500'), 10%);
+      background-color: darken(map-get($sv-colors, 'blue-400'), 7%);
     }
 
     &[disabled] {
-      @include disabled-button(map-get($sv-colors, 'blue-500'));
+      @include disabled-button(map-get($sv-colors, 'blue-200'));
     }
   }
 
@@ -155,7 +155,7 @@
     color: map-get($sv-colors, 'steel-700');
 
     &:hover {
-      background-color: darken(map-get($sv-colors, 'steel-400'), 10%);
+      background-color: darken(map-get($sv-colors, 'steel-400'), 7%);
     }
 
     &[disabled] {

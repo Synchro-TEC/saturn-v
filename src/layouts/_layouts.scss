@@ -1,0 +1,15 @@
+.sv-header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  &._v60 {
+    height: 60px;
+  }
+
+  &._v80 {
+    height: 60px;
+  }
+
+}
