@@ -12,8 +12,23 @@
     top: 0;
     right: 0;
     font-size: 1.4rem;
-    border-bottom-left-radius: 8px;
     cursor: pointer;
+  }
+
+  header {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0 $sv-margin-large;
+      font-weight: 700;
+    }
+  }
+
+  main {
+    margin: 0 $sv-margin-large;
   }
 
   &.info {

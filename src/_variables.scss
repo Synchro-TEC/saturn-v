@@ -108,16 +108,8 @@ $sv-colors: (
 // BASE
 // ------------------------------------------------------------------------------------------------------------------
 $sv-default-text-color: map-get($sv-colors, 'steel-600');
-//$sv-font-family: "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", "sans-serif" !default;
-$sv-font-family: -apple-system,
-BlinkMacSystemFont,
-"Segoe UI",
-Roboto,
-Oxygen-Sans,
-Ubuntu,
-Cantarell,
-"Helvetica Neue",
-sans-serif;
+
+$sv-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
 $sv-font-size-base: 16;
 $sv-font-size-root: $sv-font-size-base+px !default;
