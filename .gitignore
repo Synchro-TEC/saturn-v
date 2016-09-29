@@ -34,6 +34,7 @@ node_modules
 
 # Generated
 css/maps
+css/maps/*.map
 
 # ASSETS
 assets
