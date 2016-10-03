@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Saturn V - Layout</title>
+    <link rel="stylesheet" href="saturn-v.css">
+
+    <style>
+
+        /************************
+            MOBILE FIRST
+        *************************/
+        .layout-03-sidebar {
+            display: none;
+        }
+
+        .layout-03-topbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+        }
+
+        .layout-03-main {
+            margin-top: 60px;
+        }
+
+        /******************************************************
+            RESPONSIVE CONTROL
+            You know how your app should bahave,
+            this is your responsability.
+        *******************************************************/
+        @media screen and (min-width: 736px) {
+            .layout-03-sidebar {
+                display: block;
+                height: 100vh;
+                position: fixed;
+                /*left: 0;*/
+                /*top: 0;*/
+            }
+
+            .layout-03-main {
+                margin-left: 200px; /* _200--fixed = 200 pixels */
+            }
+
+            .layout-03-topbar {
+                position: fixed;
+                top: 0;
+                left: 200px;
+                right: 0;
+            }
+           
+        }
+
+    </style>
+</head>
+<body>
+<div class='sv-row sv-no-margins'>
+    <div class='sv-column _200--fixed layout-03-sidebar sv-bg-color--blue-gray-500'>
+        <p class='sv-color--white-1'>menu</p>
+    </div>
+    <div class='sv-column layout-03-main'>
+        <header class='layout-03-topbar sv-bg-color--red-500'>
+           <p class='sv-color--white-1'>Header</p>
+        </header>
+        <p>content</p>
+    </div>
+</div>
+</body>
+</html>

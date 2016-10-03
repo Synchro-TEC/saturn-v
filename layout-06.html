@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Saturn V - Layout</title>
+    <link rel="stylesheet" href="saturn-v.css">
+
+    <style>
+
+        .layout-sidebar {
+            height: 20vh;
+            overflow: auto;
+        }
+
+        /******************************************************
+           RESPONSIVE CONTROL
+           You know how your app should bahave,
+           this is your responsability.
+       *******************************************************/
+        @media screen and (min-width: 736px) {
+
+            .layout-sidebar {
+                display: block;
+                height: 100vh;
+            }
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class='sv-row sv-no-margins'>
+            <aside class='layout-sidebar sv-column _200--fixed sv-bg-color--orange-500'>
+                Menu Area
+            </aside>
+            <div class='sv-column'>Content Area</div>
+        </div>
+    </main>
+</body>
+</html>

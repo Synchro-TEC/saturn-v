@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Saturn V - Layout</title>
+    <link rel="stylesheet" href="saturn-v.css">
+
+    <style>
+
+        body {
+            margin-top: 60px;
+        }
+
+        /************************
+            MOBILE FIRST
+        *************************/
+        .layout-02-center-area,
+        .layout-02-right-area {
+            display: none;
+        }
+
+        /******************************************************
+            RESPONSIVE CONTROL
+            You know how your app should bahave,
+            this is your responsability.
+        *******************************************************/
+        @media screen and (min-width: 736px) {
+            .layout-02-center-area,
+            .layout-02-right-area {
+                display: block;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class='sv-header _v60 sv-bg-color--green-600'>
+        <div class='sv-row--with-gutter sv-no-margins'>
+            <div class='sv-column _20'>
+                <h6 class='sv-color--steel-50'>Left Area</h6>
+            </div>
+            <div class='sv-column sv-text-center _60 layout-02-center-area'>
+                <h6 class='sv-color--steel-50'>Center Area</h6>
+            </div>
+            <div class='sv-column _20 sv-text-right layout-02-right-area'>
+                <h6 class='sv-color--steel-50'>Right Area</h6>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class='sv-row sv-no-margins'>
+            <div class='sv-column'>Content Area</div>
+        </div>
+    </main>
+</body>
+</html>

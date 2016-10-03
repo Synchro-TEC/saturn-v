@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Saturn V - Layout</title>
+    <link rel="stylesheet" href="saturn-v.css">
+
+    <style>
+
+        /************************
+            MOBILE FIRST
+        *************************/
+        .layout-column-folders {
+            display: none;
+        }
+
+        .layout-column-messages {
+            height: 25vh;
+            overflow: auto;
+        }
+
+
+        /******************************************************
+            RESPONSIVE CONTROL
+            You know how your app should bahave,
+            this is your responsability.
+        *******************************************************/
+        @media screen and (min-width: 736px) {
+
+            .layout-column-folders {
+                display: block;
+                height: 100vh;
+            }
+
+            .layout-column-messages {
+                display: block;
+                height: 100vh;
+                overflow: auto;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class='sv-row sv-no-margins'>
+        <aside class='sv-column _150--fixed layout-column-folders sv-bg-color--steel-800'>
+            <ul>
+                <li>folder</li>
+                <li>folder</li>
+                <li>folder</li>
+                <li>folder</li>
+            </ul>
+        </aside>
+        <aside class='sv-column _25 layout-column-messages sv-bg-color--steel-100'>
+            <ul>
+                <li>message</li>
+                <li>message</li>
+                <li>message</li>
+                <li>message</li>
+                <li>message</li>
+                <li>message</li>
+                <li>message</li>
+                <li>message</li>
+                <li>message</li>
+                <li>message</li>
+                <li>message</li>
+                <li>message</li>
+                <li>message</li>
+                <li>message</li>
+                <li>message</li>
+                <li>message</li>
+            </ul>
+        </aside>
+        <main class='sv-column _75'>Content Area</main>
+    </div>
+
+</body>
+</html>
