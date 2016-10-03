@@ -10,7 +10,29 @@
   }
 
   &._v80 {
+    height: 80px;
+  }
+
+}
+
+
+.sv-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+
+  &._v40 {
+    height: 40px;
+  }
+
+  &._v60 {
     height: 60px;
+  }
+
+  &._v80 {
+    height: 80px;
   }
 
 }
