@@ -61,6 +61,14 @@ p {
   &.bold {
     font-weight: 600;
   }
+
+  &.small {
+    font-size: .85rem;
+  }
+}
+
+p img {
+  vertical-align: middle;
 }
 
 code {

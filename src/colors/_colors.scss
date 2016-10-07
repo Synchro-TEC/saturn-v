@@ -10,7 +10,7 @@
   }
 
   .sv-bd-color--#{$color} {
-    border-color: $the-color;
+    border-color: $the-color !important;
   }
 
 }
