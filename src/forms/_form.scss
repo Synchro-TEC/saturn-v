@@ -62,25 +62,35 @@
   }
 
   legend {
-    border-bottom: 1px dotted map-get($sv-colors, 'gray-600');
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 600;
-    width: inherit;
+    margin: $sv-margin-large 0;
+    border-bottom: 1px solid map-get($sv-colors, 'steel-200');
+    width: 100%;
+    letter-spacing: -1px;
   }
 
   label {
     display: block;
-    margin-bottom: $sv-margin-large;
+    margin-bottom: $sv-margin-med;
 
     span {
       display: block;
-      margin-bottom: $sv-margin-small;
+      margin-bottom: $sv-margin-mini;
+    }
+
+    span[data-info]:after {
+      content: attr(data-info);
+      font-size: small;
+      margin: 0 $sv-margin-med;
     }
   }
 
   fieldset {
     border-width: 0;
+    display: block;
     padding: 0;
+    margin: $sv-margin-large 0;
   }
 
   input[type="email"],
