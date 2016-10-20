@@ -1,5 +1,8 @@
 @import 'normalize';
 
+//************************************************************************
+// Setting global values
+//************************************************************************
 *,
 *:after,
 *:before {
@@ -9,21 +12,47 @@
   padding: 0;
 }
 
+
+//************************************************************************
+// Setting font size
+//************************************************************************
 html {
   font-size: $sv-font-size-root;
 }
 
+//************************************************************************
+// Setting body
+//************************************************************************
 body {
   color: $sv-default-text-color;
   font-family: $sv-font-family;
-  font-weight: 400;
+  font-weight: $sv-font-weight-default;
   font-size: $sv-font-base;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  letter-spacing: .01rem;
   line-height: $sv-line-height-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+
+//************************************************************************
+// Optimizing text render
+//************************************************************************
 body, button, html, input, select, textarea {
   text-rendering: optimizeLegibility;
+}
+
+
+//************************************************************************
+// Default hr
+//************************************************************************
+hr {
+  background-image: linear-gradient(to left,
+    map_get($sv-colors, 'steel-100'),
+    map_get($sv-colors, 'steel-500'),
+    map_get($sv-colors, 'steel-500'),
+    map_get($sv-colors, 'steel-100')
+  );
+  border: 0;
+  height: 1px;
+  margin: 0 0 $sv-margin-bigger 0;
 }

@@ -1,4 +1,6 @@
-
+//************************************************************************
+// CARDS
+//************************************************************************
 .sv-card {
   @include simple-shadow2;
   background-color: map-get($sv-colors, 'white-1');
@@ -17,13 +19,13 @@
     h4,
     h5,
     h6 {
-      font-weight: 500;
+      font-weight: $sv-font-weight-bold;
       margin: 0;
       padding: 0;
     }
 
     &.big-header {
-      height: 150px;
+      height: $sv-card-big-header-height;
 
       h1,
       h2,
@@ -46,7 +48,7 @@
 
   footer {
     display: flex;
-    font-weight: 600;
+    font-weight: $sv-font-weight-bold;
     padding: $sv-padding-large $sv-padding-x-large;
   }
 

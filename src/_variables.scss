@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
 // // ------------------------------------------------------------------------------------------------------------------
 // // COLORS
 // // ------------------------------------------------------------------------------------------------------------------
@@ -107,36 +109,43 @@ $sv-colors: (
 // ------------------------------------------------------------------------------------------------------------------
 // BASE
 // ------------------------------------------------------------------------------------------------------------------
-$sv-default-text-color: map-get($sv-colors, 'steel-600');
+$sv-default-text-color    :map-get($sv-colors, 'blue-gray-700');
 
-$sv-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$sv-font-family           :'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
 
-$sv-font-size-base: 16;
-$sv-font-size-root: $sv-font-size-base+px !default;
+$sv-font-size-base        :15.5px;
+$sv-font-size-root        :$sv-font-size-base !default;
 
-$sv-font-base:   1rem !default;
-$sv-font-lg:     1.25rem !default;
-$sv-font-small:  .875rem !default;
-$sv-font-xsmall: .75rem !default;
+$sv-font-base             :1rem !default;
+$sv-font-lg               :1.25rem !default;
+$sv-font-bigger           :1.4rem !default;
+$sv-font-small            :.875rem !default;
+$sv-font-xsmall           :.75rem !default;
 
-$sv-line-height-base: 1.5 !default;
+$sv-line-height-base      :1.45 !default;
+$sv-line-height-small     :1 !default;
 
-$sv-font-size-h1: 2.75rem !default;
-$sv-font-size-h2: 2.25rem !default;
-$sv-font-size-h3: 2rem !default;
-$sv-font-size-h4: 1.75rem !default;
-$sv-font-size-h5: 1.5rem !default;
-$sv-font-size-h6: 1.25rem !default;
+$sv-font-size-h1          :2.75rem !default;
+$sv-font-size-h2          :2.25rem !default;
+$sv-font-size-h3          :2rem !default;
+$sv-font-size-h4          :1.75rem !default;
+$sv-font-size-h5          :1.5rem !default;
+$sv-font-size-h6          :1.25rem !default;
+
+$sv-font-weight-thin      :300;
+$sv-font-weight-default   :400;
+$sv-font-weight-bold      :500;
+$sv-font-weight-bolder    :700;
 
 
 // ------------------------------------------------------------------------------------------------------------------
 // TABLE
 // ------------------------------------------------------------------------------------------------------------------
 
-$sv-table-header-font-weight      :600;
+$sv-table-header-font-weight      :$sv-font-weight-bold;
 $sv-table-header-bg-color         :map-get($sv-colors, 'steel-300');
 $sv-table-header-border-color     :map-get($sv-colors, 'steel-300');
-$sv-table-header-font-color       :map-get($sv-colors, 'steel-600');
+$sv-table-header-font-color       :map-get($sv-colors, 'steel-700');
 $sv-table-cell-padding            :.5rem;
 $sv-table-condensed-cell-padding  :$sv-table-cell-padding / 1.5;
 $sv-table-spaced-cell-padding     :1rem;
@@ -145,41 +154,6 @@ $sv-table-bg-accent               :rgba(map-get($sv-colors, 'steel-300'), .3);
 $sv-table-bg-hover                :rgba(map-get($sv-colors, 'steel-300'), .3);
 $sv-table-bg-active               :$sv-table-bg-hover;
 $sv-table-border-color            :map-get($sv-colors, 'steel-300');
-
-
-//$sv-table-padding-compact     :2.5px 10px 2.5px;
-//$sv-table-padding-default     :5px 7px;
-//$sv-table-padding-large       :7px 9px;
-//$sv-table-cell-padding        :10px !default;
-//$sv-table-border-color        :map-get($colors, 'grey-300');
-//$sv-table-thead-bg            :map-get($colors, 'blue-grey-100');
-//$sv-table-line-height-header  :1.5 !default;
-
-$sv-table-font-size                 :13px !default;
-$sv-table-header-font-size          :12px !default;
-$sv-table-header-sort-icon-size     :16px !default;
-
-$sv-table-header-color              :rgba(#000, .54) !default;
-$sv-table-header-sorted-color       :rgba(#000, .87) !default;
-$sv-table-divider-color             :rgba(#000, .12) !default;
-
-$sv-table-hover-color               :map-get($sv-colors, 'steel-300') !default;
-$sv-table-selection-color           :map-get($sv-colors, 'steel-200') !default;
-
-$sv-table-dividers                  :1px solid $sv-table-border-color !default;
-
-$sv-table-row-height                :48px !default;
-$sv-table-last-row-height           :56px !default;
-$sv-table-header-height             :56px !default;
-
-$sv-table-column-spacing            :36px !default;
-$sv-table-column-padding            :$sv-table-column-spacing / 2;
-
-$sv-table-card-header-height        :64px !default;
-$sv-table-card-title-top            :20px !default;
-$sv-table-card-padding              :24px !default;
-$sv-table-button-padding-right      :16px !default;
-$sv-table-cell-top                  :$sv-table-card-padding / 2;
 
 
 // ------------------------------------------------------------------------------------------------------------------
@@ -212,10 +186,25 @@ $sv-shadow-ambient-shadow-opacity   :.12 !default;
 $sv-default-link-color              :map-get($sv-colors, 'blue-600');
 $sv-default-link-color-hover        :map-get($sv-colors, 'blue-900');
 
-// // ------------------------------------------------------------------------------------------------------------------
-// // FORM
-// // ------------------------------------------------------------------------------------------------------------------
- $sv-form-input-default-height        :34px;
- $sv-form-input-default-padding       :4px 8px;
- $sv-form-fields-default-border       :4px;
- $sv-form-textarea-default-min-height :65px;
+// ------------------------------------------------------------------------------------------------------------------
+// FORM & BUTTONS
+// ------------------------------------------------------------------------------------------------------------------
+$sv-form-input-default-height        :34px;
+$sv-form-input-default-padding       :4px 8px;
+$sv-form-fields-default-border       :2px;
+$sv-form-textarea-default-min-height :65px;
+$sv-form-progress-padding            :4px;
+
+$sv-button-default-height            :$sv-form-input-default-height;
+$sv-button-small-height              :28px;
+$sv-button-circle-height             :45px;
+
+// ------------------------------------------------------------------------------------------------------------------
+// CARDS
+// ------------------------------------------------------------------------------------------------------------------
+$sv-card-big-header-height           :150px;
+
+// ------------------------------------------------------------------------------------------------------------------
+// COMPONENTS - MESSAGEBOX
+// ------------------------------------------------------------------------------------------------------------------
+$sv-message-box-padding: 2px 8px;

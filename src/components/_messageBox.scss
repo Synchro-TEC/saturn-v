@@ -1,3 +1,6 @@
+//************************************************************************
+// MESSAGEBOX
+//************************************************************************
 .sv-messagebox {
   position: relative;
   margin: $sv-margin-med-two 0;
@@ -8,10 +11,10 @@
     background: none;
     border: none;
     position: absolute;
-    padding: 2px 8px;
+    padding: $sv-message-box-padding;
     top: 0;
     right: 0;
-    font-size: 1.4rem;
+    font-size: $sv-font-bigger;
     cursor: pointer;
   }
 

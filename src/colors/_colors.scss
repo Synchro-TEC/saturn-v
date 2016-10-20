@@ -1,4 +1,6 @@
-
+//************************************************************************
+// COLORS
+//************************************************************************
 @each $color, $the-color in $sv-colors {
 
   .sv-color--#{$color} {
@@ -14,39 +16,3 @@
   }
 
 }
-//
-//.sv-color-yellow {
-//  color: #ffeb3b;
-//}
-//
-//.sv-bg-color-yellow {
-//  background-color: #ffeb3b;
-//}
-//
-//.sv-border-color-yellow {
-//  border-color: #ffeb3b;
-//}
-//
-//.sv-color-white {
-//  color: #fff;
-//}
-//
-//.sv-bg-color-white {
-//  background-color: #fff;
-//}
-//
-//.sv-border-color-white {
-//  border-color: #fff;
-//}
-//
-//.sv-color-black {
-//  color: #000;
-//}
-//
-//.sv-bg-color-black {
-//  background-color: #000;
-//}
-//
-//.sv-border-color-black {
-//  border-color: #000;
-//}

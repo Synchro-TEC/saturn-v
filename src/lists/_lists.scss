@@ -1,3 +1,17 @@
 ul {
   list-style: none;
+
+  &.sv-styled {
+    list-style: circle;
+  }
+
+  &.inline {
+    display: table;
+    min-width: 100%;
+    width: 100%;
+
+    li {
+      display: table-cell;
+    }
+  }
 }

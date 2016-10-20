@@ -10,6 +10,10 @@
   max-width: 100%;
   width: 100%;
 
+  > caption {
+    text-align: inherit;
+  }
+
   > thead,
   > tbody,
   > tfoot {
@@ -27,15 +31,19 @@
     }
   }
 
+
   > thead > tr {
-    border: 1px solid $sv-table-header-border-color;
+    border-bottom: 2px solid $sv-table-header-border-color;
   }
 
   > thead > tr > th {
-    background-color: $sv-table-header-bg-color;
-    color: $sv-table-header-font-color;
-    font-weight: 600;
+    background-color: map-get($sv-colors, 'steel-100');
+    color: map-get($sv-colors, 'blue-gray-500');
+    font-weight: $sv-table-header-font-weight;
     vertical-align: bottom;
+    text-transform: uppercase;
+    border-top: 2px solid $sv-table-header-border-color !important;
+    font-size: .9rem;
   }
 
   > caption + thead,
@@ -51,7 +59,7 @@
   }
 
   > tbody + tbody {
-    border-top: 1px solid rgba(0, 0, 0, .12);
+    border-top: 1px solid $sv-table-header-border-color;
   }
 
   // Nesting
@@ -149,8 +157,7 @@
     > .sv-table {
       margin-bottom: 0;
       background-color: transparent;
-      > thead,
-      > tfoot {
+      > thead {
         display: none;
       }
 

@@ -1,0 +1,131 @@
+.sv-breadcrumb{
+  list-style: none;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: $sv-margin-large;
+
+  li{
+
+    float:left;
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+      display: block;
+    }
+
+    &:first-of-type {
+      display: block;
+      a {
+        background-color: map-get($sv-colors, 'steel-200');
+        color: map-get($sv-colors, 'blue-500');
+
+        &:after {
+          border-left-color: map-get($sv-colors, 'steel-200');
+
+        }
+      }
+    }
+
+    &:last-of-type {
+      background: transparent;
+      display: block;
+    }
+
+    a {
+      font-size: $sv-font-base;
+      font-weight: $sv-font-weight-default;
+      color: map-get($sv-colors, 'blue-gray-500');
+      display: block;
+      text-decoration: none;
+      position: relative;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 10px 0 5px;
+      text-align: center;
+      margin-right: 23px;
+    }
+
+    //&:nth-child(even){
+      a{
+        background-color: map-get($sv-colors, 'steel-50');
+
+        &:before{
+          border-color: map-get($sv-colors, 'steel-50');
+          border-left-color:transparent;
+        }
+
+        &:after{
+          border-left-color: map-get($sv-colors, 'steel-50');
+        }
+      }
+    //}
+
+    &:first-child{
+      a{
+        padding-left:15px;
+
+        &:before{
+          border:none;
+        }
+      }
+    }
+
+    &:last-child{
+      a{
+        padding-right:15px;
+        @include borderRadius(0 4px 4px 0);
+        background: transparent;
+        color: map-get($sv-colors, 'blue-700');
+        &:before{
+          border:none;
+        }
+        &:after{
+          border:none;
+        }
+
+        &:hover {
+          background: transparent;
+        }
+      }
+    }
+
+    a{
+
+      &:before,
+      &:after{
+        content: "";
+        position:absolute;
+        top: 0;
+        border:0 solid  map-get($sv-colors, 'steel-50');;
+        border-width:20px 10px;
+        width: 0;
+        height: 0;
+      }
+
+      &:before{
+        left:-20px;
+        border-left-color:transparent;
+      }
+
+      &:after{
+        left:100%;
+        border-color:transparent;
+        border-left-color: map-get($sv-colors, 'steel-50');
+      }
+
+      &:hover,
+      &:active {
+        background-color: map-get($sv-colors, 'steel-400');
+
+        &:before{
+          border-color: map-get($sv-colors, 'steel-400');
+          border-left-color: transparent;
+        }
+        &:after{
+          border-left-color: map-get($sv-colors, 'steel-400');
+        }
+      }
+    }
+  }
+}
