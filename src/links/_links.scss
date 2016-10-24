@@ -1,7 +1,7 @@
 a {
   color: $sv-default-link-color;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: $sv-font-weight-default;
   text-decoration: none;
 
   &:hover {
