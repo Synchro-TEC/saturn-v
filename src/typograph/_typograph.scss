@@ -89,3 +89,11 @@ dl dd {
 code, kbd, pre, samp {
   font-family: Monaco, Menlo, Consolas, monospace;
 }
+
+.sv-text-small {
+  font-size: $sv-font-small;
+}
+
+.sv-text-smaller {
+  font-size: $sv-font-xsmall;
+}

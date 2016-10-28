@@ -148,6 +148,14 @@
     font-weight: $sv-font-weight-bold;
     line-height: $sv-font-base;
     padding: $sv-padding-small $sv-padding-default;
+    display: inline-block;
+
+    &.small {
+      font-size: $sv-font-small;
+      height: $sv-button-small-height;
+      width: $sv-button-small-height;
+    }
+
 
     //Active behavior, no backgrounds
     &:active,
@@ -223,6 +231,7 @@
         color: darken(map-get($sv-colors, 'gray-500'), 15%);
       }
     }
+
   }
 
 }

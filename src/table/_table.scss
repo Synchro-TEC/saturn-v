@@ -44,6 +44,13 @@
     text-transform: uppercase;
     border-top: 2px solid $sv-table-header-border-color !important;
     font-size: .9rem;
+
+    & a {
+      color: map-get($sv-colors, 'blue-gray-500');
+      &:hover {
+        color: map-get($sv-colors, 'blue-gray-800');
+      }
+    }
   }
 
   > caption + thead,
