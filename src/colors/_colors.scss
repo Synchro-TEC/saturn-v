@@ -8,7 +8,7 @@
   }
 
   .sv-bg-color--#{$color} {
-    background-color: $the-color;
+    background-color: $the-color !important;
   }
 
   .sv-bd-color--#{$color} {

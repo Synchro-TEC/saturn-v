@@ -1,0 +1,103 @@
+.sv-tag {
+  border-radius: 2px;
+  display: inline-flex;
+  font-size: .8em;
+  margin: 0 $sv-margin-default $sv-margin-default 0;
+
+  .sv-tag__content {
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+    padding: $sv-padding-small;
+  }
+
+  .sv-tag__close {
+    padding: $sv-padding-small;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+    user-select: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+
+
+  //DANGER (RED)
+  &.danger {
+    background-color: map_get($sv-colors, 'red-50');
+    border: 1px solid map_get($sv-colors, 'red-300');
+    color: map_get($sv-colors, 'red-600');
+
+    .sv-tag__content {
+      border-left: 1px solid map_get($sv-colors, 'red-300');
+    }
+
+    .sv-tag__close:hover {
+      background-color: map_get($sv-colors, 'red-100');
+    }
+  }
+
+  //PRIMARY (GREEN)
+  &.primary {
+    background-color: map_get($sv-colors, 'green-50');
+    border: 1px solid map_get($sv-colors, 'green-300');
+    color: map_get($sv-colors, 'green-600');
+
+    .sv-tag__content {
+      border-left: 1px solid map_get($sv-colors, 'green-300');
+    }
+
+    .sv-tag__close:hover {
+      background-color: map_get($sv-colors, 'green-100');
+    }
+  }
+
+  //INFO (BLUE)
+  &.info {
+    background-color: map_get($sv-colors, 'blue-50');
+    border: 1px solid map_get($sv-colors, 'blue-300');
+    color: map_get($sv-colors, 'blue-600');
+
+    .sv-tag__content {
+      border-left: 1px solid map_get($sv-colors, 'blue-300');
+    }
+
+    .sv-tag__close:hover {
+      background-color: map_get($sv-colors, 'blue-100');
+    }
+  }
+
+  //DEFAULT (GRAY)
+  &.default {
+    background-color: map_get($sv-colors, 'steel-50');
+    border: 1px solid map_get($sv-colors, 'steel-300');
+    color: map_get($sv-colors, 'steel-600');
+
+    .sv-tag__content {
+      border-left: 1px solid map_get($sv-colors, 'steel-300');
+    }
+
+    .sv-tag__close:hover {
+      background-color: map_get($sv-colors, 'steel-100');
+    }
+  }
+
+  //WARNING (YELLOW)
+  &.warning {
+    background-color: map_get($sv-colors, 'yellow-50');
+    border: 1px solid map_get($sv-colors, 'yellow-500');
+    color: map_get($sv-colors, 'yellow-700');
+
+    .sv-tag__content {
+      border-left: 1px solid map_get($sv-colors, 'yellow-500');
+    }
+
+    .sv-tag__close:hover {
+      background-color: map_get($sv-colors, 'yellow-100');
+    }
+  }
+
+}
