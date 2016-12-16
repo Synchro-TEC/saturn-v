@@ -173,13 +173,11 @@
     }
 
     //Disable behavior
-    &[disabled],
-    fieldset[disabled] & {
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
+    &[disabled] {
+      background-color: transparent;
+      color: lighten($sv-default-link-color, 20%);
     }
+
 
 
     //************************************************************************
@@ -193,6 +191,11 @@
       &:hover {
         color: darken(map-get($sv-colors, 'red-500'), 10%);
       }
+
+      &[disabled] {
+        background-color: transparent;
+        color: lighten(map-get($sv-colors, 'red-500'), 20%);
+      }
     }
 
     //PRIMARY (GREEN)
@@ -201,6 +204,11 @@
 
       &:hover {
         color: darken(map-get($sv-colors, 'green-600'), 10%);
+      }
+
+      &[disabled] {
+        background-color: transparent;
+        color: lighten(map-get($sv-colors, 'green-600'), 20%);
       }
     }
 
@@ -211,6 +219,12 @@
       &:hover {
         color: darken(map-get($sv-colors, 'blue-500'), 10%);
       }
+
+      &[disabled] {
+        background-color: transparent;
+        color: lighten(map-get($sv-colors, 'blue-500'), 20%);
+      }
+
     }
 
     //WARNING (YELLOW)
@@ -220,6 +234,11 @@
       &:hover {
         color: darken(map-get($sv-colors, 'yellow-800'), 10%);
       }
+
+      &[disabled] {
+        background-color: transparent;
+        color: lighten(map-get($sv-colors, 'yellow-800'), 20%);
+      }
     }
 
     //CANCEL (GRAY)
@@ -228,6 +247,11 @@
 
       &:hover {
         color: darken(map-get($sv-colors, 'gray-500'), 15%);
+      }
+
+      &[disabled] {
+        background-color: transparent;
+        color: lighten(map-get($sv-colors, 'gray-500'), 20%);
       }
     }
 
