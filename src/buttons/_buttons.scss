@@ -175,6 +175,7 @@
     //Disable behavior
     &[disabled] {
       background-color: transparent;
+      cursor: not-allowed;
       color: lighten($sv-default-link-color, 20%);
     }
 

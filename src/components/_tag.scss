@@ -89,7 +89,7 @@
   &.warning {
     background-color: map_get($sv-colors, 'yellow-50');
     border: 1px solid map_get($sv-colors, 'yellow-500');
-    color: map_get($sv-colors, 'yellow-700');
+    color: map_get($sv-colors, 'yellow-900');
 
     .sv-tag__content {
       border-left: 1px solid map_get($sv-colors, 'yellow-500');

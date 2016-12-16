@@ -128,18 +128,25 @@
       color: lighten($sv-default-text-color, 15%);
     }
 
-    span[data-info][data-error]:not([data-info='']):not([data-error='']):after {
-      content: attr(data-info) " " attr(data-error);
-      font-size: small;
-      margin: 0 $sv-margin-med;
-      color: map_get($sv-colors, 'red-500');
-    }
-
     span[data-info]:not([data-info='']):after {
       content: attr(data-info);
       font-size: small;
       margin: 0 $sv-margin-med;
       color: lighten($sv-default-text-color, 15%);
+    }
+
+    span[data-error]:not([data-error='']):after {
+      content: attr(data-error);
+      font-size: small;
+      margin: 0 $sv-margin-med;
+      color: map_get($sv-colors, 'red-500');
+    }
+
+    span[data-info][data-error]:not([data-info='']):not([data-error='']):after {
+      content: attr(data-info) " - " attr(data-error);
+      font-size: small;
+      margin: 0 $sv-margin-med;
+      color: map_get($sv-colors, 'red-500');
     }
 
 
@@ -411,7 +418,7 @@
   position: absolute;
   z-index: 99;
 
-  &.--right {
+  &.on-right {
     right: 15px;
     top: 0;
   }
@@ -447,17 +454,17 @@
 
 }
 
-.--center {
+.on-center {
   border-radius: 0 !important;
 }
 
-.--first {
+.at-first {
   border-bottom-right-radius: 0 !important;
   border-top-right-radius: 0 !important;
   border-right: none !important;
 }
 
-.--last {
+.at-last {
   border-bottom-left-radius: 0 !important;
   border-top-left-radius: 0 !important;
 }
