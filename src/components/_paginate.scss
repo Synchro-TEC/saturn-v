@@ -1,0 +1,33 @@
+.sv-paginate {
+  text-align: center;
+
+  a {
+    padding: $sv-padding-default $sv-padding-med;
+  }
+
+  button {
+    &:first-child{
+      i {
+        margin: 0  $sv-margin-med 0 0;
+      }
+    }
+
+    &:last-child {
+      i {
+        margin: 0 0 0 $sv-margin-med;
+      }
+    }
+  }
+
+  span {
+    color: map-get($sv-colors, 'gray-500');
+  }
+
+  em {
+    border-radius: 2px;
+    background-color: map-get($sv-colors, 'blue-300');
+    color: map-get($sv-colors, 'white-1');
+    font-style: normal;
+    padding: $sv-padding-default $sv-padding-med;
+  }
+}
