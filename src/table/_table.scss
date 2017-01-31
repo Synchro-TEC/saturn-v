@@ -50,6 +50,15 @@
         color: map-get($sv-colors, 'blue-gray-800');
       }
     }
+
+    & i.sv-sort {
+      margin-left: $sv-margin-med;
+      cursor: pointer;
+    }
+
+    i.sv-sort.is--active {
+      color: map-get($sv-colors, 'blue-500');
+    }
   }
 
   > caption + thead,
@@ -148,7 +157,6 @@
     }
   }
 }
-
 
 // Responsive tables (vertical)
 //
