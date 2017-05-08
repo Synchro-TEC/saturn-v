@@ -158,6 +158,12 @@
   }
 }
 
+.with--grid {
+  th, td {
+    border: 1px solid $sv-table-border-color;
+  }
+}
+
 // Responsive tables (vertical)
 //
 // Wrap your tables in `.table-responsive-vertical` and we'll make them mobile friendly
