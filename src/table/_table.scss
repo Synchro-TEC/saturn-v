@@ -159,6 +159,11 @@
 }
 
 .with--grid {
+  th {
+    font-family: $sv-font-family-cond;
+    font-weight: 400;
+  }
+
   th, td {
     border: 1px solid $sv-table-border-color;
   }
