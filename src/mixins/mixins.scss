@@ -10,10 +10,53 @@
   }
 }
 
-@mixin disabled-button($backgroun-color) {
+@mixin disabled-button($backgroun-color, $color) {
   background-color: lighten($backgroun-color, 10%);
+  color: lighten($color, 20%);
   cursor: not-allowed;
 }
+
+@mixin make-variant-button($background-color, $color, $background-hover-color, $hover-darker, $disabled-color) {
+  background-color: $background-color;
+  color: $color;
+
+  &:hover {
+    background-color: darken($background-hover-color, $hover-darker);
+  }
+
+  &[disabled] {
+    @include disabled-button($disabled-color, $color);
+  }
+}
+
+@mixin make-variant-link-button ($color, $darken, $lighten ) {
+  color: $color;
+
+  &:hover {
+    color: darken($color, $darken);
+  }
+
+  &[disabled] {
+    background-color: transparent;
+    color: lighten($color, $lighten);
+  }
+}
+
+@mixin make-outlined-button($color, $border-color, $background-hover-color, $hover-color) {
+  background-color: transparent;
+  color: $color;
+  border: 1px solid $border-color;
+
+  &:hover {
+    background-color: $background-hover-color;
+    color: $hover-color;
+  }
+
+  //&[disabled] {
+  //  @include disabled-button(map-get($sv-colors, 'green-50'));
+  //}
+}
+
 
 @mixin table($line-height, $padding) {
   // margin-bottom: $sv-line-height;

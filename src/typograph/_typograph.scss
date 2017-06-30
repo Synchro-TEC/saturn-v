@@ -5,24 +5,19 @@ h3,
 h4,
 h5,
 h6{
-  font-weight: 400;
+  color: inherit;
+  font-weight: $sv-font-weight-bold;
   line-height: 1;
-  padding: .6rem 0;
-  margin: .3rem 0;
+  padding: $sv-padding-default 0;
+  margin: $sv-margin-default 0;
+  width: 100%;
 
   &.sv-title {
-    color: map-get($sv-colors, 'blue-gray-700');
+    //color: map-get($sv-colors, 'blue-gray-700');
     //border-bottom: 1px solid map-get($sv-colors, 'blue-gray-200');
     margin-bottom: 1.5rem;
-    font-weight: 400;
-  }
-
-  &.thin {
-    font-weight: 300;
-  }
-
-  &.bold {
-    font-weight: 600;
+    font-weight: $sv-font-weight-bold;
+    border-bottom: 1px solid map-get($sv-colors, 'steel-300');;
   }
 
 }
@@ -52,15 +47,8 @@ h6 {
 }
 
 p {
-  margin: 0 0 1rem;
-
-  &.thin {
-    font-weight: 300;
-  }
-
-  &.bold {
-    font-weight: 500;
-  }
+  margin: 0 0 $sv-margin-med-two;
+  display: block;
 
   &.small {
     font-size: .85rem;
@@ -71,15 +59,17 @@ p img {
   vertical-align: middle;
 }
 
-code {
-  padding: 2px 4px;
-  font-size: 90%;
-  color: #c7254e;
-  background-color: #fafbfd;
+//TODO: VARIABLES
+.code {
+  font-family: $sv-font-family-mono;
+  padding: 0 5px;
+  background-color: #eff2f7;
+  color: #d33682;
+  border-radius: 3px;
 }
 
 dl dt {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 dl dd {
@@ -96,4 +86,8 @@ code, kbd, pre, samp {
 
 .sv-text-smaller {
   font-size: $sv-font-xsmall;
+}
+
+.sv-text-big {
+  font-size: $sv-font-lg;
 }

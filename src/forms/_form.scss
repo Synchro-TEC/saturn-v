@@ -1,5 +1,39 @@
 
 .sv-form {
+
+  &.sv-compact {
+    label {
+      margin-bottom: 0;
+      span {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+
+  .sv-form-action {
+    margin-top: $sv-margin-large;
+    //padding: $sv-padding-large;
+    //background: map_get($sv-colors, 'steel-100');
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  //width: 100%;
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: map-get($sv-colors, 'blue-gray-200');
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: map-get($sv-colors, 'blue-gray-200');
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: map-get($sv-colors, 'blue-gray-200');
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: map-get($sv-colors, 'blue-gray-200');
+  }
+
   input[type="email"],
   input[type="number"],
   input[type="search"],
@@ -13,27 +47,31 @@
     border: 1px solid map-get($sv-colors, 'steel-500');
     border-radius: $sv-form-fields-default-border;
     color: inherit;
-    font-size: 1rem;
+    font-size: inherit;
+    font-family: $sv-font-family;
     height: $sv-form-input-default-height;
     padding: $sv-form-input-default-padding;
     vertical-align: middle;
     box-shadow:inset 0 0 3px map-get($sv-colors, 'steel-300');
     width: 100%;
 
+    -moz-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+
+    &.code {
+      font-family: $sv-font-family-mono !important;
+    }
+
     &:disabled {
       background-color: map-get($sv-colors, 'steel-200');
     }
 
-    &.is--valid,
-    &.is--valid:focus {
-      box-shadow:inset 0 0 3px map-get($sv-colors, 'green-200');
+    &.is--valid{
       border-color: map-get($sv-colors, 'green-300');
       outline: 0;
     }
 
-    &.is--invalid,
-    &.is--invalid:focus {
-      box-shadow:inset 0 0 3px map-get($sv-colors, 'red-200');
+    &.is--invalid {
       border-color: map-get($sv-colors, 'red-300');
       outline: 0;
     }
@@ -93,25 +131,18 @@
   }
 
 
-  .three-fourths {
-    width: 75%;
+  //TODO MUDOU - DOCUMENTAR HALF...
+  @each $size, $the-size in $sv-input-sizes {
+    .is--#{$size}-of-100 {
+      width: calc(#{$the-size} - 10px) !important;
+      margin-right: 10px;
+    }
   }
 
-  .two-thirds {
-    width: 66%;
-  }
-
-  .half {
-    width: 50%;
-  }
-
-  .quarter {
-    width: 25%;
-  }
 
   legend {
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: $sv-font-weight-default;
+    font-weight: $sv-font-weight-bold;
     margin: $sv-margin-large 0;
     width: 100%;
     text-transform: uppercase;
@@ -119,13 +150,13 @@
 
   label {
     display: block;
-    margin-bottom: $sv-margin-large;
+    margin-bottom: $sv-margin;
 
     span {
       display: block;
       margin-bottom: $sv-margin-mini;
-      font-weight: 500;
-      color: lighten($sv-default-text-color, 15%);
+      font-weight: $sv-font-weight-default;
+      color: lighten($sv-default-text-color, 5%);
     }
 
     span[data-info]:not([data-info='']):after {
@@ -157,6 +188,21 @@
     display: block;
     padding: 0;
     margin: $sv-margin-large 0;
+
+    &.bordered {
+      padding: 46px 15px 15px 15px;
+      border: 1px solid map_get($sv-colors, 'steel-300');
+      position: relative;
+
+      legend {
+        position: absolute;
+        background: transparent;
+        top: 15px;
+        margin: 0 0 10px 0;
+        //margin: -15px;
+      }
+    }
+
   }
 
   input[type="email"],
@@ -187,6 +233,18 @@
     box-shadow:inset 0 0 3px map-get($sv-colors, 'blue-200');
     border-color: map-get($sv-colors, 'blue-300');
     outline: 0;
+    transition: border 200ms linear;
+
+    &.is--valid{
+      border-color: map-get($sv-colors, 'green-300');
+      box-shadow: inset 0 0 3px map-get($sv-colors, 'green-200');
+    }
+
+    &.is--invalid {
+      border-color: map-get($sv-colors, 'red-300');
+      box-shadow:inset 0 0 3px map-get($sv-colors, 'red-200');
+    }
+
   }
 
 
@@ -320,9 +378,9 @@
   .label, .label-action {
     border-radius: $sv-form-fields-default-border;
     border: 1px solid map-get($sv-colors, 'steel-500');
-    height: 34px;
-    line-height: 34px;
-    font-size: 1rem;
+    height: $sv-form-input-default-height;
+    line-height: $sv-form-input-default-height;
+    font-size: inherit;
     font-stretch: normal;
     font-weight: 500;
     outline: none;
@@ -365,17 +423,17 @@
       top: 0;
       bottom: 0;
       right: 10px;
-      line-height: 34px;
+      line-height: $sv-form-input-default-height;
 
       color: rgb(57, 70, 78);
       cursor: default;
       display: block;
-      font-size: 13px;
-      height:34px ;
+      font-size: inherit;
+      height: $sv-form-input-default-height;
       list-style: none outside none;
       pointer-events: none;
       text-align: left;
-      width:19px;
+      width: 19px;
       margin: 0;
       outline: none;
       &:focus {outline:none;}

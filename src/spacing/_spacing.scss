@@ -1,0 +1,66 @@
+@each $size, $the-size in $sv-spacings {
+
+  //PADDINGS
+  .sv-pl--#{$size} {
+    padding-left: $the-size !important;
+  }
+
+  .sv-pr--#{$size} {
+    padding-right: $the-size !important;
+  }
+
+  .sv-pt--#{$size} {
+    padding-top: $the-size !important;
+  }
+
+  .sv-pb--#{$size} {
+    padding-bottom: $the-size !important;
+  }
+
+  .sv-pv--#{$size} {
+    padding-top: $the-size !important;
+    padding-bottom: $the-size !important;
+  }
+
+  .sv-ph--#{$size} {
+    padding-right: $the-size !important;
+    padding-left: $the-size !important;
+  }
+
+  .sv-pa--#{$size} {
+    padding: $the-size !important;
+  }
+
+
+  //MARGINS
+  .sv-ml--#{$size} {
+    margin-left: $the-size !important;
+  }
+
+  .sv-mr--#{$size} {
+    margin-right: $the-size !important;
+  }
+
+  .sv-mt--#{$size} {
+    margin-top: $the-size !important;
+  }
+
+  .sv-mb--#{$size} {
+    margin-bottom: $the-size !important;
+  }
+
+  .sv-mv--#{$size} {
+    margin-top: $the-size !important;
+    margin-bottom: $the-size !important;
+  }
+
+  .sv-mh--#{$size} {
+    margin-right: $the-size !important;
+    margin-left: $the-size !important;
+  }
+
+  .sv-ma--#{$size} {
+    margin: $the-size !important;
+  }
+
+}

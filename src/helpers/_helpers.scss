@@ -136,6 +136,34 @@
   margin-right: 50px !important;
 }
 
+// TOP
+.sv-top-marged-5 {
+  margin-top: 5px !important;
+}
+
+.sv-top-marged-10 {
+  margin-top: 10px !important;
+}
+
+.sv-top-marged-15 {
+  margin-top: 15px !important;
+}
+
+.sv-top-marged-25 {
+  margin-top: 25px !important;
+}
+
+.sv-top-marged-50 {
+  margin-top: 50px !important;
+}
+
+.sv-top-marged-75 {
+  margin-top: 75px !important;
+}
+
+.sv-top-marged-100 {
+  margin-top: 100px !important;
+}
 
 .sv-padd-5 {
   padding: 5px;
@@ -181,6 +209,14 @@
   margin: 0 0 1rem;
 }
 
+.sv-clear:before,
+.sv-clear:after {
+  content: " ";
+  display: table;
+}
+.sv-clear:after {
+  clear: both;
+}
 
 .sv-segment {
   @include  simple-shadow();
@@ -194,4 +230,8 @@
 
 .sv-pointer {
   cursor: pointer !important;
+}
+
+.sv-text-bold {
+  font-weight: $sv-font-weight-bold;
 }

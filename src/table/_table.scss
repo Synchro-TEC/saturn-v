@@ -2,6 +2,34 @@
   @include simple-shadow();
 }
 
+.sv-simple-table {
+  border-collapse: collapse;
+  border: 1px solid $sv-table-border-color;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+
+
+  tr th {
+    background-color: $sv-table-bg-accent;
+    vertical-align: middle;
+    text-align: center;
+    padding: 3px;
+    border-bottom: 1px solid $sv-table-border-color;
+    border-left: 1px solid $sv-table-border-color
+  }
+
+  tr td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 3px;
+    border-bottom: 1px solid $sv-table-border-color;
+    border-left: 1px solid $sv-table-border-color;
+  }
+}
+
+
+
 .sv-table {
   background-color: $sv-table-bg;
   border-collapse: collapse;
@@ -127,7 +155,6 @@
 .with--borders {
   border: 0;
 
-  //> thead,
   > tbody,
   > tfoot {
 
@@ -143,7 +170,6 @@
   > thead > tr {
     > th,
     > td {
-      //border-bottom-width: 2px;
       border: none;
     }
   }
@@ -169,11 +195,6 @@
   }
 }
 
-// Responsive tables (vertical)
-//
-// Wrap your tables in `.table-responsive-vertical` and we'll make them mobile friendly
-// by vertical table-cell display. Only applies <768px. Everything above that will display normally.
-// For correct display you must add 'data-title' to each 'td'
 .sv-table-responsive-vertical {
 
   @media screen and (max-width: 768px) {
@@ -212,22 +233,10 @@
       }
     }
 
-    // Special overrides for shadows
-    // &.with-shadow {
-    //   -webkit-box-shadow: none;
-    //   -moz-box-shadow: none;
-    //   box-shadow: none;
-    //   > .table > tbody > tr {
-    //     border: none;
-    //     @extend .with-shadow;
-    //   }
-    // }
-
-    // Special overrides for the bordered tables
     > .with--borders {
       border: 0;
 
-      // Nuke the appropriate borders so that the parent can handle them
+
       > tbody {
         > tr {
           > td {
@@ -241,7 +250,7 @@
       }
     }
 
-    // Special overrides for the striped tables
+
     > .with--stripes {
       > tbody > tr > td,
       > tbody > tr:nth-child(odd) {
@@ -252,7 +261,6 @@
       }
     }
 
-    // Special overrides for hover tables
     > .with--hover {
       > tbody {
         > tr:hover > td,

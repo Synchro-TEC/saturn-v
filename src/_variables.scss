@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300,400,500,700');
-
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600');
+//@import url('https://fonts.googleapis.com/css?family=Muli:400,700');
 // // ------------------------------------------------------------------------------------------------------------------
 // // COLORS
 // // ------------------------------------------------------------------------------------------------------------------
 $sv-colors: (
   white-1               :#ffffff,
-  //Teste
   black-1               :#000000,
   blue-brand            :#0060aa,
+  blue-synchro          :#0060aa,
+  text-color            :#4c6a94,
+  link-color            :#0070d2,
+  link-color-hover      :#002a54,
 
   red-1                 :#f44336,
   red-50                :#ffebee,
@@ -107,16 +110,49 @@ $sv-colors: (
 
 );
 
+$sv-spacings: (
+  5    :5px,
+  10   :10px,
+  15   :15px,
+  20   :20px,
+  25   :25px,
+  30   :30px,
+  50   :50px,
+  80   :80px,
+  100  :100px,
+);
+
+$sv-input-sizes: (
+  10   :10%,
+  15   :15%,
+  20   :20%,
+  25   :25%,
+  30   :30%,
+  35   :35%,
+  40   :40%,
+  45   :45%,
+  50   :50%,
+  55   :55%,
+  60   :60%,
+  65   :65%,
+  70   :70%,
+  75   :75%,
+  80   :80%,
+  85   :85%,
+  90   :90%,
+);
+
+
 // ------------------------------------------------------------------------------------------------------------------
 // BASE
 // ------------------------------------------------------------------------------------------------------------------
-$sv-default-text-color    :map-get($sv-colors, 'blue-gray-700');
+$sv-default-text-color    :map-get($sv-colors, 'text-color');
 
-$sv-font-family           :'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
-$sv-font-family-cond      :'Roboto Condensed', Arial;
+$sv-font-family           : 'Fira Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+$sv-font-family-mono      : consolas, monaco, monospace;
+$sv-font-family-cond      : Arial;
 
-$sv-font-size-base        :15.5px;
-$sv-font-size-root        :$sv-font-size-base !default;
+$sv-font-size-base        :14px;
 
 $sv-font-base             :1rem !default;
 $sv-font-lg               :1.25rem !default;
@@ -127,17 +163,16 @@ $sv-font-xsmall           :.75rem !default;
 $sv-line-height-base      :1.45 !default;
 $sv-line-height-small     :1 !default;
 
-$sv-font-size-h1          :2.75rem !default;
-$sv-font-size-h2          :2.25rem !default;
-$sv-font-size-h3          :2rem !default;
-$sv-font-size-h4          :1.75rem !default;
-$sv-font-size-h5          :1.5rem !default;
-$sv-font-size-h6          :1.25rem !default;
+$sv-font-size-h1          :2rem !default;
+$sv-font-size-h2          :1.8rem !default;
+$sv-font-size-h3          :1.6rem !default;
+$sv-font-size-h4          :1.4rem !default;
+$sv-font-size-h5          :1.2rem !default;
+$sv-font-size-h6          :1.1rem !default;
 
-$sv-font-weight-thin      :300;
 $sv-font-weight-default   :400;
-$sv-font-weight-bold      :500;
-$sv-font-weight-bolder    :700;
+$sv-font-weight-bold      :600;
+
 
 
 // ------------------------------------------------------------------------------------------------------------------
@@ -161,14 +196,15 @@ $sv-table-border-color            :map-get($sv-colors, 'steel-300');
 // ------------------------------------------------------------------------------------------------------------------
 // BOX MODEL
 // ------------------------------------------------------------------------------------------------------------------
+
 $sv-margin-default                  :.25rem;
 $sv-margin-mini                     :.15rem;
 $sv-margin-small                    :.20rem;
-//$sv-margin-med                      :.50rem;
 $sv-margin-med                      :.50rem;
 $sv-margin-med-two                  :.75rem;
 $sv-margin-large                    :1rem;
 $sv-margin-bigger                   :2rem;
+
 $sv-padding-default                 :.5rem;
 $sv-padding-mini                    :.15rem;
 $sv-padding-small                   :.25rem;
@@ -176,6 +212,8 @@ $sv-padding-med                     :.75rem;
 $sv-padding-large                   :1rem;
 $sv-padding-x-large                 :1.5rem;
 $sv-padding-bigger                  :2rem;
+
+$sv-margin                          :10px;
 
 // ------------------------------------------------------------------------------------------------------------------
 // SHADOW
@@ -187,13 +225,13 @@ $sv-shadow-ambient-shadow-opacity   :.12 !default;
 // ------------------------------------------------------------------------------------------------------------------
 // LINKS
 // ------------------------------------------------------------------------------------------------------------------
-$sv-default-link-color              :map-get($sv-colors, 'blue-600');
-$sv-default-link-color-hover        :map-get($sv-colors, 'blue-900');
+$sv-default-link-color              :map-get($sv-colors, 'link-color');
+$sv-default-link-color-hover        :map-get($sv-colors, 'link-color-hover');
 
 // ------------------------------------------------------------------------------------------------------------------
 // FORM & BUTTONS
 // ------------------------------------------------------------------------------------------------------------------
-$sv-form-input-default-height        :34px;
+$sv-form-input-default-height        :32px;
 $sv-form-input-default-padding       :4px 8px;
 $sv-form-fields-default-border       :2px;
 $sv-form-textarea-default-min-height :65px;
@@ -201,7 +239,7 @@ $sv-form-progress-padding            :4px;
 
 $sv-button-default-height            :$sv-form-input-default-height;
 $sv-button-small-height              :28px;
-$sv-button-circle-height             :45px;
+$sv-button-big-height                :56px;
 
 // ------------------------------------------------------------------------------------------------------------------
 // CARDS

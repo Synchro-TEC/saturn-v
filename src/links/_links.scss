@@ -3,8 +3,10 @@ a {
   cursor: pointer;
   font-weight: $sv-font-weight-default;
   text-decoration: none;
+  transition: all .1s linear;
 
-  &:hover {
+  &:hover,
+  &:active {
     color: $sv-default-link-color-hover;
   }
 }
