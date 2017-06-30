@@ -31,6 +31,7 @@
 
 @mixin make-variant-link-button ($color, $darken, $lighten ) {
   color: $color;
+  font-size: $sv-font-small;
 
   &:hover {
     color: darken($color, $darken);
