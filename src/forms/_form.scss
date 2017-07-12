@@ -2,12 +2,18 @@
 .sv-form {
 
   &.sv-compact {
+
     label {
       margin-bottom: 0;
       span {
         margin-bottom: 0;
       }
     }
+
+    .sv-select {
+      margin: 0;
+    }
+
 
   }
 
