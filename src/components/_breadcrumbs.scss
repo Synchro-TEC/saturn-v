@@ -1,9 +1,71 @@
+.sv-breadcrumb--thin {
+  margin-bottom: $sv-margin-small;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+
+  li{
+    max-width: 25vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:last-child {
+      overflow: hidden;
+      a {
+        pointer-events: none;
+        color: map-get($sv-colors, 'text-color');
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    &:first-child{
+      overflow: visible;
+    }
+
+    a {
+      flex:1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &+ li {
+      &:before {
+        content: "\A0\A0/\A0\A0";
+      }
+    }
+  }
+
+}
+
+
+@media only screen and ( max-width: 640px ) {
+  .sv-breadcrumb--thin {
+    li {
+      display: none;
+
+        &:first-child{
+          display: flex;
+
+        }
+
+        &:last-child{
+          max-width: 75vw;
+          display: block;
+       }
+    }
+  }
+}
+
 .sv-breadcrumb{
   list-style: none;
   display: block;
   overflow: hidden;
   width: 100%;
-  margin-bottom: $sv-margin-large;
+  margin-bottom: $sv-margin-med;
 
   li{
 
@@ -33,8 +95,6 @@
     }
 
     a {
-      font-size: $sv-font-base;
-      font-weight: $sv-font-weight-default;
       color: map-get($sv-colors, 'blue-gray-500');
       display: block;
       text-decoration: none;
@@ -44,6 +104,7 @@
       padding: 0 10px 0 5px;
       text-align: center;
       margin-right: 23px;
+      transition: 0s;
     }
 
     //&:nth-child(even){

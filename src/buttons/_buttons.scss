@@ -132,7 +132,6 @@
     );
   }
 
-
   &.warning {
     @include make-variant-button(
         map-get($sv-colors, 'yellow-500'),
@@ -142,7 +141,6 @@
         map-get($sv-colors, 'yellow-300')
     );
   }
-
 
   &.out-primary {
     @include make-outlined-button(
