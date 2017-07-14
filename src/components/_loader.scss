@@ -13,6 +13,36 @@
   }
 }
 
+.sv-spin-loader {
+  animation: spin 400ms linear infinite;
+  border: 3px solid map-get($sv-colors, 'gray-400');
+  border-top: 3px solid map-get($sv-colors, 'blue-400');
+  border-radius: 50%;
+  height: $sv-button-small-height;
+  width: $sv-button-small-height;
+  display: inline-block;
+
+  &.large {
+    height: $sv-form-input-default-height;
+    width: $sv-form-input-default-height;
+  }
+
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 @keyframes typing{
   0% {
     background-color: rgba(map-get($sv-colors, 'blue-500'), 1);
