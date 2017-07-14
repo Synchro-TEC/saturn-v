@@ -7,6 +7,8 @@
   - Formulários Compactos
   - Cores foram adicionadas (Já está documentada)
   - Breadcrumbs 'thin', breadcrumbs mais simplista
+  - Melhoria na apresentacao do ultimo iten do breadcrumb
+  - Novos widths para inputs 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90% 
 
 ### Removido
 

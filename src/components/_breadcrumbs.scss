@@ -80,8 +80,6 @@
       display: block;
       a {
         background-color: map-get($sv-colors, 'steel-200');
-        color: map-get($sv-colors, 'blue-500');
-
         &:after {
           border-left-color: map-get($sv-colors, 'steel-200');
 
@@ -95,7 +93,6 @@
     }
 
     a {
-      color: map-get($sv-colors, 'blue-gray-500');
       display: block;
       text-decoration: none;
       position: relative;
@@ -137,7 +134,9 @@
         padding-right:15px;
         @include borderRadius(0 4px 4px 0);
         background: transparent;
-        color: map-get($sv-colors, 'blue-700');
+        // color: map-get($sv-colors, 'blue-700');
+        pointer-events: none;
+        color: map-get($sv-colors, 'text-color');
         &:before{
           border:none;
         }
