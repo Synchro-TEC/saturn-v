@@ -1,64 +1,7 @@
 //************************************************************************
 // Default button styles
 //************************************************************************
-
-
-  span {
-    &.button {
-      display: inline-block;
-      vertical-align: middle;
-      cursor: pointer;
-      background: #00a5ec;
-      color: white;
-      padding: 0 $sv-padding-large;
-      text-decoration: none;
-      height:  $sv-button-default-height;
-      line-height:  $sv-button-default-height;
-      text-align: center;
-      position: relative;
-      font-size: $sv-font-small;
-      font-stretch: normal;
-      font-weight: $sv-font-weight-bold;
-      text-transform: uppercase;
-      transition: .25s ease-in-out;
-      border-radius: $sv-form-fields-default-border;
-      &:before, &:after, span {
-        transition: .25s ease-in-out;
-      }
-      &.mail {
-        position:relative;
-        overflow:hidden;
-        span {
-          display:block;
-          position:relative;
-          bottom:0;
-        }
-        &:before {
-          content:'\f1d8';
-          font-family: FontAwesome;
-          display:block;
-          width:100%;
-          height:100%;
-          padding:0 $sv-padding-large;
-          top:-100%;
-          left:0;
-          position:absolute;
-        }
-        &:hover {
-          background: #53af09;
-          span {
-            bottom:-56px;
-          }
-          &:before {
-            top:0%;
-          }
-        }
-      }
-    }
-  }
-
-
-.sv-button {
+.base-button {
   background-color: transparent;
   border: 0;
   border-radius: $sv-form-fields-default-border;
@@ -76,20 +19,9 @@
   vertical-align: middle;
   white-space: nowrap;
   text-transform: uppercase;
-  transition: all .2s;
+}
 
-  &.icon-before {
-    & i {
-      margin: 0 4px 0 -5px;
-    }
-  }
-
-  &.icon-after {
-    & i {
-      margin: 0 -5px 0 4px;
-    }
-  }
-
+.base-button-variants {
   &.danger {
     @include make-variant-button(
         map-get($sv-colors, 'red-400'),
@@ -141,13 +73,15 @@
         map-get($sv-colors, 'yellow-300')
     );
   }
+}
 
+.base-button-variants-outlined {
   &.out-primary {
     @include make-outlined-button(
-      map-get($sv-colors, 'green-400'),
-      map-get($sv-colors, 'green-400'),
-      map-get($sv-colors, 'green-50'),
-      map-get($sv-colors, 'green-600')
+        map-get($sv-colors, 'green-400'),
+        map-get($sv-colors, 'green-400'),
+        map-get($sv-colors, 'green-50'),
+        map-get($sv-colors, 'green-600')
     );
   }
 
@@ -187,18 +121,31 @@
         map-get($sv-colors, 'yellow-800')
     );
   }
+}
+
+.sv-button {
+  @extend .base-button;
+  transition: all .2s;
+
+  &.icon-before {
+    & i {
+      margin: 0 4px 0 -5px;
+    }
+  }
+
+  &.icon-after {
+    & i {
+      margin: 0 -5px 0 4px;
+    }
+  }
+
+  @extend .base-button-variants;
+  @extend .base-button-variants-outlined;
 
 
   //************************************************************************
   // BUTTON HELPERS & SIZES
   //************************************************************************
-
-
-  // HORIZONTAL MARGINS BETWEEN BUTTONS
-  &.marged {
-    margin: 0 $sv-margin-default;
-  }
-
 
   // SMALL BUTTONS
   &.small {
@@ -292,7 +239,98 @@
     &.link-default {
       @include make-variant-link-button(map-get($sv-colors, 'steel-600'), 10%, 20%);
     }
+  }
+}
 
+.base-animation {
+  position:relative;
+  overflow:hidden;
+  span {
+    display:block;
+    position:relative;
+    bottom:0;
+  }
+  &:before {
+    font-family: FontAwesome;
+    display:block;
+    width:100%;
+    height:100%;
+    padding:0 $sv-padding-large;
+    top:-100%;
+    left:0;
+    position:absolute;
+  }
+  &:hover {
+    span {
+      bottom:-56px;
+    }
+    &:before {
+      top:0;
+    }
+  }
+}
+
+.sv-bt-animated {
+  @extend .base-button;
+  @extend .base-button-variants;
+
+  &:before, &:after, span {
+    transition: .25s ease-in-out;
   }
 
+  &.mail {
+    @extend .base-animation;
+    &:before {
+      content:'\f1d8';
+    }
+  }
+
+  &.delete {
+    @extend .base-animation;
+    &:before {
+      content:'\f1f8';
+    }
+  }
+
+  &.exit {
+    @extend .base-animation;
+    &:before {
+      content:'\f08b';
+    }
+  }
+
+  &.search {
+    @extend .base-animation;
+    &:before {
+      content:'\f002';
+    }
+  }
+
+  &.open {
+    @extend .base-animation;
+    &:before {
+      content:'\f08e';
+    }
+  }
+
+  &.view {
+    @extend .base-animation;
+    &:before {
+      content:'\f06e';
+    }
+  }
+
+  &.upload {
+    @extend .base-animation;
+    &:before {
+      content:'\f093';
+    }
+  }
+
+  &.download {
+    @extend .base-animation;
+    &:before {
+      content:'\f019';
+    }
+  }
 }

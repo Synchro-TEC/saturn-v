@@ -5,17 +5,62 @@
 ### Adicionado
   - Novo sistema de espaçametos
   - Formulários Compactos
-  - Cores foram adicionadas (Já está documentada)
+  - Cores foram adicionadas
   - Breadcrumbs 'thin', breadcrumbs mais simplista
   - Melhoria na apresentacao do ultimo iten do breadcrumb
-  - Novos widths para inputs 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90% 
+  - Novos widths para inputs 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%
+  - Botões com animação 
 
 ### Removido
 
+  - `.sv-button marged`  (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-vertical-marged-5` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-vertical-marged-10` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-vertical-marged-15` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-vertical-marged-25` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-vertical-marged-50` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-horizontal-marged-5` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-horizontal-marged-10` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-horizontal-marged-15` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-horizontal-marged-25` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-horizontal-marged-50` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-horizontal-padd-5` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-horizontal-padd-10` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-horizontal-padd-15` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-horizontal-padd-25` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-horizontal-padd-50` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-left-marged-5` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-left-marged-10` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-left-marged-15` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-left-marged-25` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-left-marged-50` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-right-marged-5` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-right-marged-10` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-right-marged-15` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-right-marged-25` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-right-marged-50` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-top-marged-5` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-top-marged-10` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-top-marged-15` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-top-marged-25` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-top-marged-50` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-top-marged-75` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-top-marged-100` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-padd-5`  (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-padd-10` (não é mais necessário apoós o sistema de espaçamentos)
+  - `.sv-padd-15 ` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-padd-25 ` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-padd-50 ` (não é mais necessário apoós o sistema de espaçamentos) 
+  - `.sv-thin-text`
+  - `.sv-header`
+  - `.sv-footer`
+  - `.sv-title`
+  
 ### Mudou
   - Font Base foi ajustada(Tamanho, shape, etc...)
   - a classe `.hidden` foi alterada para `.sv-hidden`
   - A margem inferior do breadcrumb foi reduzida
+  - normalize.css atualizado para versão v7.0.0 
 
 ## Beta 3
 

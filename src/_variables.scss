@@ -11,6 +11,7 @@ $sv-colors: (
   text-color            :#4c6a94,
   link-color            :#0070d2,
   link-color-hover      :#002a54,
+  code-color            :#d33682,
 
   red-1                 :#f44336,
   red-50                :#ffebee,
@@ -157,7 +158,7 @@ $sv-font-size-base        :14px;
 $sv-font-base             :1rem !default;
 $sv-font-lg               :1.25rem !default;
 $sv-font-bigger           :1.4rem !default;
-$sv-font-small            :.875rem !default;
+$sv-font-small            :.85rem !default;
 $sv-font-xsmall           :.75rem !default;
 
 $sv-line-height-base      :1.45 !default;

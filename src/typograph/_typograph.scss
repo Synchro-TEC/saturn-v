@@ -11,15 +11,6 @@ h6{
   padding: $sv-padding-default 0;
   margin: $sv-margin-default 0;
   width: 100%;
-
-  &.sv-title {
-    //color: map-get($sv-colors, 'blue-gray-700');
-    //border-bottom: 1px solid map-get($sv-colors, 'blue-gray-200');
-    margin-bottom: 1.5rem;
-    font-weight: $sv-font-weight-bold;
-    border-bottom: 1px solid map-get($sv-colors, 'steel-300');;
-  }
-
 }
 
 h1 {
@@ -51,7 +42,7 @@ p {
   display: block;
 
   &.small {
-    font-size: .85rem;
+    font-size: $sv-font-small;
   }
 }
 
@@ -59,25 +50,25 @@ p img {
   vertical-align: middle;
 }
 
-//TODO: VARIABLES
+
 .code {
   font-family: $sv-font-family-mono;
-  padding: 0 5px;
-  background-color: #eff2f7;
-  color: #d33682;
-  border-radius: 3px;
+  padding: 0 $sv-padding-small;
+  background-color: map-get($sv-colors, 'steel-100');
+  color: map-get($sv-colors, 'code-color');
+  border-radius: $sv-form-fields-default-border;
 }
 
 dl dt {
-  font-weight: 600;
+  font-weight: $sv-font-weight-bold;
 }
 
 dl dd {
-  margin-bottom: 10px;
+  margin-bottom: $sv-margin-med;
 }
 
 code, kbd, pre, samp {
-  font-family: Monaco, Menlo, Consolas, monospace;
+  font-family: $sv-font-family-mono;
 }
 
 .sv-text-small {

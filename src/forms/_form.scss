@@ -2,7 +2,6 @@
 .sv-form {
 
   &.sv-compact {
-
     label {
       margin-bottom: 0;
       span {
@@ -13,8 +12,6 @@
     .sv-select {
       margin: 0;
     }
-
-
   }
 
   .sv-form-action {
@@ -84,7 +81,6 @@
   progress {
     -webkit-appearance: none;
     -moz-appearance: none;
-    // appearance: none;
 
     background: map_get($sv-colors, 'white-1');
     border: 1px solid map-get($sv-colors, 'steel-500');
@@ -97,7 +93,6 @@
 
     &::-webkit-progress-bar {
       background: map_get($sv-colors, 'white-1');
-      //border: 1px solid map-get($sv-colors, 'steel-500');
       border-radius: $sv-form-fields-default-border;
     }
 
@@ -176,7 +171,6 @@
       color: map_get($sv-colors, 'red-500');
     }
 
-
   }
 
   fieldset {
@@ -195,7 +189,6 @@
         background: transparent;
         top: 15px;
         margin: 0 0 10px 0;
-        //margin: -15px;
       }
     }
 
