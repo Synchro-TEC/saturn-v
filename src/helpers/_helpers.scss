@@ -72,3 +72,30 @@
 .sv-text-bold {
   font-weight: $sv-font-weight-bold;
 }
+
+
+.sv-br--1 {
+  border-radius: 2px;
+}
+.sv-br--2 {
+  border-radius: 5px;
+}
+.sv-br--3 {
+  border-radius: 8px;
+}
+.sv-br--4 {
+  border-radius: 12px;
+}
+
+.sv-bws--1 {
+  border: 1px solid;
+}
+.sv-bws--2 {
+  border: 2px solid;
+}
+.sv-bws--3 {
+  border: 3px solid;
+}
+.sv-bws--4 {
+  border: 4px solid;
+}
