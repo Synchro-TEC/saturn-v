@@ -41,8 +41,8 @@ p {
   margin: 0 0 $sv-margin-med-two;
   display: block;
 
-  &.small {
-    font-size: $sv-font-small;
+  &.sv-text-large {
+    margin: 0 0 $sv-margin-big;
   }
 }
 
@@ -79,6 +79,18 @@ code, kbd, pre, samp {
   font-size: $sv-font-xsmall;
 }
 
-.sv-text-big {
+.sv-text-large {
   font-size: $sv-font-lg;
+}
+
+.sv-fw-normal {
+  font-weight: $sv-font-weight-default;
+}
+
+.sv-fw-bold {
+  font-weight: $sv-font-weight-bold;
+}
+
+.sv-fm-i {
+  font-style: italic;
 }
