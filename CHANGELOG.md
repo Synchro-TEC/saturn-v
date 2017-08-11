@@ -58,6 +58,7 @@
   - `.sv-header`
   - `.sv-footer`
   - `.sv-title`
+  - `.sv-no-margins`
 
 ### Mudou
   - Font Base foi ajustada(Tamanho, shape, etc...)

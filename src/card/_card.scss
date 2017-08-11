@@ -53,3 +53,13 @@
   }
 
 }
+
+.sv-segment {
+  @include  simple-shadow();
+  background: map-get($sv-colors, 'white-1');
+  border: 1px solid map-get($sv-colors, 'gray-300');
+  border-radius: $sv-segment-border-radius;
+  margin: 0;
+  position: relative;
+  z-index: auto;
+}
