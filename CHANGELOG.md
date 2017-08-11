@@ -12,6 +12,7 @@
   - Botões com animação
   - Opções de font weight (`sv-fw-normal` - `sv-fw-bold`)
   - Novos modificadores de tamanho do texto: `sv-text-large`, `sv-text-small`, `sv-text-smaller`
+  - Alinhamentos para elementos flex `sv-flex-left, sv-flex-right, sv-flex-center e sv-flex-justify`
 
 ### Removido
 

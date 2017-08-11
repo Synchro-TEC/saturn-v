@@ -94,3 +94,22 @@ code, kbd, pre, samp {
 .sv-fm-i {
   font-style: italic;
 }
+
+
+
+.sv-flex-left {
+  justify-content: flex-start !important;
+}
+
+.sv-flex-right {
+  justify-content: flex-end !important;
+}
+
+.sv-flex-center {
+  justify-content: center !important;
+}
+
+.sv-flex-justify {
+  justify-content: space-between !important;
+}
+

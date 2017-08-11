@@ -112,6 +112,7 @@ $sv-colors: (
 );
 
 $sv-spacings: (
+  0    :0,
   5    :5px,
   10   :10px,
   15   :15px,
@@ -167,7 +168,7 @@ $sv-font-bigger           :1.4rem !default;
 $sv-font-small            :.85rem !default;
 $sv-font-xsmall           :.75rem !default;
 
-$sv-line-height-base      :1.45 !default;
+$sv-line-height-base      :1.5 !default;
 $sv-line-height-small     :1 !default;
 
 $sv-font-size-h1          :2rem !default;

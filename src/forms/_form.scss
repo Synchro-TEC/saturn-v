@@ -567,11 +567,23 @@
   }
 
   .sv-button {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-left: 0;
+    border-radius: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    border-right: 1px solid rgba(255, 255, 255, 0.6);
     display: inline-flex;
     flex: 0 0 auto;
+  }
+
+  .sv-button:first-of-type {
+    border-top-left-radius: $sv-form-fields-default-border;
+    border-bottom-left-radius: $sv-form-fields-default-border;
+    border: 0;
+  }
+
+  .sv-button:last-of-type {
+    border-top-right-radius: $sv-form-fields-default-border;
+    border-bottom-right-radius: $sv-form-fields-default-border;
+    border: 0;
   }
 
 }
