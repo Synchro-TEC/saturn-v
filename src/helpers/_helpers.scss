@@ -1,3 +1,6 @@
+/*--------------------------------------------------------
+  POSICIONAMENTOS
+--------------------------------------------------------*/
 .sv-pull-left {
   float: left !important;
 }
@@ -6,6 +9,10 @@
   float: right !important;
 }
 
+
+/*--------------------------------------------------------
+  ALINHAMENTO DE TEXTO
+--------------------------------------------------------*/
 .sv-text-left {
   text-align: left !important;
 }
@@ -23,6 +30,9 @@
 }
 
 
+/*--------------------------------------------------------
+  POSICIONAMENTO DE ELEMENTOS COM DISPLAY FLEX
+--------------------------------------------------------*/
 .sv-flex-left {
   justify-content: flex-start !important;
 }
@@ -40,6 +50,7 @@
 }
 
 
+
 .sv-hidden {
   display: none !important;
 }
@@ -47,6 +58,10 @@
 .sv-fixed {
   position: fixed !important;
 }
+
+/*--------------------------------------------------------
+  LINHAS
+--------------------------------------------------------*/
 
 .sv-line {
   border-top: none;
@@ -60,6 +75,9 @@
   margin: 0 0 1rem;
 }
 
+/*--------------------------------------------------------
+  CLEAR
+--------------------------------------------------------*/
 .sv-clear:before,
 .sv-clear:after {
   content: " ";
@@ -69,12 +87,9 @@
   clear: both;
 }
 
+
 .sv-pointer {
   cursor: pointer !important;
-}
-
-.sv-text-bold {
-  font-weight: $sv-font-weight-bold;
 }
 
 

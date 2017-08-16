@@ -50,7 +50,9 @@ p img {
   vertical-align: middle;
 }
 
-
+/*--------------------------------------------------------
+CODE
+--------------------------------------------------------*/
 .sv-code {
   font-family: $sv-font-family-mono;
   padding: 0 $sv-padding-small;
@@ -59,18 +61,13 @@ p img {
   border-radius: $sv-form-fields-default-border;
 }
 
-dl dt {
-  font-weight: $sv-font-weight-bold;
-}
-
-dl dd {
-  margin-bottom: $sv-margin-med;
-}
-
 code, kbd, pre, samp {
   font-family: $sv-font-family-mono;
 }
 
+/*--------------------------------------------------------
+TEXT SIZE
+--------------------------------------------------------*/
 .sv-text-small {
   font-size: $sv-font-small;
 }
@@ -83,6 +80,14 @@ code, kbd, pre, samp {
   font-size: $sv-font-lg;
 }
 
+
+/*--------------------------------------------------------
+FONT WEIGHT
+--------------------------------------------------------*/
+.sv-fw-thin {
+  font-weight: $sv-font-weight-thin;
+}
+
 .sv-fw-normal {
   font-weight: $sv-font-weight-default;
 }
@@ -91,7 +96,30 @@ code, kbd, pre, samp {
   font-weight: $sv-font-weight-bold;
 }
 
-.sv-fm-i {
+/*--------------------------------------------------------
+TEXT STYLES
+--------------------------------------------------------*/
+.sv-ts-i {
   font-style: italic;
 }
 
+.sv-ts-u {
+  text-decoration: underline;
+}
+
+.sv-ts-lt {
+  text-decoration: line-through;
+}
+
+/*--------------------------------------------------------
+TEXT TRANSFORMS
+--------------------------------------------------------*/
+.sv-tt-u {
+  text-transform: uppercase;
+}
+.sv-tt-l {
+  text-transform: lowercase;
+}
+.sv-tt-c {
+  text-transform: capitalize;
+}

@@ -10,9 +10,13 @@
   - Melhoria na apresentacao do ultimo iten do breadcrumb
   - Novos widths para inputs 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 65%, 70%, 75%, 80%, 85%, 90%
   - Botões com animação
-  - Opções de font weight (`sv-fw-normal` - `sv-fw-bold`)
+  - Opções de font weight (`sv-fw-normal`, `sv-fw-bold` e `sv-fw-thin`)
+  - Estilos de texto `sv-ts-i`, `sv-ts-u`, `sv-ts-lt`;
+  - Transformação de texto `sv-tt-u`, `sv-tt-l`, `sv-tt-c`;
   - Novos modificadores de tamanho do texto: `sv-text-large`, `sv-text-small`, `sv-text-smaller`
   - Alinhamentos para elementos flex `sv-flex-left, sv-flex-right, sv-flex-center e sv-flex-justify`
+  - listas OL `sv-ol`
+
 
 ### Removido
 
@@ -60,7 +64,9 @@
   - `.sv-title`
   - `.sv-no-margins`
 
+
 ### Mudou
+  - `.sv-text-bold` agora é `.sv-fw-bold`
   - Font Base foi ajustada(Tamanho, shape, etc...)
   - a classe `.hidden` foi alterada para `.sv-hidden`
   - A margem inferior do breadcrumb foi reduzida
