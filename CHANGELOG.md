@@ -1,6 +1,20 @@
 # CHANGELOG
 
-## Beta 4
+## RC-2
+
+### Adicionado
+  - Helpers para manipulação de border-radius
+  - Campos readonly se comportam como disabled
+
+### Removido
+
+### Mudou
+  - Lista UL `.sv-styled` agora é `.sv-list-styled`
+  - Lista UL `.inline` agora é `.sv-list-inline`
+  - Removio o line-height dos buttons do tipo link
+
+
+## RC
 
 ### Adicionado
   - Novo sistema de espaçametos

@@ -62,7 +62,8 @@
       font-family: $sv-font-family-mono !important;
     }
 
-    &:disabled {
+    &:disabled,
+    &:read-only {
       background-color: map-get($sv-colors, 'steel-200');
     }
 
