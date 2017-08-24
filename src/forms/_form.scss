@@ -41,6 +41,19 @@
   input[type="tel"],
   input[type="url"],
   input[type="password"],
+  textarea {
+    &:read-only {
+      background-color: map-get($sv-colors, 'steel-200');
+    }
+  }
+
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="text"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="password"],
   textarea,
   select {
     background-color: map-get($sv-colors, 'white-1');
@@ -62,8 +75,7 @@
       font-family: $sv-font-family-mono !important;
     }
 
-    &:disabled,
-    &:read-only {
+    &:disabled {
       background-color: map-get($sv-colors, 'steel-200');
     }
 
@@ -101,10 +113,10 @@
 
       background: repeating-linear-gradient(
           -55deg,
-          map_get($sv-colors, 'blue-500'),
-          map_get($sv-colors, 'blue-500') 10px,
-          map_get($sv-colors, 'blue-400') 10px,
-          map_get($sv-colors, 'blue-400') 20px
+          map_get($sv-colors, 'blue-300'),
+          map_get($sv-colors, 'blue-300') 10px,
+          map_get($sv-colors, 'blue-200') 10px,
+          map_get($sv-colors, 'blue-200') 20px
       );
       border-radius: $sv-form-fields-default-border;
 
@@ -113,17 +125,17 @@
     &::-moz-progress-bar {
       background: repeating-linear-gradient(
           -55deg,
-          map_get($sv-colors, 'blue-500'),
-          map_get($sv-colors, 'blue-500') 10px,
-          map_get($sv-colors, 'blue-400') 10px,
-          map_get($sv-colors, 'blue-400') 20px
+          map_get($sv-colors, 'blue-300'),
+          map_get($sv-colors, 'blue-300') 10px,
+          map_get($sv-colors, 'blue-200') 10px,
+          map_get($sv-colors, 'blue-200') 20px
       );
       border-radius: $sv-form-fields-default-border;
     }
   }
 
 
-  //TODO MUDOU - DOCUMENTAR HALF...
+  // TODO: MUDOU - DOCUMENTAR HALF...
   @each $size, $the-size in $sv-input-sizes {
     .is--#{$size}-of-100 {
       width: calc(#{$the-size} - 10px) !important;

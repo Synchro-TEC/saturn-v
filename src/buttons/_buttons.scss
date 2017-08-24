@@ -3,7 +3,7 @@
 //************************************************************************
 .base-button {
   background-color: transparent;
-  border: 0;
+  border: 1px solid transparent;
   border-radius: $sv-form-fields-default-border;
   cursor: pointer;
   display: inline-block;
@@ -151,8 +151,9 @@
   &.small {
     font-size: $sv-font-xsmall;
     height: $sv-button-small-height;
-    line-height: $sv-line-height-small;
-    padding: $sv-padding-small $sv-padding-med;
+    line-height: $sv-button-small-height;
+    padding: 0 $sv-padding-med;
+
   }
 
   // FULL WIDTH BUTTONS
@@ -179,15 +180,13 @@
   &.link {
     border-radius: 0;
     color: $sv-default-link-color;
-    font-size: $sv-font-base;
     font-weight: $sv-font-weight-bold;
-    // line-height: $sv-font-base;
-    padding: $sv-padding-small $sv-padding-default;
     display: inline-block;
 
     &.small {
-      font-size: $sv-font-small;
+      font-size: $sv-font-xsmall;
       height: $sv-button-small-height;
+      padding: 0 $sv-padding-med;
     }
 
 

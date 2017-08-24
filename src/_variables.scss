@@ -157,7 +157,7 @@ $sv-input-sizes: (
 $sv-default-text-color    :map-get($sv-colors, 'text-color');
 
 $sv-font-family           : 'Fira Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
-$sv-font-family-mono      : consolas, monaco, monospace;
+$sv-font-family-mono      : monospace;
 $sv-font-family-cond      : Arial;
 
 $sv-font-size-base        :14px;
