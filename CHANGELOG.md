@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.0.1
+
+### Mudou
+  - Font default depende do Sistema Operacional que está acessando a aplicação
+  - Simplificando processo de build
+
 ## RC-2
 
 ### Adicionado

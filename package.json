@@ -1,45 +1,36 @@
 {
-  "name": "saturn-v",
-  "version": "0.0.1",
+  "name": "syntec-saturn-v",
+  "version": "1.0.1",
   "description": "Saturn V",
-  "scripts": {},
   "style": "css/saturn-v.css",
   "sass": "src/main.scss",
   "main": "css/saturn-v.css",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marcio/saturn-v.git"
+    "url": "https://github.com/Synchro-TEC/saturn-v.git"
   },
   "author": "Marcio Gasparotto",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marcio/saturn-v/issues"
+    "url": "https://github.com/Synchro-TEC/saturn-v/issues"
   },
-  "homepage": "https://github.com/marcio/saturn-v",
+  "homepage": "http://espresso.synchro.com.br",
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/saturn-v.css css/saturn-v.css",
+    "build-clean": "rimraf css",
+    "build-sass": "node-sass --output-style expanded --source-map true src/main.scss css/saturn-v.css",
+    "build-dev": "node-sass --output-style expanded --source-map true src/main.scss ../Espresso/public/css/saturn-v.css",
+    "start": "npm run build-sass -- --watch",
+    "start-dev": "npm run build-dev -- --watch"
+  },
   "devDependencies": {
-    "assemble": "^0.24.3",
-    "autoprefixer": "^7.1.1",
-    "cssnano": "^3.4.0",
-    "grunt": "^1.0.1",
-    "grunt-autoprefixer": "^3.0.0",
-    "grunt-build-control": "^0.7.1",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-exec": "^2.0.0",
-    "grunt-jekyll": "^0.4.2",
-    "grunt-parker": "^0.2.0",
-    "grunt-postcss": "^0.8.0",
-    "grunt-sass": "^2.0.0",
-    "grunt-shell": "^2.1.0",
-    "load-grunt-config": "^0.19.2",
-    "load-grunt-tasks": "^3.1.0",
+    "autoprefixer": "^7.1.4",
+    "cpx": "^1.5.0",
     "node-sass": "^4.5.3",
     "normalize.css": "^7.0.0",
-    "pixrem": "^3.0.0",
-    "sass-lint": "^1.9.1",
-    "sass-loader": "^6.0.6",
-    "susy": "^2.2.11",
-    "time-grunt": "^1.1.1",
-    "webpack": "^3.0.0"
+    "postcss-cli": "^4.1.1",
+    "rimraf": "^2.6.2"
   },
   "dependencies": {}
 }
